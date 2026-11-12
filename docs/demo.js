@@ -134,11 +134,14 @@ async function initialize() {
   if (records.analysis) {
     const analysis = records.analysis;
     $("shot-count").textContent = String(Array.isArray(analysis.shots) ? analysis.shots.length : 0);
-    const regions = Array.isArray(analysis.text_regions) ? analysis.text_regions : analysis.captions;
-    $("caption-count").textContent = String(Array.isArray(regions) ? regions.length : 0);
+    const captions = Array.isArray(analysis.captions) ? analysis.captions : [];
+    const regions = Array.isArray(analysis.text_regions) ? analysis.text_regions : captions;
+    const suspect = regions.filter((item) => !captions.some((caption) => caption.id === item.id));
+    $("caption-count").textContent = String(captions.length);
     const total = Number(analysis.source?.duration) || 0;
     addLane("A / SHOTS", analysis.shots, total, "", "analysis", "Reference A");
-    addLane("A / TEXT", regions, total, "caption-clip", "analysis", "Reference A");
+    addLane("A / CAPTIONS", captions, total, "caption-clip", "analysis", "Reference A");
+    if (suspect.length) addLane("A / SUSPECT TEXT", suspect, total, "suspect-clip", "analysis", "Reference A");
     inspect({source: analysis.source, coverage: analysis.coverage, unknowns: analysis.unknowns}, "Coverage and unknowns", "Reference facts and unresolved properties, from the recorded analysis. Select an event to see its evidence and method.", sources.analysis.path);
   }
   if (records.project) {
