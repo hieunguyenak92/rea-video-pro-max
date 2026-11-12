@@ -58,7 +58,10 @@ and **0.76885**. Its first run intentionally failed because ring graphics became
 OCR text; the same temporal/layout admission gate now keeps those 217 suspect
 regions in `text_regions` while leaving `captions` empty, so unknown style does
 not poison B. The motion fit itself remains model-derived apparent motion, not
-camera/layer history. Final replay evidence was regenerated after these fixes.
+camera/layer history. After the fix, the same fixture rendered a different
+144-frame B with two new images and captions; project identity, no-reference
+reuse, decoded clock/geometry and independent caption OCR checks passed. Final
+replay evidence was regenerated after these fixes.
 
 ```sh
 python -m pip install -e '.[test,mcp,interop]'
