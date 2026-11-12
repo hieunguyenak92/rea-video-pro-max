@@ -518,7 +518,7 @@ def test_asr_import_preserves_model_and_external_source_provenance(reference, tm
 
 
 @pytest.mark.skipif(not shutil.which("tesseract"), reason="optional local OCR not installed")
-def test_ring_graphic_ocr_is_suspect_and_never_admitted_to_reusable_style(tmp_path):
+def test_ring_graphic_ocr_never_admitted_to_reusable_style(tmp_path):
     images = []
     colors = [(15, 30, 48), (18, 36, 56), (20, 40, 62)]
     for index in range(18):
@@ -535,5 +535,23 @@ def test_ring_graphic_ocr_is_suspect_and_never_admitted_to_reusable_style(tmp_pa
     assert result["style"]["status"] == "unknown"
     assert result["style"].get("reason") == "no readable text detected"
     assert result["text_regions"]
-    assert all(region["quality"]["status"] == "suspect" for region in result["text_regions"])
+    # OCR engine builds can return coherent scene-label candidates as well as
+    # suspect readings. Neither category is an admitted subtitle/style source.
+    assert all(region["quality"]["status"] == "suspect" or region.get("role") != "caption_candidate"
+               for region in result["text_regions"])
     assert any(reason in region["quality"]["reasons"] for region in result["text_regions"] for reason in ("word_height_incoherent", "word_baseline_incoherent", "single_temporal_observation", "weak_closed_catalog_geometry_fit"))
+
+
+def test_scene_candidate_is_preserved_without_becoming_subtitle_style():
+    from rea_video_pro_max.analysis import _classify_text_regions
+    def region(role, y):
+        return {"text": "READ THIS LABEL", "role": role, "bbox": [.1, y, .6, .08],
+                "engine_score": 96, "style": {"position": [.4, y+.04]},
+                "observations": [{"word_appearances": []}, {"word_appearances": []}],
+                "font_candidates": [{"glyph_iou": .8}]}
+    scene = region("title_or_scene_text", .1)
+    caption = region("caption_candidate", .78)
+    selected = _classify_text_regions([scene, caption])
+    assert selected == [caption]
+    assert scene["quality"]["status"] == "candidate"
+    assert caption["quality"]["status"] == "candidate"

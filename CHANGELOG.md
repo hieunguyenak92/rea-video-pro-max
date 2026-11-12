@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1 — 2026-11-13
+
+- Separate coherent subtitle candidates from scene/suspect OCR in the recorded demo.
+- Make the ring-graphic regression assert caption/style exclusion across OCR builds; retain scene-text observations without calling them subtitles.
+- Preserve the original v0.1.0 source tag; release artifacts identify the patched source.
+
 ## 0.1.0 — 2026-11-12
 
 - Local reference analysis with source hashes, PTS index, coverage, shot candidates,

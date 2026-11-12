@@ -5,10 +5,12 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import tomllib
 import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+VERSION = tomllib.loads((ROOT / "pyproject.toml").read_text())["project"]["version"]
 IGNORE = {".git", ".venv", "__pycache__", ".pytest_cache", ".ruff_cache", "build", "dist", ".rea-video-jobs"}
 
 
@@ -35,9 +37,9 @@ def archive(path, source, prefix):
 def main(out):
     out.mkdir(parents=True, exist_ok=True)
     archive(
-        out / "rea-video-pro-max-v0.1.0-skill.zip", ROOT / "skills/rea-video-pro-max", "rea-video-pro-max"
+        out / f"rea-video-pro-max-v{VERSION}-skill.zip", ROOT / "skills/rea-video-pro-max", "rea-video-pro-max"
     )
-    archive(out / "rea-video-pro-max-v0.1.0-source.zip", ROOT, "rea-video-pro-max")
+    archive(out / f"rea-video-pro-max-v{VERSION}-source.zip", ROOT, "rea-video-pro-max")
     records = [
         {"file": p.name, "bytes": p.stat().st_size, "sha256": hashlib.sha256(p.read_bytes()).hexdigest()}
         for p in sorted(out.glob("*"))
@@ -45,7 +47,7 @@ def main(out):
     ]
     (out / "SHA256SUMS").write_text("".join(f"{p['sha256']}  {p['file']}\n" for p in records))
     (out / "release-manifest.json").write_text(
-        json.dumps({"schema_version": 1, "version": "0.1.0", "artifacts": records}, indent=2) + "\n"
+        json.dumps({"schema_version": 1, "version": VERSION, "artifacts": records}, indent=2) + "\n"
     )
     print(json.dumps(records))
 

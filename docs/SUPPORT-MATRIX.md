@@ -1,6 +1,6 @@
 # Support matrix
 
-This is the **implemented boundary of v0.1.0**, not a certification of every codec, language, editor or operating system. [Validation](VALIDATION.md) records the environment and cases actually run. `doctor` reports local availability; availability alone does not prove output quality.
+This is the **implemented boundary of v0.1.1**, not a certification of every codec, language, editor or operating system. [Validation](VALIDATION.md) records the environment and cases actually run. `doctor` reports local availability; availability alone does not prove output quality.
 
 ## Runtime and platforms
 
@@ -65,7 +65,7 @@ Composition admits 1–256 scenes; even dimensions 64–3840 with no more than 3
 | ASS | Caption timing with explicit Be Vietnam Pro substitute style | No original font/effect/highlight recovery; centisecond rounding |
 | OTIO | Flattened reference slices with annotations; adapter readback | Optional dependency; effect hypotheses are metadata, not NLE effect nodes |
 | EDL | Integer-CFR non-drop-frame cut list | Fractional/VFR rejected; no layer/transition/effect semantics |
-| FCPXML | Unavailable | Explicit error; not certified in v0.1.0 |
+| FCPXML | Unavailable | Explicit error; not certified in v0.1.1 |
 | Premiere / Resolve / After Effects / CapCut project | Unavailable | No claim of native application project recovery or import validation |
 
 Read each export receipt's `losses`. Successful syntax or adapter readback does not certify import fidelity in an external editor. B's portable native project and renderer are distinct from A's flattened-reference interchange exports.

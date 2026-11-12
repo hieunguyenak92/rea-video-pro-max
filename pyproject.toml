@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rea-video-pro-max"
-version = "0.1.0"
+version = "0.1.1"
 description = "Reverse-engineer video editing into evidence, timelines and reusable styles; render new content."
 requires-python = ">=3.11"
 license = "Apache-2.0"
