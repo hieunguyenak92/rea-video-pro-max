@@ -1,86 +1,189 @@
 # REA-Video-Pro-Max
 
-## Giải mã cách dựng. Tạo nội dung mới cùng phong cách.
+## Trao cho Claude & Codex con mắt của một người dựng phim.
 
-**Biến video tham chiếu thành timeline có bằng chứng và template phong cách tái sử dụng. Sau đó đưa script và media khác vào để render video của bạn.**
+**Giải mã nhịp dựng, phụ đề và chuyển động trong video tham khảo. Biến những quyết định dựng đó thành phong cách có thể tái sử dụng. Render một video mới bằng câu chuyện và tư liệu của riêng bạn.**
+
+Mỗi bản dựng cuốn hút đều có ngôn ngữ riêng. Hãy đưa ngôn ngữ ấy vào bộ công cụ sáng tạo của bạn.
+
+[**▶ Khám phá demo trực tiếp**](https://hieunguyenak92.github.io/rea-video-pro-max/) · [**Tải skill**](https://github.com/hieunguyenak92/rea-video-pro-max/releases/download/v0.1.1/rea-video-pro-max-v0.1.1-skill.zip) · [Bản phát hành v0.1.1](https://github.com/hieunguyenak92/rea-video-pro-max/releases/tag/v0.1.1)
 
 [English](README.md) · [Tiếng Việt](README.vi.md) · [한국어](README.ko.md) · [日本語](README.ja.md) · [Español](README.es.md) · [Português](README.pt-BR.md) · [简体中文](README.zh-CN.md) · [ไทย](README.th.md) · [Français](README.fr.md)
 
-[Xem walkthrough](docs/index.html) · [Video A](docs/media/reference.mp4) · [Video B](docs/media/adapted.mp4) · [Kiểm chứng (English)](docs/VALIDATION.md)
+**Skill cho Claude Code / Codex · CLI + MCP tùy chọn · Xử lý cục bộ · Apache-2.0**
 
-Một bản edit tốt chứa nhiều quyết định: cắt ở đâu, chia chữ thế nào, từ nào sáng lên, chuyển động kết thúc khi nào và hình gặp tiếng ra sao. REA-Video-Pro-Max làm những phần được hỗ trợ của hệ quyết định đó có thể kiểm tra và tái sử dụng.
+---
+
+## Từ “Video này dựng hay quá” đến “Đây là phiên bản của tôi.”
+
+Bạn bắt gặp một video đúng chất mình đang tìm: nhịp cắt đầy năng lượng, cách phụ đề xuất hiện, màu nhấn chạy qua từng cụm từ, cú zoom khiến một bức ảnh tĩnh có sức sống.
+
+REA-Video-Pro-Max biến những phần phong cách được hỗ trợ thành dữ liệu bạn có thể xem, chỉnh và tái sử dụng. Đưa vào kịch bản, hình ảnh, cảnh quay hoặc lời thuyết minh mới. Nhận lại một project có thể chỉnh sửa cùng một video đã render thực sự.
+
+| Video tham khảo A | Video B mới của bạn |
+| :---: | :---: |
+| [![Khung hình từ video tham khảo do dự án tự tạo](docs/media/readme-reference.png)](https://hieunguyenak92.github.io/rea-video-pro-max/#workspace) | [![Khung hình đã render với lời mới và tư liệu độc lập](docs/media/readme-new-video.png)](https://hieunguyenak92.github.io/rea-video-pro-max/#workspace) |
+| Phân tích nhịp cảnh và cách thể hiện phụ đề. | Áp dụng phong cách đã trích xuất vào một câu chuyện khác. |
+
+*Đây là khung hình thực từ demo do dự án tự tạo. B dùng văn bản mới, tư liệu được tạo độc lập và mốc thời gian phụ đề mới. [Demo tương tác](https://hieunguyenak92.github.io/rea-video-pro-max/#workspace) cho phép bạn tua cả hai video và xem timeline, template, project cùng kết quả kiểm chứng đã ghi lại.*
 
 ```text
-Video A → phân tích + timeline suy luận → style template + nội dung mới → project chỉnh sửa được → Video B
+Reference video → editing evidence + timeline → reusable style
+                                                   + your new content
+                                                   → editable project + Video B
 ```
 
-Demo dùng media synthetic do dự án sở hữu. A và B có chữ/media khác nhau. Website chỉ trình bày kết quả đã ghi; không chạy inference trực tiếp hay upload video của người xem.
+## Biến video tham khảo thành công cụ sáng tạo
 
-## Bạn có thể yêu cầu gì?
+| Điều bạn muốn làm | Kết quả bạn nhận được |
+| --- | --- |
+| Hiểu điều gì tạo nên cảm giác của một bản dựng | Khoảng thời gian từng cảnh, chữ nhìn thấy, diện mạo phụ đề, chuyển động biểu kiến và tín hiệu âm thanh, gắn với mốc thời gian và bằng chứng. |
+| Mang cách làm phụ đề sang câu chuyện mới | Kiểu chữ, bố cục và bảng màu nhấn có thể tái sử dụng, áp dụng cho lời mới với thời gian mới. |
+| Xây dựng một định dạng video cho cả loạt nội dung | Template phong cách có thể kết hợp với kịch bản và bộ tư liệu khác. |
+| Chủ động điều chỉnh kết quả | Timeline/project JSON của hệ thống, kèm tư liệu đã sao chép và mã băm, để bạn kiểm tra, sửa và render lại. |
+| Đưa dữ liệu phân tích vào quy trình riêng | Tệp có cấu trúc, trình xem ngoại tuyến, bản xuất phụ đề và các định dạng trao đổi timeline trong phạm vi được hỗ trợ. |
 
-- Bóc toàn bộ video thành shot, subtitle/style, motion, cue âm thanh và timeline có timestamp.
-- Chỉ phân tích một frame: typography, bố cục và màu; frame đơn không đủ để suy timing hay âm thanh.
-- Rút ra style rồi dùng script, ảnh hoặc footage mới để tạo một video khác.
-- Giữ timeline và file phân tích riêng khi bạn chỉ cần REA.
+Dùng cho video giới thiệu sản phẩm, clip kiến thức, chuỗi nội dung của creator, nghiên cứu kỹ thuật dựng hoặc công cụ video do bạn tự xây. Khi chỉ cần bóc tách video, bản phân tích và timeline đã là những đầu ra hoàn chỉnh.
+
+## Một prompt để bắt đầu
+
+Cài skill đi kèm, cung cấp video tham khảo cùng nội dung mới cho agent, rồi yêu cầu:
 
 ```text
-Dùng REA-Video-Pro-Max phân tích reference.mp4 thành timeline và style. Sau đó dùng script mới và assets của tôi để tạo video khác có cách chạy subtitle, motion và nhịp dựng tương tự. Bàn giao template, project, video và các phần chưa kiểm chứng.
+Use REA-Video-Pro-Max to break down reference.mp4: shot rhythm,
+subtitle layout, highlight colors and supported motion.
+Extract a reusable style, then use my new script and assets to make
+an original video with a similar editing language.
+Render the video, keep the editable project, verify the new content,
+and show me any effects that need an approximation.
 ```
 
-## Kết quả đầu tiên
+Bạn định hướng câu chuyện. Skill cung cấp cho agent quy trình cụ thể và công cụ thực thi để phân tích, biên soạn, render và kiểm chứng.
 
-Cần Python 3.11+, FFmpeg và FFprobe. Runtime Python dùng Pillow, NumPy và PyAV. Tesseract là tùy chọn cho OCR; language data đã cài quyết định ngôn ngữ có thể chạy. [Phạm vi hỗ trợ (English)](docs/SUPPORT-MATRIX.md) ghi ranh giới kiểm chứng.
+## Chuyên môn nằm trong từng bước xử lý
 
-macOS là nền tảng đã đo kiểm. Linux là mục tiêu CI dự kiến; chưa chứng nhận renderer native trên Windows. Kiểm chứng tạo video cần render receipt khớp hash và một lượt OCR độc lập, nên luồng demo đầy đủ cần Tesseract cùng dữ liệu `eng`.
+- **Bản dựng có thể truy vết.** Mốc thời gian trình chiếu được giải mã, bằng chứng từng khung hình và phạm vi khảo sát giúp bạn kiểm tra nguồn gốc của timeline. Tín hiệu đo được, kết quả từ mô hình và quyết định dựng suy luận được gắn nhãn riêng.
+- **Chi tiết phụ đề được giữ lại để tái sử dụng.** Ước lượng kích thước, vị trí, màu chữ và viền; giữ các bảng màu nhấn và biến thể phong cách đã quan sát. Tự xuống dòng và tính lại thời gian cho lời mới khi biên soạn.
+- **Chuyển động giữ đúng chiều.** Khớp các mô hình chuyển động similarity/affine và đường cong theo thời gian trong giới hạn xác định. Renderer của hệ thống có thể tái sử dụng thành phần zoom có hướng được hỗ trợ, kể cả zoom ra.
+- **Project để bạn tiếp tục phát triển.** Hình ảnh, cảnh quay, font và âm thanh tùy chọn được sao chép vào project có thể di chuyển. Liên kết nội dung tường minh và mã băm giúp bạn kiểm tra chính xác tư liệu đã chọn.
+- **Nhận dạng lời nói khi công việc cần đến.** ASR faster-whisper cục bộ tùy chọn cung cấp khoảng thời gian từng từ do mô hình ước lượng. Đối chiếu chặt kịch bản/âm thanh cho phép gắn chúng vào nội dung mới; bạn phải chỉ định mô hình cục bộ.
+- **Đầu ra có thể kiểm chứng.** Đối chiếu danh tính project/đầu ra, giải mã video đã render và dùng OCR độc lập để kiểm tra nội dung phụ đề. Bằng chứng được lưu cùng kết quả.
+
+Renderer của hệ thống hỗ trợ **phụ đề static / fade / pop / slide**, **chuyển cảnh cut / dissolve / fade / wipe** và **nền static / signed panzoom**. Phân tích có thể giữ lại các quan sát chuyển động phong phú hơn khả năng tái hiện của renderer. [Phạm vi hỗ trợ chi tiết — tiếng Anh](docs/SUPPORT-MATRIX.md).
+
+## Tạo kết quả đầu tiên
+
+### 1. Cài môi trường chạy
+
+Cần **Python 3.11+**, **FFmpeg + FFprobe** và bản FFmpeg có **libx264**. Cài **Tesseract với dữ liệu ngôn ngữ `eng`** để chạy ví dụ OCR và kiểm chứng phụ đề đi kèm. Các thư viện Python được cài bằng lệnh dưới đây.
 
 ```sh
-python -m venv .venv
-# macOS / Linux
+git clone https://github.com/hieunguyenak92/rea-video-pro-max.git
+cd rea-video-pro-max
+python3 -m venv .venv
 . .venv/bin/activate
-# Windows PowerShell: .venv\Scripts\Activate.ps1
 python -m pip install -e .
-python skills/rea-video-pro-max/scripts/rea-video-pro-max.py doctor
+rea-video-pro-max doctor
 ```
+
+Các lệnh shell này dành cho macOS/Linux. CI của bản phát hành đã chạy đạt trên Linux và macOS; render trực tiếp trên Windows chưa được xác nhận. `doctor` báo những công cụ thực sự có trên máy bạn.
+
+### 2. Cài skill cho agent
+
+Sao chép **toàn bộ** thư mục `skills/rea-video-pro-max` vào thư mục skill của project:
+
+| Agent | Đường dẫn trong project |
+| --- | --- |
+| Claude Code | `.claude/skills/rea-video-pro-max` |
+| Codex | `.agents/skills/rea-video-pro-max` |
+
+Bạn cũng có thể giải nén [skill ZIP](https://github.com/hieunguyenak92/rea-video-pro-max/releases/download/v0.1.1/rea-video-pro-max-v0.1.1-skill.zip) vào đó. Giữ nguyên `lib`, `assets`, `scripts` và `references` cùng nhau. Nếu chỉ cài từ ZIP, cài thư viện Python bằng `python -m pip install -r /path/to/rea-video-pro-max/requirements.txt`; chạy qua `python /path/to/rea-video-pro-max/scripts/rea-video-pro-max.py`. Các lệnh console bên dưới được cung cấp bởi bước cài từ mã nguồn ở trên. Agent phải dùng đúng trình thông dịch Python đã cài các thư viện này.
+
+### 3. Chạy ví dụ A → B đi kèm
 
 ```sh
-python skills/rea-video-pro-max/scripts/rea-video-pro-max.py analyze examples/reference.mp4 --out ./work/analysis --ocr auto --ocr-lang eng
-python skills/rea-video-pro-max/scripts/rea-video-pro-max.py template ./work/analysis/analysis.json --out ./work/style-template.json
-python skills/rea-video-pro-max/scripts/rea-video-pro-max.py compose ./work/style-template.json --content examples/content.json --out ./work/project
-python skills/rea-video-pro-max/scripts/rea-video-pro-max.py render ./work/project/project.json --out ./work/video-b.mp4
-python skills/rea-video-pro-max/scripts/rea-video-pro-max.py verify ./work/project/project.json --mode style-transfer --render ./work/video-b.mp4 --ocr-lang eng
+rea-video-pro-max analyze examples/reference.mp4 --out work/analysis --ocr required --ocr-lang eng
+rea-video-pro-max template work/analysis/analysis.json --out work/style-template.json
+rea-video-pro-max compose work/style-template.json --content examples/content.json --out work/project
+rea-video-pro-max render work/project/project.json --out work/video-b.mp4
+rea-video-pro-max verify work/project/project.json --mode style-transfer --render work/video-b.mp4 --ocr-lang eng
 ```
 
-Các lệnh dùng cấu trúc Git checkout. Với gói skill đã giải nén, entrypoint là `scripts/rea-video-pro-max.py`; giữ nguyên các thư mục `lib`, `assets`, `references`. Dùng Python đã cài dependencies; không chỉ sao chép file entrypoint.
+Mở `work/video-b.mp4`. Project có thể di chuyển nằm ở `work/project/`; dữ liệu phân tích video tham khảo ở `work/analysis/`. Mỗi lần biên soạn nên dùng một thư mục đầu ra mới. Để tạo trình xem phân tích ngoại tuyến, chạy:
 
-## Đưa nội dung của bạn vào
+```sh
+rea-video-pro-max report work/analysis/analysis.json --out work/report
+```
 
-`examples/content.json` là ví dụ synthetic của content binding: các scene mới gồm `id`, `text`, `duration`, `background`, `accent` và `asset` tùy chọn. `width`, `height`, `fps` đặt đầu ra; `audio`/`font` tùy chọn. Đường dẫn media tính từ thư mục file bindings. Project sao chép asset và ghi hash; không âm thầm lấy footage/nhạc của A làm nội dung B. Lời mới cần timing mới; phương pháp ước lượng được ghi rõ khi chưa có alignment chính xác.
+Sau đó mở `work/report/timeline.html` ngay trên máy. [CLI, skill và MCP tùy chọn dùng chung một lõi xử lý — tài liệu tiếng Anh](skills/rea-video-pro-max/references/runtime-and-support.md).
 
-Âm thanh của footage scene bị tắt; muốn có tiếng hãy đưa `audio` mới vào riêng. Footage ngắn giữ frame cuối; footage đưa vào renderer native phải thẳng chiều và pixel vuông. CSV chỉ xuất các dòng shot. Kiểm tra hỗ trợ shaping/grouping trước khi chọn ngôn ngữ phức tạp hoặc hai chiều.
+<details>
+<summary><strong>Đưa câu chuyện của bạn vào: tệp liên kết nội dung gồm những gì?</strong></summary>
 
-## Dùng với Claude Code / Codex
+Tệp liên kết nội dung là JSON xác định các cảnh, lời, tư liệu và âm thanh/font tùy chọn cho video mới. Agent có thể tạo tệp này từ yêu cầu thông thường của bạn. Bắt đầu với [examples/content.json](examples/content.json).
 
-Sao chép toàn bộ `skills/rea-video-pro-max` vào thư mục skill của host hoặc nhờ agent cài từ checkout này. Vị trí project-local thường là `.claude/skills/rea-video-pro-max` hoặc `.agents/skills/rea-video-pro-max`. Cài skill không tự cài FFmpeg, OCR languages hay model weights. Host có tài khoản, quyền chạy và chính sách dữ liệu riêng. [Skill](skills/rea-video-pro-max/SKILL.md) và các tài liệu kỹ thuật hiện bằng English.
+```json
+{
+  "schema_version": 1,
+  "kind": "rea-video-content",
+  "width": 640,
+  "height": 360,
+  "fps": 24,
+  "scenes": [
+    {
+      "id": "intro",
+      "text": "Your next story starts here",
+      "duration": 3.0,
+      "background": [18, 24, 38],
+      "accent": [108, 240, 190]
+    }
+  ]
+}
+```
 
-## Dữ liệu và hành vi xuất
+Thêm đường dẫn `asset` cho ảnh hoặc video, và `audio` để chọn nhạc hoặc lời thuyết minh cụ thể. Đường dẫn tư liệu được tính tương đối từ tệp JSON này. Renderer dùng nội dung mới đã chọn; muốn dùng lại chính tư liệu của video tham khảo, bạn phải cho phép tường minh.
 
-- Native JSON giữ analysis, timeline, caption/style/motion/audio, template và project. CSV phục vụ kiểm tra editorial data.
-- SRT/WebVTT/ASS xuất text và timing theo khả năng từng format; SRT không giữ đầy đủ typography hoặc motion.
-- Timeline interchange chỉ dùng adapter mà phiên bản đang cài báo available; receipt ghi phần xuất được, approximation và losses. Không đảm bảo mọi effect hoạt động ở mọi editor.
-- Renderer software dùng nội dung mới và FFmpeg để encode video; không cần filters FFmpeg tùy chọn `drawtext`, `ass`, `subtitles`.
+Lời mới có thời gian mới. Phân bổ thời gian theo số ký tự chỉ là ước lượng. Khi cần bám lời nói, hãy cung cấp khoảng thời gian từ mới hoặc dùng ASR cục bộ với đối chiếu nội dung chặt chẽ. [Hướng dẫn lời nói và chuyển động — tiếng Anh](skills/rea-video-pro-max/references/speech-and-motion.md).
 
-## Giới hạn quan trọng
+</details>
 
-Metadata đo được, OCR detection, style fitting và giả thuyết cơ chế là những loại bằng chứng khác nhau. Video flatten không xác định duy nhất clip nguồn, layer bị che, font/plugin/editor/project gốc hay prompt AI. Phạm vi đầu tập trung timing, captions và primitive 2D được hỗ trợ; chưa phải universal video decompiler hoặc sản phẩm đã chứng minh mạnh nhất. Occlusion phức tạp, 3D, HDR mastering và NLE round-trip tùy ý nằm ngoài ranh giới đã kiểm. Complex-script shaping cần hỗ trợ và test riêng; chín bản README không chứng nhận chín ngôn ngữ OCR/render.
+## Xem bằng chứng phía sau lời hứa
 
-Video B được kiểm theo nội dung mới, style contract và playback, thay vì điểm giống toàn frame với A. Check kỹ thuật khác đánh giá sáng tạo của con người. [Bằng chứng và giới hạn hiện tại (English)](docs/VALIDATION.md).
+**v0.1.1 đã vượt qua 176 bài kiểm thử cục bộ**, bao gồm trường hợp thực chạy ASR cục bộ tùy chọn. [CI đã chạy đạt ba tác vụ trên Linux/macOS](https://github.com/hieunguyenak92/rea-video-pro-max/actions/runs/43324016397). Sáu tệp phát hành đã được tải xuống và đối chiếu với dữ liệu byte cùng checksum cục bộ.
 
-## Local và ghi công
+Bằng chứng bao gồm một lần chạy hoàn chỉnh **A → phân tích → phong cách → B mới** trên video do dự án tự tạo; một tác vụ tiếng Việt độc lập với kiểu chữ/viền đã hiệu chỉnh và hai chế độ màu nhấn; cùng tác vụ chuyển động giữ đúng chiều zoom vào/zoom ra. Các trường hợp này có phạm vi xác định, xác minh quy trình đã trình diễn; chúng chưa chứng minh độ chính xác trên nhiều thể loại hoặc ngôn ngữ.
 
-Core chạy local, không yêu cầu API trả phí, không upload video lên dịch vụ inference và không tự publish. Cài dependency hoặc dùng provider tùy chọn có thể cần mạng; chính sách host Claude/Codex tách biệt. [Privacy (English)](docs/PRIVACY.md). Lấy cảm hứng từ JuneYaooo/rea-video; đây là sản phẩm độc lập, không phải official upgrade. License source/font/media/codec/model được áp dụng riêng.
+[Xem phân tích](docs/evidence/reference-analysis.json) · [Đọc template](docs/evidence/style-template.json) · [Mở project](docs/evidence/project.json) · [Xem kết quả kiểm chứng](docs/evidence/verification.json) · [Chi tiết kiểm thử — tiếng Anh](docs/VALIDATION.md)
 
-Report local mặc định sao chép video tham chiếu và evidence. `report --no-media` chỉ bỏ bản sao media đầy đủ, vẫn giữ OCR text, đường dẫn local và crop. Kiểm tra trước khi chia sẻ.
+## Giữ trọn đầu ra. Mở rộng khả năng.
 
-[Support (English)](SUPPORT.md) · [Maintenance (English)](docs/MAINTENANCE.md) · Các bản dịch chưa có chứng nhận rà soát chuyên nghiệp bởi người bản ngữ.
+| Định dạng | Dữ liệu được mang theo |
+| --- | --- |
+| JSON của hệ thống | Phân tích, timeline, dữ liệu phụ đề/phong cách/chuyển động/âm thanh, template và project có thể chỉnh sửa. |
+| CSV | Các dòng dữ liệu cảnh để kiểm tra và xử lý tiếp. |
+| SRT / WebVTT | Chữ nhìn thấy cùng khoảng thời gian hiển thị. |
+| ASS | Thời gian phụ đề với phong cách thay thế được chỉ rõ; diện mạo quan sát được và độ bất định vẫn nằm trong bằng chứng của hệ thống. |
+| OTIO / EDL | OTIO tùy chọn chứa các đoạn video tham khảo kèm chú thích; EDL cho các điểm cắt đo được ở tốc độ khung hình cố định nguyên. Biên nhận xuất mô tả dữ liệu bị mất. |
+| MP4 + HTML ngoại tuyến | Video mới cùng báo cáo phân tích có thể xem trên máy. |
 
-[Speech local và chuyển động nâng cao (tài liệu kỹ thuật tiếng Anh)](skills/rea-video-pro-max/references/speech-and-motion.md).
+Project của hệ thống là JSON có thể chỉnh sửa. Bản này chưa xuất project gốc của Premiere, Resolve, After Effects hoặc CapCut, cũng chưa xuất FCPXML. Việc nhập các tệp trao đổi được hỗ trợ vào phần mềm dựng bên ngoài vẫn chưa được kiểm chứng. [Giới hạn xuất tệp và render — tiếng Anh](docs/SUPPORT-MATRIX.md).
+
+## Nắm rõ phạm vi để sáng tạo chủ động
+
+Bản hiện tại tập trung vào bằng chứng dựng nhìn thấy được và tái sử dụng phong cách **2D** trong phạm vi hỗ trợ. Font gốc chính xác, lớp ẩn, plugin, tư liệu nguồn và lịch sử project có thể vẫn chưa biết. OCR và phép khớp chuyển động có thể sai; phạm vi lấy mẫu và độ bất định luôn được thể hiện.
+
+Cảnh quay đưa vào phải đúng chiều và dùng pixel vuông. Âm thanh của từng cảnh quay bị tắt; hãy chỉ định âm thanh riêng. Chữ viết phức tạp cần font và bộ xử lý định hình chữ phù hợp; hệ thống từ chối phụ đề hai chiều. Chín bản README là chín ngôn ngữ tài liệu, chưa phải chín ngôn ngữ OCR/render đã được xác nhận. Đánh giá phong cách sáng tạo và âm thanh vẫn cần người xem. [Toàn bộ phạm vi hỗ trợ — tiếng Anh](docs/SUPPORT-MATRIX.md).
+
+Lõi xử lý chạy cục bộ, không cần API mô hình trả phí hay tải nội dung lên dịch vụ. Cài thư viện và mô hình tùy chọn có thể cần mạng; môi trường Claude/Codex có chính sách dữ liệu riêng. Báo cáo cục bộ mặc định chứa bản sao video tham khảo và ảnh cắt. `report --no-media` bỏ bản sao toàn bộ video, nhưng vẫn giữ chữ và ảnh cắt. [Quyền riêng tư — tiếng Anh](docs/PRIVACY.md).
+
+## Cùng xây cách dựng video tiếp theo
+
+**Nếu bạn muốn có quy trình này trong bộ công cụ sáng tạo của mình, hãy tặng dự án một star.** Đó là cách giúp các creator và người xây công cụ AI khác tìm thấy dự án.
+
+**Fork để xây ngôn ngữ dựng của riêng bạn:** thêm một kiểu phụ đề, phát triển adapter render, mở rộng cách xuất tệp hoặc đóng góp ví dụ từ video tham khảo đến kết quả trên tư liệu bạn sở hữu. Mang theo bằng chứng có thể chạy lại để mỗi khả năng mới đều đứng vững.
+
+[**⭐ Tặng star trên GitHub**](https://github.com/hieunguyenak92/rea-video-pro-max) · [**🍴 Fork và phát triển**](https://github.com/hieunguyenak92/rea-video-pro-max/fork) · [Đóng góp — tiếng Anh](CONTRIBUTING.md) · [Gửi tác vụ cần giải quyết](https://github.com/hieunguyenak92/rea-video-pro-max/issues)
+
+Dự án độc lập, lấy cảm hứng từ [JuneYaooo/rea-video](https://github.com/JuneYaooo/rea-video). [Apache-2.0](LICENSE); điều khoản riêng của font, codec và mô hình được giữ trong [NOTICE](NOTICE).
+
+[Hỗ trợ — tiếng Anh](SUPPORT.md) · [Bảo trì — tiếng Anh](docs/MAINTENANCE.md) · [Hướng dẫn skill — tiếng Anh](skills/rea-video-pro-max/SKILL.md)

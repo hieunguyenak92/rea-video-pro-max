@@ -1,86 +1,189 @@
 # REA-Video-Pro-Max
 
-## 編集の仕組みを読み解き、そのスタイルで新しい動画を。
+## ClaudeとCodexに、編集者の眼を。
 
-**参考動画から根拠付きのタイムラインと再利用可能なスタイルテンプレートを作成。別の台本とメディアを組み合わせ、自分の動画をレンダリングします。**
+**参考動画のテンポ、字幕、動きを読み解く。その編集判断を再利用できるスタイルに変え、自分の言葉と素材で新しい動画をレンダリング。**
+
+優れた編集には、独自の言語があります。その表現を、あなたの創作道具に。
+
+[**▶ ライブデモを見る**](https://hieunguyenak92.github.io/rea-video-pro-max/) · [**スキルを入手**](https://github.com/hieunguyenak92/rea-video-pro-max/releases/download/v0.1.1/rea-video-pro-max-v0.1.1-skill.zip) · [リリース v0.1.1](https://github.com/hieunguyenak92/rea-video-pro-max/releases/tag/v0.1.1)
 
 [English](README.md) · [Tiếng Việt](README.vi.md) · [한국어](README.ko.md) · [日本語](README.ja.md) · [Español](README.es.md) · [Português](README.pt-BR.md) · [简体中文](README.zh-CN.md) · [ไทย](README.th.md) · [Français](README.fr.md)
 
-[記録済みデモ](docs/index.html) · [動画 A](docs/media/reference.mp4) · [動画 B](docs/media/adapted.mp4) · [検証記録 (English)](docs/VALIDATION.md)
+**Claude Code / Codexスキル · CLI + 任意のMCP · ローカル処理 · Apache-2.0**
 
-良い編集には、カットの位置、字幕のまとまり、強調する単語、動きの収まり、音との同期といった判断があります。REA-Video-Pro-Maxは、対応範囲内の判断を確認し、再利用できる形にします。
+---
+
+## 「この編集、好きだ」から「これが自分の作品」へ。
+
+カットのリズム、字幕が入る瞬間、フレーズごとに変わる強調色、静止画に勢いを与えるズーム。惹きつけられる動画には、そんな選択が詰まっています。
+
+REA-Video-Pro-Maxは、対応するスタイル要素を、確認・調整・再利用できる形にします。新しい台本、画像、映像、ナレーションを用意してください。最後に手元へ残るのは、編集可能なプロジェクトと実際にレンダリングされた動画です。
+
+| 参考動画 A | あなたの新しい動画 B |
+| :---: | :---: |
+| [![自作の参考動画から取り出した実際のフレーム](docs/media/readme-reference.png)](https://hieunguyenak92.github.io/rea-video-pro-max/#workspace) | [![新しい文章と独立した素材でレンダリングしたフレーム](docs/media/readme-new-video.png)](https://hieunguyenak92.github.io/rea-video-pro-max/#workspace) |
+| ショットのリズムと字幕表現を調べる。 | 再利用できるスタイルで別の物語を描く。 |
+
+*付属の自作デモから抽出した実際のフレームです。Bには新しいテキスト、独立して生成した素材、新しい字幕タイミングを使っています。[インタラクティブデモ](https://hieunguyenak92.github.io/rea-video-pro-max/#workspace)では両動画をシークし、記録済みのタイムライン、テンプレート、プロジェクト、検証結果を確認できます。*
 
 ```text
-動画 A → 分析＋推論タイムライン → スタイルテンプレート＋新しい内容 → 編集可能なプロジェクト → 動画 B
+Reference video → editing evidence + timeline → reusable style
+                                                   + your new content
+                                                   → editable project + Video B
 ```
 
-デモはプロジェクトが所有する合成メディアを使用します。AとBでは文字とメディアが異なります。静的サイトは記録済みの結果を表示し、ライブ推論や閲覧者の動画アップロードを行いません。
+## 参考動画を、次の制作に活かす
 
-## できる依頼
+| やりたいこと | 手に入るもの |
+| --- | --- |
+| 編集がその印象を生む理由を知る | 時刻と根拠に結びついたショット区間、見える文字、字幕の外観、見かけ上の動き、音声の手がかり。 |
+| 字幕表現を新しい物語へ持ち込む | 新しい単語とタイミングに適用できる文字組み、配置、強調色のパレット。 |
+| 繰り返し使える動画フォーマットを作る | 別の台本や素材に紐付けられるスタイルテンプレート。 |
+| 結果を自分で調整する | 素材のコピーとハッシュを含み、確認・変更・再レンダリングできるネイティブJSONタイムライン／プロジェクト。 |
+| 分析を自分のパイプラインに組み込む | 構造化ファイル、オフラインの分析ビューア、字幕出力、対応範囲が明確なタイムライン交換形式。 |
 
-- 動画全体をショット、字幕スタイル、動き、音のキュー、タイムラインに分解し、時刻付きの根拠を残します。
-- 単一フレームのタイポグラフィ、レイアウト、色を分析します。一枚の画像から動きの時間や音は確定できません。
-- 抽出したスタイルに新しい台本、画像、映像素材を適用して別の動画を作ります。
-- 分析だけの依頼では、タイムラインと分析ファイルだけで完了できます。
+新製品紹介、教育動画、クリエイターの連載、編集研究、独自の動画ツールに。分析だけが必要なら、分析ファイルとタイムライン自体を成果物として受け取れます。
+
+## ひとつのプロンプトで、制作を始める
+
+同梱スキルをインストールし、参考動画と新しいコンテンツをエージェントに渡して、次のように依頼してください。
 
 ```text
-REA-Video-Pro-Maxでreference.mp4のタイムラインとスタイルを分析してください。新しい台本と私の素材を使い、字幕、動き、編集リズムが似た別の動画を作成してください。テンプレート、プロジェクト、動画と未検証の点を渡してください。
+Use REA-Video-Pro-Max to break down reference.mp4: shot rhythm,
+subtitle layout, highlight colors and supported motion.
+Extract a reusable style, then use my new script and assets to make
+an original video with a similar editing language.
+Render the video, keep the editable project, verify the new content,
+and show me any effects that need an approximation.
 ```
 
-## 最初の結果まで
+物語を決めるのは、あなたです。スキルは分析、構成、レンダリング、検証を進める具体的な手順と実行ツールをエージェントに提供します。
 
-Python 3.11+、FFmpeg、FFprobeが必要です。Python側はPillow、NumPy、PyAVを使用します。OCR用のTesseractは任意で、実行可能な言語はインストール済み言語データによって決まります。[対応表 (English)](docs/SUPPORT-MATRIX.md)で検証範囲を確認してください。
+## 制作で役立つ、具体的な強み
 
-macOSが実測済みの開発環境です。LinuxはCIの予定対象で、Windowsのネイティブレンダラーは認証されていません。生成検証は正確なレンダー記録のハッシュと独立したOCR検査を必要とするため、一連のデモにはTesseractと`eng`データが必要です。
+- **根拠をたどれる編集分析。** デコードした表示タイムスタンプ、フレームの証拠、分析範囲からタイムラインを追跡できます。測定信号、モデルの結果、推定した編集判断は区別して記録します。
+- **次の動画へ引き継げる字幕の細部。** 見える文字サイズ、位置、塗り、縁取りを推定し、観察した強調パレットやスタイルの違いを保持。構成時に新しい単語を組み直し、タイミングを付け直します。
+- **方向まで扱うモーション。** 範囲を制限した相似／アフィン変換と時間曲線の候補をフィット。ネイティブレンダラーはズームアウトを含む、対応した方向付きズーム成分を再利用できます。
+- **育てていけるプロジェクト。** 新しい画像、映像、フォント、任意の音声をポータブルなプロジェクトへコピーします。明示的な紐付けとハッシュで、選択したコンテンツを確認できます。
+- **必要なときだけ音声認識。** 任意のローカルfaster-whisper ASRが、モデル由来の単語区間を提供します。台本と音声の厳密な照合により、新しいコンテンツへ紐付けられます。ローカルモデルの明示的な準備が必要です。
+- **完成後に確かめられる結果。** プロジェクトと出力の同一性を検査し、レンダリング動画をデコードし、別途OCRで字幕内容を確認。根拠も出力と一緒に残せます。
+
+ネイティブレンダラーは、**static / fade / pop / slide字幕**、**cut / dissolve / fade / wipeトランジション**、**static / 方向付きpanzoom背景**に対応します。分析は、ネイティブレンダラーで再現できる範囲より豊かなモーション観察を保持できます。[正確な対応範囲（英語）](docs/SUPPORT-MATRIX.md)。
+
+## 最初の結果を作る
+
+### 1. 実行環境を準備
+
+**Python 3.11+**、**FFmpeg + FFprobe**、**libx264**を含むFFmpegビルドを使用します。付属のOCR・字幕検証の例には、**`eng`言語データ付きのTesseract**が必要です。Python依存関係は以下でインストールします。
 
 ```sh
-python -m venv .venv
-# macOS / Linux
+git clone https://github.com/hieunguyenak92/rea-video-pro-max.git
+cd rea-video-pro-max
+python3 -m venv .venv
 . .venv/bin/activate
-# Windows PowerShell: .venv\Scripts\Activate.ps1
 python -m pip install -e .
-python skills/rea-video-pro-max/scripts/rea-video-pro-max.py doctor
+rea-video-pro-max doctor
 ```
+
+これらのシェルコマンドはmacOS/Linux向けです。リリースCIはLinuxとmacOSで通過済みですが、Windowsのネイティブレンダリングは認証していません。`doctor`は、実際にマシンで利用できるツールを表示します。
+
+### 2. エージェントにスキルを追加
+
+`skills/rea-video-pro-max`フォルダを**丸ごと**、プロジェクトのスキルディレクトリへコピーします。
+
+| ホスト | プロジェクト内の配置先 |
+| --- | --- |
+| Claude Code | `.claude/skills/rea-video-pro-max` |
+| Codex | `.agents/skills/rea-video-pro-max` |
+
+[スキルZIP](https://github.com/hieunguyenak92/rea-video-pro-max/releases/download/v0.1.1/rea-video-pro-max-v0.1.1-skill.zip)をそこへ展開しても構いません。`lib`、`assets`、`scripts`、`references`は一緒に保ってください。ZIPのみで導入する場合は、`python -m pip install -r /path/to/rea-video-pro-max/requirements.txt`でPython依存関係をインストールし、`python /path/to/rea-video-pro-max/scripts/rea-video-pro-max.py`を起動点にします。以下のコンソールコマンドは、前述のチェックアウトからのインストールで利用できます。エージェントは、その依存関係が入ったインタープリターを使う必要があります。
+
+### 3. 付属のA → Bサンプルを実行
 
 ```sh
-python skills/rea-video-pro-max/scripts/rea-video-pro-max.py analyze examples/reference.mp4 --out ./work/analysis --ocr auto --ocr-lang eng
-python skills/rea-video-pro-max/scripts/rea-video-pro-max.py template ./work/analysis/analysis.json --out ./work/style-template.json
-python skills/rea-video-pro-max/scripts/rea-video-pro-max.py compose ./work/style-template.json --content examples/content.json --out ./work/project
-python skills/rea-video-pro-max/scripts/rea-video-pro-max.py render ./work/project/project.json --out ./work/video-b.mp4
-python skills/rea-video-pro-max/scripts/rea-video-pro-max.py verify ./work/project/project.json --mode style-transfer --render ./work/video-b.mp4 --ocr-lang eng
+rea-video-pro-max analyze examples/reference.mp4 --out work/analysis --ocr required --ocr-lang eng
+rea-video-pro-max template work/analysis/analysis.json --out work/style-template.json
+rea-video-pro-max compose work/style-template.json --content examples/content.json --out work/project
+rea-video-pro-max render work/project/project.json --out work/video-b.mp4
+rea-video-pro-max verify work/project/project.json --mode style-transfer --render work/video-b.mp4 --ocr-lang eng
 ```
 
-コマンドはGitチェックアウト構成を前提としています。配布スキルの展開先では`scripts/rea-video-pro-max.py`を使い、`lib`、`assets`、`references`も一緒に保持します。依存関係を入れたPythonを使用し、入口スクリプトだけをコピーしないでください。
+`work/video-b.mp4`を開いてください。ポータブルなプロジェクトは`work/project/`、参考動画の分析は`work/analysis/`にあります。構成のたびに新しい出力ディレクトリを使います。オフライン分析ビューアを作るには、次を実行します。
 
-## 自分の内容を入力
+```sh
+rea-video-pro-max report work/analysis/analysis.json --out work/report
+```
 
-`examples/content.json`はcontent bindingの合成例です。新しい各シーンに`id`、`text`、`duration`、`background`、`accent`、任意の`asset`パスを指定します。`width`、`height`、`fps`は出力設定で、`audio`と`font`も任意です。メディアパスはbindingファイルの場所を基準に解決します。プロジェクトは素材とハッシュを記録し、Aの映像や音楽を無断で代用しません。新しい発話には新しい時間情報を作り、正確なアラインメントがない場合は推定方法を明示します。
+続いて`work/report/timeline.html`をローカルで開きます。[CLI、スキル、任意のMCPは同じカーネルを共有します（英語）](skills/rea-video-pro-max/references/runtime-and-support.md)。
 
-シーン映像の音声はミュートされます。音は新しい`audio`バインディングで別途指定してください。短い映像は最終フレームを保持し、ネイティブ入力映像は正しい向きの正方形ピクセルである必要があります。CSVはショット行のみです。複雑な文字や双方向文字は組版・グループ分けの対応範囲を先に確認してください。
+<details>
+<summary><strong>自分の作品にする：コンテンツバインディングとは？</strong></summary>
 
-## Claude Code / Codexで使う
+コンテンツバインディングは、新しいシーン、文章、素材、任意の音声／フォントを指定するJSONファイルです。エージェントは通常の制作依頼から作成できます。[examples/content.json](examples/content.json)を出発点にしてください。
 
-`skills/rea-video-pro-max`フォルダ全体をホストのスキルディレクトリにコピーするか、エージェントにチェックアウトからのインストールを依頼します。プロジェクト内では通常`.claude/skills/rea-video-pro-max`または`.agents/skills/rea-video-pro-max`です。スキルを入れてもFFmpeg、OCR言語データ、モデル重みは入りません。ホストのアカウント、実行権限、データポリシーは別です。[スキル](skills/rea-video-pro-max/SKILL.md)と技術資料はEnglishです。
+```json
+{
+  "schema_version": 1,
+  "kind": "rea-video-content",
+  "width": 640,
+  "height": 360,
+  "fps": 24,
+  "scenes": [
+    {
+      "id": "intro",
+      "text": "Your next story starts here",
+      "duration": 3.0,
+      "background": [18, 24, 38],
+      "accent": [108, 240, 190]
+    }
+  ]
+}
+```
 
-## データとエクスポート
+画像や動画には`asset`のパスを、サウンドトラックやナレーションには`audio`を明示します。素材パスはこのJSONファイルを基準に解決します。レンダラーは選んだ新しいコンテンツを使い、参考動画と同一の素材を再利用するには明示的なオプトインが必要です。
 
-- Native JSONは分析、タイムライン、字幕・スタイル・モーション・音、テンプレートとプロジェクトを保持します。CSVは編集データの確認に使います。
-- SRT/WebVTT/ASSは各形式の対応範囲で文字と時間情報を出力します。SRTは完全な書式や動きを保持しません。
-- インストール版がavailableと報告したタイムラインアダプタを使います。receiptは対応部分、近似、損失を示し、すべての編集ソフトで効果を再現する保証ではありません。
-- ソフトウェアレンダラーは新しい内容を組み立て、FFmpegで動画化します。FFmpegの任意フィルタ`drawtext`、`ass`、`subtitles`は不要です。
+新しい単語には新しいタイミングを割り当てます。文字数に重み付けしたタイミングは推定です。発話タイミングが重要な場合は新しい単語区間を指定するか、厳密に照合したローカルASRを使います。[音声とモーションのガイド（英語）](skills/rea-video-pro-max/references/speech-and-motion.md)。
 
-## 重要な制限
+</details>
 
-測定メタデータ、OCR検出、スタイルの推定、制作方法の仮説は別々の根拠です。書き出された動画だけから、元素材、隠れたレイヤー、元のフォント・プラグイン・編集プロジェクト、AIプロンプトを一意に復元することはできません。初期範囲は時間、字幕と対応する2D要素です。万能な動画デコンパイラや、市場最強と実証された製品ではありません。複雑な遮蔽、3D、HDRマスタリング、任意NLE往復は検証範囲外です。複雑な文字の整形には別途サポートとテストが必要で、README翻訳数はOCR・描画言語の認定数ではありません。
+## 約束を支える、実際の検証
 
-動画Bは新しい内容、スタイル契約、再生状態で検証します。Aとの全画面ピクセル一致で採点しません。技術確認と人間による創作評価は区別します。[検証と制限 (English)](docs/VALIDATION.md)。
+**v0.1.1は176件のローカルテストを通過しました。** 実際の任意ローカルASRケースも含みます。[ホスティングCIのLinux/macOSジョブ3件も成功しました](https://github.com/hieunguyenak92/rea-video-pro-max/actions/runs/43324016397)。アップロード済みのリリース成果物6点はダウンロードし、ローカルのバイト列とチェックサムに照合済みです。
 
-## ローカル処理とクレジット
+根拠には、自作素材による完全な**A → 分析 → スタイル → 新しいB**の再実行、文字組み／縁取りと2種類の強調表現を確認した独立したベトナム語タスク、ズームイン／ズームアウトの方向を保持するモーションタスクが含まれます。いずれも範囲を限定した自作ケースです。実演したワークフローを示すもので、広範なジャンルや言語の精度を示すものではありません。
 
-コア処理はローカルで実行し、有料API、ホスト型推論への動画アップロード、自動公開を必要としません。依存関係のインストールや任意providerでは通信が発生する場合があります。Claude/Codexホストのポリシーは別です。[Privacy (English)](docs/PRIVACY.md)。JuneYaooo/rea-videoに着想を得た独立製品であり、公式アップグレードではありません。ソース、フォント、メディア、コーデック、モデルの条件はそれぞれ適用されます。
+[分析データ](docs/evidence/reference-analysis.json) · [テンプレート](docs/evidence/style-template.json) · [プロジェクト](docs/evidence/project.json) · [検証結果](docs/evidence/verification.json) · [検証の詳細（英語）](docs/VALIDATION.md)
 
-ローカルレポートは既定で参考メディアと根拠ファイルをコピーします。`report --no-media`は完全なメディアコピーだけを省き、OCRテキスト、ローカルパス、切り抜きは残ります。共有前に確認してください。
+## 出力を手元に。システムをその先へ。
 
-[サポート (English)](SUPPORT.md) · [保守 (English)](docs/MAINTENANCE.md) · 専門のネイティブ翻訳者による査読済みとは主張していません。
+| 形式 | 内容 |
+| --- | --- |
+| ネイティブJSON | 分析、タイムライン、字幕／スタイル／モーション／音声データ、テンプレート、編集可能なネイティブプロジェクト。 |
+| CSV | 確認や後続処理のためのショット行。 |
+| SRT / WebVTT | 見えるテキストとキュー区間。 |
+| ASS | 明示的な代替スタイルを用いた字幕タイミング。観察した外観と不確実性はネイティブの根拠に残します。 |
+| OTIO / EDL | 任意のOTIO参考区間と注釈、測定した整数CFRカット向けEDL。出力記録で情報損失を説明します。 |
+| MP4 + オフラインHTML | 新しい動画と、ローカルで確認できる分析レポート。 |
 
-[ローカル音声と高度なモーション（英語技術資料）](skills/rea-video-pro-max/references/speech-and-motion.md).
+ネイティブプロジェクトは編集可能なJSONです。このリリースはPremiere、Resolve、After Effects、CapCut固有のプロジェクトやFCPXMLを出力しません。対応する交換形式ファイルの外部エディターへのインポートも未検証です。[エクスポーターとレンダラーの範囲（英語）](docs/SUPPORT-MATRIX.md)。
+
+## 制作で知っておきたい範囲
+
+現行リリースは、観察できる編集の根拠と、対応する**2D**スタイルの再利用に集中しています。正確な元フォント、隠れたレイヤー、プラグイン、元素材、プロジェクト履歴は不明のまま残る場合があります。OCRやモーションのフィットは誤ることがあり、サンプリング範囲と不確実性を明示します。
+
+紐付ける映像は正しい向きで、正方形ピクセルである必要があります。シーン映像の音声はミュートされるため、音声は明示的に指定します。複雑な文字体系には適切なフォントとシェーピングが必要で、双方向字幕は拒否します。9言語のREADMEは製品説明の翻訳であり、9言語のOCR／レンダリング認証ではありません。創作スタイルと音の判断には人による確認が必要です。[全対応表（英語）](docs/SUPPORT-MATRIX.md)。
+
+コア処理はローカルで動作し、有料モデルAPIやコンテンツのアップロードは不要です。依存関係や任意モデルの準備にはネットワークが必要な場合があり、Claude/Codexホストには独自のデータポリシーがあります。ローカルレポートには既定で参考メディアと切り抜きが含まれます。`report --no-media`は参考動画全体のコピーを省きますが、テキストと切り抜きは残ります。[プライバシー（英語）](docs/PRIVACY.md)。
+
+## 次の編集ワークフローを、一緒に作ろう
+
+**このワークフローを創作道具に加えたいと思ったら、ぜひStarを。** 他のクリエイターやAI開発者が、このプロジェクトを見つけるきっかけになります。
+
+**Forkして、自分の編集言語を育ててください。** 字幕表現の追加、レンダラーアダプターの開発、出力フローの拡張、自作の参考動画と成果物の例など。再現可能な根拠とともに、次の機能を形にしましょう。
+
+[**⭐ GitHubでStar**](https://github.com/hieunguyenak92/rea-video-pro-max) · [**🍴 Forkして作る**](https://github.com/hieunguyenak92/rea-video-pro-max/fork) · [貢献ガイド（英語）](CONTRIBUTING.md) · [タスクを報告](https://github.com/hieunguyenak92/rea-video-pro-max/issues)
+
+[JuneYaooo/rea-video](https://github.com/JuneYaooo/rea-video)に着想を得た独立プロジェクトです。[Apache-2.0](LICENSE)。フォント、コーデック、モデルの別個の条件は[NOTICE](NOTICE)に保持しています。
+
+[サポート（英語）](SUPPORT.md) · [保守方針（英語）](docs/MAINTENANCE.md) · [スキルの手順（英語）](skills/rea-video-pro-max/SKILL.md)
