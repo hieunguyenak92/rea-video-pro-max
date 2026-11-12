@@ -534,12 +534,11 @@ def test_ring_graphic_ocr_never_admitted_to_reusable_style(tmp_path):
     assert result["captions"] == []
     assert result["style"]["status"] == "unknown"
     assert result["style"].get("reason") == "no readable text detected"
-    assert result["text_regions"]
+    # OCR may correctly return no text, or retain raw scene/suspect readings.
     # OCR engine builds can return coherent scene-label candidates as well as
     # suspect readings. Neither category is an admitted subtitle/style source.
     assert all(region["quality"]["status"] == "suspect" or region.get("role") != "caption_candidate"
                for region in result["text_regions"])
-    assert any(reason in region["quality"]["reasons"] for region in result["text_regions"] for reason in ("word_height_incoherent", "word_baseline_incoherent", "single_temporal_observation", "weak_closed_catalog_geometry_fit"))
 
 
 def test_scene_candidate_is_preserved_without_becoming_subtitle_style():
@@ -555,3 +554,29 @@ def test_scene_candidate_is_preserved_without_becoming_subtitle_style():
     assert selected == [caption]
     assert scene["quality"]["status"] == "candidate"
     assert caption["quality"]["status"] == "candidate"
+
+
+@pytest.mark.parametrize("case,reason", [
+    ("single-observation", "single_temporal_observation"),
+    ("incoherent-height", "word_height_incoherent"),
+    ("weak-glyph-fit", "weak_closed_catalog_geometry_fit"),
+])
+def test_unreliable_caption_evidence_is_retained_but_not_reused(case, reason):
+    from rea_video_pro_max.analysis import _classify_text_regions
+    region = {"text": "SAMPLE TEXT", "role": "caption_candidate", "bbox": [.1, .76, .6, .12],
+              "engine_score": 96, "style": {"position": [.4, .82]},
+              "observations": [{"word_appearances": []}, {"word_appearances": []}],
+              "font_candidates": [{"glyph_iou": .8}]}
+    if case == "single-observation":
+        region["observations"] = region["observations"][:1]
+    elif case == "weak-glyph-fit":
+        region["font_candidates"][0]["glyph_iou"] = .02
+    else:
+        for observation in region["observations"]:
+            observation["word_appearances"] = [{"bbox": [.1, .76, .2, .03]},
+                                               {"bbox": [.4, .76, .2, .12]}]
+    regions = [region]
+    assert _classify_text_regions(regions) == []
+    assert regions == [region]  # raw observation is still available for analysis files
+    assert region["quality"]["status"] == "suspect"
+    assert reason in region["quality"]["reasons"]
