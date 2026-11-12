@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "kind": "rea-video-motion-evaluation",
+  "source_sha256": "87e568a97f0d7d521e8470205f5f20f44cc706fbc986a3a2a503990801f50a99",
+  "fixture": "owned independent motion A2; gold held separately",
+  "captions_admitted": 0,
+  "text_regions": 217,
+  "shots": [
+    {
+      "shot_id": "shot-0001",
+      "status": "model-derived",
+      "accepted_pairs": 11,
+      "rejected_pairs": 0,
+      "scale_start": 1.0,
+      "scale_end": 1.140282218420097,
+      "curve": {
+        "status": "model-derived",
+        "family": "linear",
+        "held_out_rmse_normalized": 3.481e-05,
+        "complexity_penalty": 0.0005,
+        "selection_score": 0.00053481,
+        "coefficients": [
+          [
+            1.000013862,
+            1.879e-06,
+            -5.168e-06,
+            -5.939e-06,
+            1.000013862,
+            2.944e-06
+          ],
+          [
+            0.140317322,
+            8.4197e-05,
+            -0.071607235,
+            -0.0002661,
+            0.140317322,
+            -0.072078998
+          ]
+        ],
+        "candidates": [
+          {
+            "family": "constant",
+            "held_out_rmse_normalized": 0.01896061,
+            "complexity_penalty": 0.00025,
+            "selection_score": 0.01921061,
+            "coefficients": [
+              [
+                1.070172523,
+                4.3978e-05,
+                -0.035808785,
+                -0.00013899,
+                1.070172523,
+                -0.036036555
+              ]
+            ]
+          },
+          {
+            "family": "linear",
+            "held_out_rmse_normalized": 3.481e-05,
+            "complexity_penalty": 0.0005,
+            "selection_score": 0.00053481,
+            "coefficients": [
+              [
+                1.000013862,
+                1.879e-06,
+                -5.168e-06,
+                -5.939e-06,
+                1.000013862,
+                2.944e-06
+              ],
+              [
+                0.140317322,
+                8.4197e-05,
+                -0.071607235,
+                -0.0002661,
+                0.140317322,
+                -0.072078998
+              ]
+            ]
+          },
+          {
+            "family": "ease-in-out",
+            "held_out_rmse_normalized": 0.00162727,
+            "complexity_penalty": 0.0005,
+            "selection_score": 0.00212727,
+            "coefficients": [
+              [
+                1.009248666,
+                9.102e-06,
+                -0.004718971,
+                -2.8767e-05,
+                1.009248666,
+                -0.004739458
+              ],
+              [
+                0.121847714,
+                6.9752e-05,
+                -0.062179628,
+                -0.000220445,
+                0.121847714,
+                -0.062594195
+              ]
+            ]
+          }
+        ],
+        "training_samples": 8,
+        "held_out_samples": 4,
+        "observed_range": [
+          0.0,
+          2.75
+        ],
+        "basis": "constant: [1]; linear: [1,u]; ease-in-out: [1,u*u*(3-2*u)]; u=(t-start)/(end-start)",
+        "value_coordinates": "row-major first two rows of normalized forward cumulative transform",
+        "limits": "curve family describes observed image-space trajectory; original animation keys and easing remain unknown"
+      },
+      "evidence": [
+        "frame-00000000",
+        "frame-00000006",
+        "frame-00000012",
+        "frame-00000018",
+        "frame-00000024",
+        "frame-00000030",
+        "frame-00000036",
+        "frame-00000042",
+        "frame-00000048",
+        "frame-00000054",
+        "frame-00000060",
+        "frame-00000066"
+      ]
+    },
+    {
+      "shot_id": "shot-0002",
+      "status": "model-derived",
+      "accepted_pairs": 11,
+      "rejected_pairs": 0,
+      "scale_start": 1.0,
+      "scale_end": 0.8816104684760515,
+      "curve": {
+        "status": "model-derived",
+        "family": "ease-in-out",
+        "held_out_rmse_normalized": 0.00079612,
+        "complexity_penalty": 0.0005,
+        "selection_score": 0.00129612,
+        "coefficients": [
+          [
+            1.001417534,
+            7.78e-05,
+            -0.00076393,
+            -0.000245887,
+            1.001417534,
+            -0.000539794
+          ],
+          [
+            -0.115074895,
+            0.000269087,
+            0.056337846,
+            -0.000850452,
+            -0.115074895,
+            0.056180031
+          ]
+        ],
+        "candidates": [
+          {
+            "family": "constant",
+            "held_out_rmse_normalized": 0.01849133,
+            "complexity_penalty": 0.00025,
+            "selection_score": 0.01874133,
+            "coefficients": [
+              [
+                0.943880086,
+                0.000212344,
+                0.027404993,
+                -0.000671113,
+                0.943880086,
+                0.027550221
+              ]
+            ]
+          },
+          {
+            "family": "linear",
+            "held_out_rmse_normalized": 0.00159307,
+            "complexity_penalty": 0.0005,
+            "selection_score": 0.00209307,
+            "coefficients": [
+              [
+                1.00901698,
+                5.1285e-05,
+                -0.004471276,
+                -0.000162084,
+                1.00901698,
+                -0.004265892
+              ],
+              [
+                -0.130273787,
+                0.000322119,
+                0.063752539,
+                -0.001018057,
+                -0.130273787,
+                0.063632226
+              ]
+            ]
+          },
+          {
+            "family": "ease-in-out",
+            "held_out_rmse_normalized": 0.00079612,
+            "complexity_penalty": 0.0005,
+            "selection_score": 0.00129612,
+            "coefficients": [
+              [
+                1.001417534,
+                7.78e-05,
+                -0.00076393,
+                -0.000245887,
+                1.001417534,
+                -0.000539794
+              ],
+              [
+                -0.115074895,
+                0.000269087,
+                0.056337846,
+                -0.000850452,
+                -0.115074895,
+                0.056180031
+              ]
+            ]
+          }
+        ],
+        "training_samples": 8,
+        "held_out_samples": 4,
+        "observed_range": [
+          3.0,
+          5.75
+        ],
+        "basis": "constant: [1]; linear: [1,u]; ease-in-out: [1,u*u*(3-2*u)]; u=(t-start)/(end-start)",
+        "value_coordinates": "row-major first two rows of normalized forward cumulative transform",
+        "limits": "curve family describes observed image-space trajectory; original animation keys and easing remain unknown"
+      },
+      "evidence": [
+        "frame-00000072",
+        "frame-00000078",
+        "frame-00000084",
+        "frame-00000090",
+        "frame-00000096",
+        "frame-00000102",
+        "frame-00000108",
+        "frame-00000114",
+        "frame-00000120",
+        "frame-00000126",
+        "frame-00000132",
+        "frame-00000138"
+      ]
+    }
+  ],
+  "limits": [
+    "Image-space apparent transforms; camera/object/layer identity remains unknown.",
+    "Scale values are model-derived and fit against sampled decoded evidence."
+  ]
+}
