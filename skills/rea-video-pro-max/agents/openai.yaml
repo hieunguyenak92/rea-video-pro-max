@@ -1,0 +1,6 @@
+interface:
+  display_name: "REA-Video-Pro-Max"
+  short_description: "Analyze video edits and render new content in their style"
+  default_prompt: "Use $rea-video-pro-max to analyze my reference video's edit and create a different video from my new script and assets in its style."
+policy:
+  allow_implicit_invocation: true

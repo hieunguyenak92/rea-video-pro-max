@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Inspect a recorded local run: reference video to editing evidence, reusable style and a different video from new content.">
+  <title>REA-Video-Pro-Max — Read the edit. Make it yours.</title>
+  <link rel="stylesheet" href="demo.css">
+  <script src="demo.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#workspace">Skip to recorded demo</a>
+  <header class="masthead wrap">
+    <a class="wordmark" href="#" aria-label="REA Video Pro Max home"><span class="logo-mark" aria-hidden="true"><i></i><i></i><i></i></span>REA<span class="wordmark-tail"> / VIDEO PRO MAX</span></a>
+    <nav aria-label="Main navigation"><a href="#workspace">The proof</a><a href="#workflow">The workflow</a><a href="../README.md">Documentation <span aria-hidden="true">↗</span></a></nav>
+    <span class="version">NATIVE / V0.1.0</span>
+  </header>
+
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> AN INDEPENDENT CLAUDE / CODEX SKILL</p>
+      <h1 id="hero-title">Read the edit.<br><span>Make it yours.</span></h1>
+      <div class="hero-bottom"><p>A reference is full of decisions. Turn the supported ones into evidence, a reusable style, and a <strong>different video</strong> with your own words and media.</p><a class="primary-link" href="#workspace">Inspect the actual run <span aria-hidden="true">↓</span></a></div>
+      <div class="process-line" aria-label="Reference to analysis to style plus new content to video B"><span>01 / REFERENCE</span><b aria-hidden="true">→</b><span>02 / EDIT GRAMMAR</span><b aria-hidden="true">→</b><span>03 / NEW CONTENT</span><b aria-hidden="true">→</b><span class="mint">04 / YOUR VIDEO</span></div>
+    </section>
+
+    <section class="workspace wrap" id="workspace" aria-labelledby="demo-title">
+      <div class="section-heading"><div><p class="eyebrow">THE RECORDED HANDOFF</p><h2 id="demo-title">Same editing language.<br>Another story.</h2></div><p class="small-note"><span class="record-dot" aria-hidden="true"></span> Recorded local run<br>Owned synthetic media · no live inference</p></div>
+      <div class="comparison">
+        <article class="player-card">
+          <div class="player-heading"><div><span class="tag">A</span><h3>The reference</h3></div><span class="utility">OBSERVE / INFER</span></div>
+          <div class="video-shell"><video id="reference" controls playsinline preload="metadata" aria-label="Reference video A" src="media/reference.mp4"></video></div>
+          <div class="player-footer"><span>Evidence about an existing edit</span><a href="media/reference.mp4" download>MP4 <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="player-card adapted-card">
+          <div class="player-heading"><div><span class="tag tag-b">B</span><h3>New content, adapted</h3></div><span class="utility mint">COMPOSE / RENDER</span></div>
+          <div class="video-shell"><video id="adapted" controls playsinline preload="metadata" aria-label="Different video B, rendered from new content" src="media/adapted.mp4"></video></div>
+          <div class="player-footer"><span>New words. Independent visual content.</span><a href="media/adapted.mp4" download>MP4 <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+      <div class="transport">
+        <button class="play-button" id="play" type="button" aria-label="Play reference and linked new video"><span aria-hidden="true">▶</span> Play</button>
+        <label class="sr-only" for="scrub">Relative progress through both videos</label><input id="scrub" type="range" min="0" max="1000" value="0" step="1" aria-valuetext="0 percent">
+        <output id="time" for="scrub">0%</output>
+        <label class="link-control"><input id="linked" type="checkbox" checked> Link progress</label>
+      </div>
+      <p class="transport-note">Linked playback compares relative progress across different durations. It does not claim frame identity or audio alignment. Use each player's controls to inspect independently.</p>
+      <p id="media-status" class="load-note" role="status"></p>
+
+      <div class="metrics" aria-label="Recorded artifact metrics">
+        <div><span class="utility">REFERENCE SHOTS</span><strong id="shot-count">—</strong><small>observed intervals</small></div>
+        <div><span class="utility">VISIBLE TEXT TRACKS</span><strong id="caption-count">—</strong><small>OCR candidates, not speech claims</small></div>
+        <div><span class="utility">NEW VIDEO DURATION</span><strong id="b-duration">—</strong><small>from resolved project</small></div>
+        <div><span class="utility">VERIFICATION RECORD</span><strong class="metric-status" id="verification-status">—</strong><small id="verification-subtitle">read actual checks below</small></div>
+      </div>
+
+      <div class="inspector">
+        <div class="timeline-panel"><div class="panel-heading"><h3>Inspect the timeline</h3><span class="utility">SELECT AN EVENT</span></div><div class="ruler" aria-hidden="true"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div><div id="timeline" class="timeline"><p class="loading">Loading recorded artifacts…</p></div><p class="timeline-note">Each lane uses its own video's duration. A is the observed/inferred reference; B is the new resolved composition.</p></div>
+        <aside class="detail-panel" aria-labelledby="detail-title"><div class="panel-heading"><h3 id="detail-title">Evidence, with its limits</h3><a id="record-link" href="evidence/reference-analysis.json">Full record ↗</a></div><p id="detail-caption">Choose a timeline event or artifact. Values below come from the recorded files.</p><pre id="detail" tabindex="0" aria-label="Selected artifact JSON">Loading recorded artifacts…</pre></aside>
+      </div>
+
+      <div class="artifact-bar" aria-label="Inspect recorded artifacts"><span class="utility">OPEN A RECORD</span><button type="button" data-artifact="analysis">Reference analysis</button><button type="button" data-artifact="template">Style template</button><button type="button" data-artifact="project">New project</button><button type="button" data-artifact="verification">Verification</button></div>
+      <p id="data-status" class="load-note" role="status">Reading local recorded evidence.</p>
+      <p class="honesty-note">There is no upload form or live model behind this page. If an artifact is missing, it stays unavailable. Technical checks are bounded; the <a href="VALIDATION.md">validation record</a> describes the actual run and remaining gaps.</p>
+    </section>
+
+    <section class="workflow wrap" id="workflow" aria-labelledby="workflow-title"><div class="section-heading"><div><p class="eyebrow">A USEFUL SYSTEM, NOT JUST A LOOK</p><h2 id="workflow-title">Keep the decisions.<br>Change the content.</h2></div><p class="section-description">Observation, inference, reusable rules and your final composition stay separate.</p></div><div class="workflow-grid">
+      <article><span class="step-number">01</span><h3>Read what is there.</h3><p>Inspect shot timing, visible words, subtitle appearance, coarse motion and signal cues. Keep timestamp evidence and the limits of coverage.</p><a href="evidence/reference-analysis.json">Analysis JSON ↗</a></article>
+      <article><span class="step-number">02</span><h3>Extract the grammar.</h3><p>Normalize supported caption, layout, entrance and rhythm decisions. Keep an explicit record of inferred choices and unknown originals.</p><a href="evidence/style-template.json">Style template ↗</a></article>
+      <article><span class="step-number">03</span><h3>Bind another story.</h3><p>Add new text and independent assets. Reflow and retime the new words. The reference is never an implicit footage or music fallback.</p><a href="../examples/content.json">Content bindings ↗</a></article>
+      <article><span class="step-number">04</span><h3>Make a playable result.</h3><p>Render the supported 2D edit locally. Check the new content, style contract and decoded playback. Keep a portable project with asset hashes.</p><a href="evidence/project.json">Native project ↗</a></article>
+    </div></section>
+
+    <section class="get-started wrap" aria-labelledby="start-title"><div><p class="eyebrow">YOUR NEXT REFERENCE</p><h2 id="start-title">Give your agent<br>an editing vocabulary.</h2><p>Use the skill, local CLI or optional workspace-bound stdio MCP. The native pipeline needs no paid model API.</p><a class="primary-link" href="../README.md">Get the skill + quickstart <span aria-hidden="true">↗</span></a></div><div class="prompt-card"><div class="prompt-header"><span class="status-dot" aria-hidden="true"></span><span class="utility">TRY A NATURAL REQUEST</span></div><p>“Analyze this reference's subtitles, rhythm and motion. Then use my new script and assets to make a different video in its style. Keep the template, timeline, project and verification.”</p><span class="prompt-footer">CLAUDE CODE / CODEX</span></div></section>
+
+    <section class="limits wrap" aria-labelledby="limits-title"><h2 id="limits-title">Evidence before certainty.</h2><p>A flattened video cannot uniquely reveal its hidden layers, original fonts, source clips, plugins or editing project. This release handles observable evidence and a bounded native 2D style vocabulary. Exact font recovery, arbitrary 3D/VFX, HDR and unrestricted NLE imports remain outside its verified scope. New words receive new timing; estimated timing is not ASR alignment.</p><div><a href="SUPPORT-MATRIX.md">Support matrix ↗</a><a href="PRIVACY.md">Privacy ↗</a><a href="VALIDATION.md">Measured validation ↗</a></div></section>
+  </main>
+  <footer class="wrap"><span>REA / VIDEO PRO MAX</span><p>Independent. Inspired by <a href="https://github.com/JuneYaooo/rea-video">JuneYaooo/rea-video</a>.</p><a href="../README.md">Source & documentation ↗</a></footer>
+</body>
+</html>

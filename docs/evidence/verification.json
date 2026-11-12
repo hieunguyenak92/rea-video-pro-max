@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "kind": "rea-video-verification",
+  "mode": "style-transfer",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "portable-project",
+      "passed": true,
+      "detail": "Manifest hashes, fonts, scene coverage and frame budgets validated"
+    },
+    {
+      "name": "explicit-new-content",
+      "passed": true,
+      "detail": {
+        "content": "explicit-new-content-bindings",
+        "reference_media_reused": false,
+        "reference_reuse_authorized": false,
+        "reference_path_included": false
+      }
+    },
+    {
+      "name": "reference-reuse-policy",
+      "passed": true,
+      "detail": {
+        "content": "explicit-new-content-bindings",
+        "reference_media_reused": false,
+        "reference_reuse_authorized": false,
+        "reference_path_included": false
+      }
+    },
+    {
+      "name": "render-project-identity",
+      "passed": true,
+      "detail": "Render receipt binds the exact output bytes to this project revision"
+    },
+    {
+      "name": "decoded-frame-count",
+      "passed": true,
+      "detail": {
+        "frames_decoded": 260,
+        "audio_samples_decoded": 520192,
+        "widths": [
+          640
+        ],
+        "heights": [
+          360
+        ],
+        "fps": 24.0,
+        "first_pts_seconds": 0.0,
+        "last_pts_seconds": 10.791666666666666,
+        "duration_seconds": 10.833333333333332
+      }
+    },
+    {
+      "name": "render-geometry",
+      "passed": true,
+      "detail": {
+        "frames_decoded": 260,
+        "audio_samples_decoded": 520192,
+        "widths": [
+          640
+        ],
+        "heights": [
+          360
+        ],
+        "fps": 24.0,
+        "first_pts_seconds": 0.0,
+        "last_pts_seconds": 10.791666666666666,
+        "duration_seconds": 10.833333333333332
+      }
+    },
+    {
+      "name": "render-clock",
+      "passed": true,
+      "detail": {
+        "frames_decoded": 260,
+        "audio_samples_decoded": 520192,
+        "widths": [
+          640
+        ],
+        "heights": [
+          360
+        ],
+        "fps": 24.0,
+        "first_pts_seconds": 0.0,
+        "last_pts_seconds": 10.791666666666666,
+        "duration_seconds": 10.833333333333332
+      }
+    },
+    {
+      "name": "bound-audio",
+      "passed": true,
+      "detail": {
+        "frames_decoded": 260,
+        "audio_samples_decoded": 520192,
+        "widths": [
+          640
+        ],
+        "heights": [
+          360
+        ],
+        "fps": 24.0,
+        "first_pts_seconds": 0.0,
+        "last_pts_seconds": 10.791666666666666,
+        "duration_seconds": 10.833333333333332
+      }
+    },
+    {
+      "name": "observed-caption-content",
+      "passed": true,
+      "detail": {
+        "status": "passed",
+        "cues_checked": 6,
+        "cues_total": 6,
+        "coverage": "first 64 cue interiors; static frame per cue; not animation/highlight quality certification",
+        "language": "eng",
+        "checks": [
+          {
+            "cue_id": "idea-caption-1",
+            "sample_seconds": 1.4583333333333333,
+            "expected": "BUILD A FRESH",
+            "observed": "i le\nBUILD A FRESH",
+            "passed": true,
+            "method": "tesseract-native-render-caption-crop"
+          },
+          {
+            "cue_id": "idea-caption-2",
+            "sample_seconds": 2.75,
+            "expected": "IDEA",
+            "observed": "i le\nIDEA",
+            "passed": true,
+            "method": "tesseract-native-render-caption-crop"
+          },
+          {
+            "cue_id": "craft-caption-3",
+            "sample_seconds": 4.625,
+            "expected": "EDIT WITH CLEAR",
+            "observed": "EDIT WITH CLEAR",
+            "passed": true,
+            "method": "tesseract-native-render-caption-crop"
+          },
+          {
+            "cue_id": "craft-caption-4",
+            "sample_seconds": 6.208333333333333,
+            "expected": "INTENT",
+            "observed": "INTENT",
+            "passed": true,
+            "method": "tesseract-native-render-caption-crop"
+          },
+          {
+            "cue_id": "publish-caption-5",
+            "sample_seconds": 8.583333333333334,
+            "expected": "CREATE YOUR OWN",
+            "observed": "CREATE YOUR OWN",
+            "passed": true,
+            "method": "tesseract-native-render-caption-crop"
+          },
+          {
+            "cue_id": "publish-caption-6",
+            "sample_seconds": 10.416666666666666,
+            "expected": "STORY",
+            "observed": "STORY",
+            "passed": true,
+            "method": "tesseract-native-render-caption-crop"
+          }
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "Decode and project checks do not certify perceived style quality, transition/motion recovery or speech alignment. Review frame evidence and fixture metrics."
+  ]
+}

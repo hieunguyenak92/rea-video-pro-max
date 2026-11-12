@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "kind": "rea-video-content",
+  "width": 640,
+  "height": 360,
+  "fps": 24,
+  "audio": "assets/audio-80736f49c0da4d4cbb8b.wav",
+  "scenes": [
+    {
+      "id": "idea",
+      "text": "BUILD A FRESH IDEA",
+      "asset": "assets/media-4fde4378cdbb8e0b2abd.png",
+      "duration": 3
+    },
+    {
+      "id": "craft",
+      "text": "EDIT WITH CLEAR INTENT",
+      "asset": "assets/media-7d78400b1457533abd6b.mp4",
+      "duration": 3.6
+    },
+    {
+      "id": "publish",
+      "text": "CREATE YOUR OWN STORY",
+      "asset": "assets/media-800c06b64c0963e18a8b.png",
+      "duration": 4.2
+    }
+  ],
+  "font": "assets/font-7f738fe5c43c8872807b.ttf"
+}

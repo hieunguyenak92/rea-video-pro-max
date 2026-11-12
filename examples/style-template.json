@@ -1,0 +1,1431 @@
+{
+  "schema_version": 1,
+  "kind": "rea-video-style-template",
+  "reference": {
+    "sha256": "e179338ef69c969d396adfb2527e6ec801f8cddc297da0a8e5fcb34d1295ecdc",
+    "width": 640.0,
+    "height": 360.0,
+    "duration": 9.0,
+    "content_policy": "analysis-only; never implicit render media"
+  },
+  "style": {
+    "font_size_ratio": 0.088889,
+    "fill": [
+      254,
+      255,
+      255
+    ],
+    "stroke": [
+      3,
+      5,
+      11
+    ],
+    "stroke_width_ratio": 0.005556,
+    "anchor": "bottom",
+    "anchor_x": 0.5,
+    "anchor_y": 0.801389,
+    "max_width_ratio": 0.88,
+    "box_color": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "shadow": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "highlight": [
+      254,
+      255,
+      255
+    ],
+    "entry": "static",
+    "entry_duration": 0.18,
+    "words_per_group": 3,
+    "line_height": 1.0
+  },
+  "rhythm": {
+    "median_shot_duration": 3.0,
+    "shot_duration_pattern": [
+      2.5,
+      3.0,
+      3.5
+    ],
+    "timing_policy": "relative",
+    "transition": {
+      "family": "cut",
+      "duration": 0
+    },
+    "source": "observed-shot-lengths"
+  },
+  "motion": {
+    "family": "static",
+    "panzoom": 0,
+    "scale_ratio": 1,
+    "easing": "linear",
+    "status": "implementation_choice",
+    "shot_id": "shot-0001",
+    "evidence": [
+      "frame-00000000",
+      "frame-00000001",
+      "frame-00000002",
+      "frame-00000003",
+      "frame-00000004",
+      "frame-00000005",
+      "frame-00000006",
+      "frame-00000012",
+      "frame-00000018",
+      "frame-00000024",
+      "frame-00000030",
+      "frame-00000036",
+      "frame-00000042",
+      "frame-00000048",
+      "frame-00000049",
+      "frame-00000050",
+      "frame-00000051",
+      "frame-00000052",
+      "frame-00000053",
+      "frame-00000054"
+    ],
+    "pattern": [
+      {
+        "family": "static",
+        "panzoom": 0,
+        "scale_ratio": 1,
+        "easing": "linear",
+        "status": "implementation_choice",
+        "shot_id": "shot-0001",
+        "evidence": [
+          "frame-00000000",
+          "frame-00000001",
+          "frame-00000002",
+          "frame-00000003",
+          "frame-00000004",
+          "frame-00000005",
+          "frame-00000006",
+          "frame-00000012",
+          "frame-00000018",
+          "frame-00000024",
+          "frame-00000030",
+          "frame-00000036",
+          "frame-00000042",
+          "frame-00000048",
+          "frame-00000049",
+          "frame-00000050",
+          "frame-00000051",
+          "frame-00000052",
+          "frame-00000053",
+          "frame-00000054"
+        ]
+      },
+      {
+        "family": "static",
+        "panzoom": 0,
+        "scale_ratio": 1,
+        "easing": "linear",
+        "status": "implementation_choice",
+        "shot_id": "shot-0002",
+        "evidence": [
+          "frame-00000060",
+          "frame-00000061",
+          "frame-00000062",
+          "frame-00000063",
+          "frame-00000064",
+          "frame-00000065",
+          "frame-00000066",
+          "frame-00000072",
+          "frame-00000078",
+          "frame-00000084",
+          "frame-00000090",
+          "frame-00000096",
+          "frame-00000102",
+          "frame-00000108",
+          "frame-00000114",
+          "frame-00000120",
+          "frame-00000121",
+          "frame-00000122",
+          "frame-00000123",
+          "frame-00000124",
+          "frame-00000125",
+          "frame-00000126"
+        ]
+      },
+      {
+        "family": "static",
+        "panzoom": 0,
+        "scale_ratio": 1,
+        "easing": "linear",
+        "status": "implementation_choice",
+        "shot_id": "shot-0003",
+        "evidence": [
+          "frame-00000132",
+          "frame-00000133",
+          "frame-00000134",
+          "frame-00000135",
+          "frame-00000136",
+          "frame-00000137",
+          "frame-00000138",
+          "frame-00000144",
+          "frame-00000150",
+          "frame-00000156",
+          "frame-00000162",
+          "frame-00000168",
+          "frame-00000174",
+          "frame-00000180",
+          "frame-00000186",
+          "frame-00000192",
+          "frame-00000198",
+          "frame-00000204",
+          "frame-00000205",
+          "frame-00000206",
+          "frame-00000207",
+          "frame-00000208",
+          "frame-00000209",
+          "frame-00000210"
+        ]
+      }
+    ],
+    "reference_candidates": [
+      {
+        "shot_id": "shot-0001",
+        "status": "model-derived",
+        "evidence": [
+          "frame-00000000",
+          "frame-00000001",
+          "frame-00000002",
+          "frame-00000003",
+          "frame-00000004",
+          "frame-00000005",
+          "frame-00000006",
+          "frame-00000012",
+          "frame-00000018",
+          "frame-00000024",
+          "frame-00000030",
+          "frame-00000036",
+          "frame-00000042",
+          "frame-00000048",
+          "frame-00000049",
+          "frame-00000050",
+          "frame-00000051",
+          "frame-00000052",
+          "frame-00000053",
+          "frame-00000054"
+        ]
+      },
+      {
+        "shot_id": "shot-0002",
+        "family": "ease-in-out_apparent_transform_candidate",
+        "displacement": [
+          -0.04567608741637175,
+          -0.0016525940828453637
+        ],
+        "status": "model-derived",
+        "evidence": [
+          "frame-00000060",
+          "frame-00000061",
+          "frame-00000062",
+          "frame-00000063",
+          "frame-00000064",
+          "frame-00000065",
+          "frame-00000066",
+          "frame-00000072",
+          "frame-00000078",
+          "frame-00000084",
+          "frame-00000090",
+          "frame-00000096",
+          "frame-00000102",
+          "frame-00000108",
+          "frame-00000114",
+          "frame-00000120",
+          "frame-00000121",
+          "frame-00000122",
+          "frame-00000123",
+          "frame-00000124",
+          "frame-00000125",
+          "frame-00000126"
+        ],
+        "curve": {
+          "status": "model-derived",
+          "family": "ease-in-out",
+          "held_out_rmse_normalized": 0.00156184,
+          "complexity_penalty": 0.0005,
+          "selection_score": 0.00206184,
+          "coefficients": [
+            [
+              0.998593713,
+              -0.001649337,
+              -0.000244731,
+              0.00119426,
+              0.998111934,
+              0.00032396
+            ],
+            [
+              -0.009213092,
+              0.131928936,
+              -0.103897598,
+              0.000695792,
+              0.003078349,
+              -0.003408533
+            ]
+          ],
+          "candidates": [
+            {
+              "family": "constant",
+              "held_out_rmse_normalized": 0.02489907,
+              "complexity_penalty": 0.00025,
+              "selection_score": 0.02514907,
+              "coefficients": [
+                [
+                  0.993882013,
+                  0.0658209,
+                  -0.053379365,
+                  0.001550097,
+                  0.999686243,
+                  -0.00141921
+                ]
+              ]
+            },
+            {
+              "family": "linear",
+              "held_out_rmse_normalized": 0.00176936,
+              "complexity_penalty": 0.0005,
+              "selection_score": 0.00226936,
+              "coefficients": [
+                [
+                  0.999053544,
+                  -0.008624637,
+                  0.005307665,
+                  0.001122709,
+                  0.997993941,
+                  0.000501481
+                ],
+                [
+                  -0.010118212,
+                  0.145654312,
+                  -0.11482245,
+                  0.000836193,
+                  0.003311027,
+                  -0.003757873
+                ]
+              ]
+            },
+            {
+              "family": "ease-in-out",
+              "held_out_rmse_normalized": 0.00156184,
+              "complexity_penalty": 0.0005,
+              "selection_score": 0.00206184,
+              "coefficients": [
+                [
+                  0.998593713,
+                  -0.001649337,
+                  -0.000244731,
+                  0.00119426,
+                  0.998111934,
+                  0.00032396
+                ],
+                [
+                  -0.009213092,
+                  0.131928936,
+                  -0.103897598,
+                  0.000695792,
+                  0.003078349,
+                  -0.003408533
+                ]
+              ]
+            }
+          ],
+          "training_samples": 15,
+          "held_out_samples": 7,
+          "observed_range": [
+            2.5,
+            5.25
+          ],
+          "basis": "constant: [1]; linear: [1,u]; ease-in-out: [1,u*u*(3-2*u)]; u=(t-start)/(end-start)",
+          "value_coordinates": "row-major first two rows of normalized forward cumulative transform",
+          "limits": "curve family describes observed image-space trajectory; original animation keys and easing remain unknown"
+        }
+      },
+      {
+        "shot_id": "shot-0003",
+        "status": "model-derived",
+        "evidence": [
+          "frame-00000132",
+          "frame-00000133",
+          "frame-00000134",
+          "frame-00000135",
+          "frame-00000136",
+          "frame-00000137",
+          "frame-00000138",
+          "frame-00000144",
+          "frame-00000150",
+          "frame-00000156",
+          "frame-00000162",
+          "frame-00000168",
+          "frame-00000174",
+          "frame-00000180",
+          "frame-00000186",
+          "frame-00000192",
+          "frame-00000198",
+          "frame-00000204",
+          "frame-00000205",
+          "frame-00000206",
+          "frame-00000207",
+          "frame-00000208",
+          "frame-00000209",
+          "frame-00000210"
+        ]
+      }
+    ]
+  },
+  "slots": [
+    {
+      "role": "scene",
+      "repeatable": true,
+      "fields": [
+        "text",
+        "asset",
+        "duration",
+        "background",
+        "accent"
+      ]
+    },
+    {
+      "role": "audio",
+      "required": false
+    }
+  ],
+  "invariants": [
+    "caption treatment and anchor",
+    "entry motion family",
+    "transition family",
+    "relative shot rhythm"
+  ],
+  "degrees_of_freedom": [
+    "new words and word durations",
+    "new footage/images/colors",
+    "line wrapping",
+    "scene duration",
+    "output canvas"
+  ],
+  "evidence": [
+    {
+      "caption_id": "text-0001",
+      "evidence": [
+        "frame-00000006",
+        "frame-00000012",
+        "frame-00000018",
+        "frame-00000024",
+        "frame-00000030",
+        "frame-00000036",
+        "frame-00000042",
+        "frame-00000048",
+        "frame-00000000",
+        "frame-00000001",
+        "frame-00000002",
+        "frame-00000003",
+        "frame-00000004",
+        "frame-00000005",
+        "frame-00000049",
+        "frame-00000050",
+        "frame-00000051",
+        "frame-00000052",
+        "frame-00000053",
+        "frame-00000054"
+      ],
+      "start": 0.25,
+      "end": 2.25
+    },
+    {
+      "caption_id": "text-0002",
+      "evidence": [
+        "frame-00000066",
+        "frame-00000072",
+        "frame-00000078",
+        "frame-00000084",
+        "frame-00000090",
+        "frame-00000096",
+        "frame-00000102",
+        "frame-00000108",
+        "frame-00000114",
+        "frame-00000120",
+        "frame-00000060",
+        "frame-00000061",
+        "frame-00000062",
+        "frame-00000063",
+        "frame-00000064",
+        "frame-00000065",
+        "frame-00000121",
+        "frame-00000122",
+        "frame-00000123",
+        "frame-00000124",
+        "frame-00000125",
+        "frame-00000126"
+      ],
+      "start": 2.75,
+      "end": 5.25
+    },
+    {
+      "caption_id": "text-0007",
+      "evidence": [
+        "frame-00000138",
+        "frame-00000144",
+        "frame-00000150",
+        "frame-00000156",
+        "frame-00000162",
+        "frame-00000168",
+        "frame-00000174",
+        "frame-00000180",
+        "frame-00000186",
+        "frame-00000192",
+        "frame-00000198",
+        "frame-00000204",
+        "frame-00000132",
+        "frame-00000133",
+        "frame-00000134",
+        "frame-00000135",
+        "frame-00000136",
+        "frame-00000137",
+        "frame-00000205",
+        "frame-00000206",
+        "frame-00000207",
+        "frame-00000208",
+        "frame-00000209",
+        "frame-00000210"
+      ],
+      "start": 5.75,
+      "end": 8.75
+    }
+  ],
+  "implementation_choices": [
+    {
+      "field": "font",
+      "status": "implementation_choice",
+      "reason": "licensed bundled font substitutes any unverified original font"
+    },
+    {
+      "field": "caption.shadow",
+      "status": "implementation_choice",
+      "reason": "no shadow added because raster analysis did not identify one reliably"
+    },
+    {
+      "field": "caption.line_height",
+      "status": "implementation_choice",
+      "reason": "bounded spacing derived from OCR box/font ratio; original baseline spacing is unverified"
+    },
+    {
+      "field": "caption.highlight",
+      "status": "implementation_choice",
+      "reason": "same as fill unless a highlight color is identified or content explicitly supplies accent"
+    },
+    {
+      "field": "transition",
+      "status": "implementation_choice",
+      "reason": "cut at detected shot boundaries; no supported transition family identified"
+    },
+    {
+      "field": "motion",
+      "status": "implementation_choice",
+      "reason": "static B background where no continuous supported scale trajectory is available"
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "original-project",
+      "status": "unknown",
+      "question": "Original editing software, source assets and unique layer/keyframe graph",
+      "reason": "flattened media does not uniquely identify the original project"
+    },
+    {
+      "id": "font-identity",
+      "status": "unknown",
+      "question": "Exact original font",
+      "reason": "font fitting searches only the bundled catalog; candidates are not identity proof"
+    },
+    {
+      "id": "production-origin",
+      "status": "unknown",
+      "question": "Filmed, AI-generated, 3D or hybrid origin",
+      "reason": "appearance statistics cannot certify production origin"
+    },
+    {
+      "id": "semantic-audio",
+      "status": "not_run",
+      "question": "Speech transcript, speaker and separated music/SFX",
+      "reason": "signal analysis only; no ASR/source-separation model called"
+    },
+    {
+      "id": "motion-scope",
+      "status": "unknown",
+      "question": "Perspective, original easing/keyframes and hidden masks",
+      "reason": "sampled similarity/affine and temporal curve candidates; perspective, camera/object identity, original keys and hidden layers remain unknown"
+    }
+  ],
+  "transition_candidates": [],
+  "support": {
+    "renderer": "native-pillow-ffmpeg-v1",
+    "entries": [
+      "fade",
+      "pop",
+      "slide",
+      "static"
+    ],
+    "transitions": [
+      "cut",
+      "dissolve",
+      "fade",
+      "wipe"
+    ],
+    "font_recovery": "candidate/unknown; bundled font is an explicit substitute",
+    "shaping": "complex-script rendering requires Pillow RAQM and suitable supplied font"
+  },
+  "style_variants": [
+    {
+      "id": "appearance-1",
+      "relative_start": 0.027777777777777776,
+      "relative_end": 0.25,
+      "style": {
+        "font_size_ratio": 0.088889,
+        "fill": [
+          254,
+          255,
+          255
+        ],
+        "stroke": [
+          2,
+          5,
+          11
+        ],
+        "stroke_width_ratio": 0.005556,
+        "anchor": "bottom",
+        "box_color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_x": 0.498437,
+        "anchor_y": 0.801389,
+        "entry": "static",
+        "line_height": 1.0
+      },
+      "source_caption_ids": [
+        "text-0001"
+      ],
+      "evidence": [
+        "frame-00000006",
+        "frame-00000012",
+        "frame-00000018",
+        "frame-00000024",
+        "frame-00000030",
+        "frame-00000036",
+        "frame-00000042",
+        "frame-00000048",
+        "frame-00000000",
+        "frame-00000001",
+        "frame-00000002",
+        "frame-00000003",
+        "frame-00000004",
+        "frame-00000005",
+        "frame-00000049",
+        "frame-00000050",
+        "frame-00000051",
+        "frame-00000052",
+        "frame-00000053",
+        "frame-00000054"
+      ],
+      "parameter_provenance": {
+        "font_size_ratio": {
+          "status": "candidate",
+          "method": "quantized-raster-contrast-and-neighbor-ring",
+          "evidence": [
+            "frame-00000006",
+            "frame-00000012",
+            "frame-00000018",
+            "frame-00000024",
+            "frame-00000030",
+            "frame-00000036",
+            "frame-00000042",
+            "frame-00000048",
+            "frame-00000000",
+            "frame-00000001",
+            "frame-00000002",
+            "frame-00000003",
+            "frame-00000004",
+            "frame-00000005",
+            "frame-00000049",
+            "frame-00000050",
+            "frame-00000051",
+            "frame-00000052",
+            "frame-00000053",
+            "frame-00000054"
+          ]
+        },
+        "fill": {
+          "status": "estimated",
+          "method": "quantized-raster-contrast-and-neighbor-ring",
+          "evidence": [
+            "frame-00000006",
+            "frame-00000012",
+            "frame-00000018",
+            "frame-00000024",
+            "frame-00000030",
+            "frame-00000036",
+            "frame-00000042",
+            "frame-00000048",
+            "frame-00000000",
+            "frame-00000001",
+            "frame-00000002",
+            "frame-00000003",
+            "frame-00000004",
+            "frame-00000005",
+            "frame-00000049",
+            "frame-00000050",
+            "frame-00000051",
+            "frame-00000052",
+            "frame-00000053",
+            "frame-00000054"
+          ]
+        },
+        "stroke": {
+          "status": "estimated",
+          "method": "quantized-raster-contrast-and-neighbor-ring",
+          "evidence": [
+            "frame-00000006",
+            "frame-00000012",
+            "frame-00000018",
+            "frame-00000024",
+            "frame-00000030",
+            "frame-00000036",
+            "frame-00000042",
+            "frame-00000048",
+            "frame-00000000",
+            "frame-00000001",
+            "frame-00000002",
+            "frame-00000003",
+            "frame-00000004",
+            "frame-00000005",
+            "frame-00000049",
+            "frame-00000050",
+            "frame-00000051",
+            "frame-00000052",
+            "frame-00000053",
+            "frame-00000054"
+          ]
+        },
+        "stroke_width_ratio": {
+          "status": "estimated",
+          "method": "quantized-raster-contrast-and-neighbor-ring",
+          "evidence": [
+            "frame-00000006",
+            "frame-00000012",
+            "frame-00000018",
+            "frame-00000024",
+            "frame-00000030",
+            "frame-00000036",
+            "frame-00000042",
+            "frame-00000048",
+            "frame-00000000",
+            "frame-00000001",
+            "frame-00000002",
+            "frame-00000003",
+            "frame-00000004",
+            "frame-00000005",
+            "frame-00000049",
+            "frame-00000050",
+            "frame-00000051",
+            "frame-00000052",
+            "frame-00000053",
+            "frame-00000054"
+          ]
+        },
+        "anchor": {
+          "status": "estimated",
+          "method": "quantized-raster-contrast-and-neighbor-ring",
+          "evidence": [
+            "frame-00000006",
+            "frame-00000012",
+            "frame-00000018",
+            "frame-00000024",
+            "frame-00000030",
+            "frame-00000036",
+            "frame-00000042",
+            "frame-00000048",
+            "frame-00000000",
+            "frame-00000001",
+            "frame-00000002",
+            "frame-00000003",
+            "frame-00000004",
+            "frame-00000005",
+            "frame-00000049",
+            "frame-00000050",
+            "frame-00000051",
+            "frame-00000052",
+            "frame-00000053",
+            "frame-00000054"
+          ]
+        },
+        "box_color": {
+          "status": "estimated",
+          "method": "quantized-raster-contrast-and-neighbor-ring",
+          "evidence": [
+            "frame-00000006",
+            "frame-00000012",
+            "frame-00000018",
+            "frame-00000024",
+            "frame-00000030",
+            "frame-00000036",
+            "frame-00000042",
+            "frame-00000048",
+            "frame-00000000",
+            "frame-00000001",
+            "frame-00000002",
+            "frame-00000003",
+            "frame-00000004",
+            "frame-00000005",
+            "frame-00000049",
+            "frame-00000050",
+            "frame-00000051",
+            "frame-00000052",
+            "frame-00000053",
+            "frame-00000054"
+          ]
+        }
+      },
+      "status": "inferred",
+      "limits": "observed raster appearance; layout/entry substitutes and new-cue placement are implementation choices"
+    },
+    {
+      "id": "appearance-2",
+      "relative_start": 0.3055555555555556,
+      "relative_end": 0.5833333333333334,
+      "style": {
+        "font_size_ratio": 0.088889,
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "stroke": [
+          7,
+          4,
+          11
+        ],
+        "stroke_width_ratio": 0.005556,
+        "anchor": "bottom",
+        "box_color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_x": 0.5,
+        "anchor_y": 0.801389,
+        "entry": "static",
+        "line_height": 1.0
+      },
+      "source_caption_ids": [
+        "text-0002"
+      ],
+      "evidence": [
+        "frame-00000066",
+        "frame-00000072",
+        "frame-00000078",
+        "frame-00000084",
+        "frame-00000090",
+        "frame-00000096",
+        "frame-00000102",
+        "frame-00000108",
+        "frame-00000114",
+        "frame-00000120",
+        "frame-00000060",
+        "frame-00000061",
+        "frame-00000062",
+        "frame-00000063",
+        "frame-00000064",
+        "frame-00000065",
+        "frame-00000121",
+        "frame-00000122",
+        "frame-00000123",
+        "frame-00000124",
+        "frame-00000125",
+        "frame-00000126"
+      ],
+      "parameter_provenance": {
+        "font_size_ratio": {
+          "status": "candidate",
+          "method": "quantized-raster-contrast-and-neighbor-ring",
+          "evidence": [
+            "frame-00000066",
+            "frame-00000072",
+            "frame-00000078",
+            "frame-00000084",
+            "frame-00000090",
+            "frame-00000096",
+            "frame-00000102",
+            "frame-00000108",
+            "frame-00000114",
+            "frame-00000120",
+            "frame-00000060",
+            "frame-00000061",
+            "frame-00000062",
+            "frame-00000063",
+            "frame-00000064",
+            "frame-00000065",
+            "frame-00000121",
+            "frame-00000122",
+            "frame-00000123",
+            "frame-00000124",
+            "frame-00000125",
+            "frame-00000126"
+          ]
+        },
+        "fill": {
+          "status": "estimated",
+          "method": "quantized-raster-contrast-and-neighbor-ring",
+          "evidence": [
+            "frame-00000066",
+            "frame-00000072",
+            "frame-00000078",
+            "frame-00000084",
+            "frame-00000090",
+            "frame-00000096",
+            "frame-00000102",
+            "frame-00000108",
+            "frame-00000114",
+            "frame-00000120",
+            "frame-00000060",
+            "frame-00000061",
+            "frame-00000062",
+            "frame-00000063",
+            "frame-00000064",
+            "frame-00000065",
+            "frame-00000121",
+            "frame-00000122",
+            "frame-00000123",
+            "frame-00000124",
+            "frame-00000125",
+            "frame-00000126"
+          ]
+        },
+        "stroke": {
+          "status": "estimated",
+          "method": "quantized-raster-contrast-and-neighbor-ring",
+          "evidence": [
+            "frame-00000066",
+            "frame-00000072",
+            "frame-00000078",
+            "frame-00000084",
+            "frame-00000090",
+            "frame-00000096",
+            "frame-00000102",
+            "frame-00000108",
+            "frame-00000114",
+            "frame-00000120",
+            "frame-00000060",
+            "frame-00000061",
+            "frame-00000062",
+            "frame-00000063",
+            "frame-00000064",
+            "frame-00000065",
+            "frame-00000121",
+            "frame-00000122",
+            "frame-00000123",
+            "frame-00000124",
+            "frame-00000125",
+            "frame-00000126"
+          ]
+        },
+        "stroke_width_ratio": {
+          "status": "estimated",
+          "method": "quantized-raster-contrast-and-neighbor-ring",
+          "evidence": [
+            "frame-00000066",
+            "frame-00000072",
+            "frame-00000078",
+            "frame-00000084",
+            "frame-00000090",
+            "frame-00000096",
+            "frame-00000102",
+            "frame-00000108",
+            "frame-00000114",
+            "frame-00000120",
+            "frame-00000060",
+            "frame-00000061",
+            "frame-00000062",
+            "frame-00000063",
+            "frame-00000064",
+            "frame-00000065",
+            "frame-00000121",
+            "frame-00000122",
+            "frame-00000123",
+            "frame-00000124",
+            "frame-00000125",
+            "frame-00000126"
+          ]
+        },
+        "anchor": {
+          "status": "estimated",
+          "method": "quantized-raster-contrast-and-neighbor-ring",
+          "evidence": [
+            "frame-00000066",
+            "frame-00000072",
+            "frame-00000078",
+            "frame-00000084",
+            "frame-00000090",
+            "frame-00000096",
+            "frame-00000102",
+            "frame-00000108",
+            "frame-00000114",
+            "frame-00000120",
+            "frame-00000060",
+            "frame-00000061",
+            "frame-00000062",
+            "frame-00000063",
+            "frame-00000064",
+            "frame-00000065",
+            "frame-00000121",
+            "frame-00000122",
+            "frame-00000123",
+            "frame-00000124",
+            "frame-00000125",
+            "frame-00000126"
+          ]
+        },
+        "box_color": {
+          "status": "estimated",
+          "method": "quantized-raster-contrast-and-neighbor-ring",
+          "evidence": [
+            "frame-00000066",
+            "frame-00000072",
+            "frame-00000078",
+            "frame-00000084",
+            "frame-00000090",
+            "frame-00000096",
+            "frame-00000102",
+            "frame-00000108",
+            "frame-00000114",
+            "frame-00000120",
+            "frame-00000060",
+            "frame-00000061",
+            "frame-00000062",
+            "frame-00000063",
+            "frame-00000064",
+            "frame-00000065",
+            "frame-00000121",
+            "frame-00000122",
+            "frame-00000123",
+            "frame-00000124",
+            "frame-00000125",
+            "frame-00000126"
+          ]
+        }
+      },
+      "status": "inferred",
+      "limits": "observed raster appearance; layout/entry substitutes and new-cue placement are implementation choices"
+    },
+    {
+      "id": "appearance-3",
+      "relative_start": 0.6388888888888888,
+      "relative_end": 0.9722222222222222,
+      "style": {
+        "font_size_ratio": 0.088889,
+        "fill": [
+          254,
+          255,
+          255
+        ],
+        "stroke": [
+          3,
+          7,
+          8
+        ],
+        "stroke_width_ratio": 0.005556,
+        "anchor": "bottom",
+        "box_color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_x": 0.500781,
+        "anchor_y": 0.801389,
+        "entry": "static",
+        "line_height": 1.0
+      },
+      "source_caption_ids": [
+        "text-0007"
+      ],
+      "evidence": [
+        "frame-00000138",
+        "frame-00000144",
+        "frame-00000150",
+        "frame-00000156",
+        "frame-00000162",
+        "frame-00000168",
+        "frame-00000174",
+        "frame-00000180",
+        "frame-00000186",
+        "frame-00000192",
+        "frame-00000198",
+        "frame-00000204",
+        "frame-00000132",
+        "frame-00000133",
+        "frame-00000134",
+        "frame-00000135",
+        "frame-00000136",
+        "frame-00000137",
+        "frame-00000205",
+        "frame-00000206",
+        "frame-00000207",
+        "frame-00000208",
+        "frame-00000209",
+        "frame-00000210"
+      ],
+      "parameter_provenance": {
+        "font_size_ratio": {
+          "status": "candidate",
+          "method": "quantized-raster-contrast-and-neighbor-ring",
+          "evidence": [
+            "frame-00000138",
+            "frame-00000144",
+            "frame-00000150",
+            "frame-00000156",
+            "frame-00000162",
+            "frame-00000168",
+            "frame-00000174",
+            "frame-00000180",
+            "frame-00000186",
+            "frame-00000192",
+            "frame-00000198",
+            "frame-00000204",
+            "frame-00000132",
+            "frame-00000133",
+            "frame-00000134",
+            "frame-00000135",
+            "frame-00000136",
+            "frame-00000137",
+            "frame-00000205",
+            "frame-00000206",
+            "frame-00000207",
+            "frame-00000208",
+            "frame-00000209",
+            "frame-00000210"
+          ]
+        },
+        "fill": {
+          "status": "estimated",
+          "method": "quantized-raster-contrast-and-neighbor-ring",
+          "evidence": [
+            "frame-00000138",
+            "frame-00000144",
+            "frame-00000150",
+            "frame-00000156",
+            "frame-00000162",
+            "frame-00000168",
+            "frame-00000174",
+            "frame-00000180",
+            "frame-00000186",
+            "frame-00000192",
+            "frame-00000198",
+            "frame-00000204",
+            "frame-00000132",
+            "frame-00000133",
+            "frame-00000134",
+            "frame-00000135",
+            "frame-00000136",
+            "frame-00000137",
+            "frame-00000205",
+            "frame-00000206",
+            "frame-00000207",
+            "frame-00000208",
+            "frame-00000209",
+            "frame-00000210"
+          ]
+        },
+        "stroke": {
+          "status": "estimated",
+          "method": "quantized-raster-contrast-and-neighbor-ring",
+          "evidence": [
+            "frame-00000138",
+            "frame-00000144",
+            "frame-00000150",
+            "frame-00000156",
+            "frame-00000162",
+            "frame-00000168",
+            "frame-00000174",
+            "frame-00000180",
+            "frame-00000186",
+            "frame-00000192",
+            "frame-00000198",
+            "frame-00000204",
+            "frame-00000132",
+            "frame-00000133",
+            "frame-00000134",
+            "frame-00000135",
+            "frame-00000136",
+            "frame-00000137",
+            "frame-00000205",
+            "frame-00000206",
+            "frame-00000207",
+            "frame-00000208",
+            "frame-00000209",
+            "frame-00000210"
+          ]
+        },
+        "stroke_width_ratio": {
+          "status": "estimated",
+          "method": "quantized-raster-contrast-and-neighbor-ring",
+          "evidence": [
+            "frame-00000138",
+            "frame-00000144",
+            "frame-00000150",
+            "frame-00000156",
+            "frame-00000162",
+            "frame-00000168",
+            "frame-00000174",
+            "frame-00000180",
+            "frame-00000186",
+            "frame-00000192",
+            "frame-00000198",
+            "frame-00000204",
+            "frame-00000132",
+            "frame-00000133",
+            "frame-00000134",
+            "frame-00000135",
+            "frame-00000136",
+            "frame-00000137",
+            "frame-00000205",
+            "frame-00000206",
+            "frame-00000207",
+            "frame-00000208",
+            "frame-00000209",
+            "frame-00000210"
+          ]
+        },
+        "anchor": {
+          "status": "estimated",
+          "method": "quantized-raster-contrast-and-neighbor-ring",
+          "evidence": [
+            "frame-00000138",
+            "frame-00000144",
+            "frame-00000150",
+            "frame-00000156",
+            "frame-00000162",
+            "frame-00000168",
+            "frame-00000174",
+            "frame-00000180",
+            "frame-00000186",
+            "frame-00000192",
+            "frame-00000198",
+            "frame-00000204",
+            "frame-00000132",
+            "frame-00000133",
+            "frame-00000134",
+            "frame-00000135",
+            "frame-00000136",
+            "frame-00000137",
+            "frame-00000205",
+            "frame-00000206",
+            "frame-00000207",
+            "frame-00000208",
+            "frame-00000209",
+            "frame-00000210"
+          ]
+        },
+        "box_color": {
+          "status": "estimated",
+          "method": "quantized-raster-contrast-and-neighbor-ring",
+          "evidence": [
+            "frame-00000138",
+            "frame-00000144",
+            "frame-00000150",
+            "frame-00000156",
+            "frame-00000162",
+            "frame-00000168",
+            "frame-00000174",
+            "frame-00000180",
+            "frame-00000186",
+            "frame-00000192",
+            "frame-00000198",
+            "frame-00000204",
+            "frame-00000132",
+            "frame-00000133",
+            "frame-00000134",
+            "frame-00000135",
+            "frame-00000136",
+            "frame-00000137",
+            "frame-00000205",
+            "frame-00000206",
+            "frame-00000207",
+            "frame-00000208",
+            "frame-00000209",
+            "frame-00000210"
+          ]
+        }
+      },
+      "status": "inferred",
+      "limits": "observed raster appearance; layout/entry substitutes and new-cue placement are implementation choices"
+    }
+  ],
+  "highlight_palette": {
+    "colors": [],
+    "regimes": [],
+    "status": "unknown",
+    "method": "discrete observed palette; nearby RGB observations share first representative, never averaged",
+    "coverage": {
+      "reference_captions": 3,
+      "captions_examined": 3,
+      "appearance_variants": 3,
+      "appearance_variants_omitted": 0,
+      "color_limit": 64,
+      "regime_limit": 256
+    },
+    "limits": "sparse appearance evidence; shot boundaries/gap extension and B word scheduling are inferred, not recovered word timestamps"
+  },
+  "style_schedule": {
+    "method": "relative-reference-progress",
+    "status": "implementation_choice",
+    "typography": "choose observed appearance at each NEW cue midpoint; use first appearance before observed start and hold nearest earlier appearance through gaps",
+    "highlight": "choose discrete palette at each NEW word midpoint; explicit scene accent overrides",
+    "limits": "new content has new cue/word times; reference word timestamps are never copied; sparse regime boundaries remain inferred"
+  },
+  "parameter_provenance": {
+    "font_size_ratio": {
+      "status": "candidate",
+      "source_field": "font_size_ratio",
+      "source_value": 0.088889,
+      "applied_value": 0.088889,
+      "caption_id": null,
+      "method": "median-caption-raster-appearance"
+    },
+    "fill": {
+      "status": "estimated",
+      "source_field": "fill",
+      "source_value": [
+        254,
+        255,
+        255
+      ],
+      "applied_value": [
+        254,
+        255,
+        255
+      ],
+      "caption_id": null,
+      "method": "median-caption-raster-appearance"
+    },
+    "stroke": {
+      "status": "estimated",
+      "source_field": "stroke",
+      "source_value": [
+        3,
+        5,
+        11
+      ],
+      "applied_value": [
+        3,
+        5,
+        11
+      ],
+      "caption_id": null,
+      "method": "median-caption-raster-appearance"
+    },
+    "stroke_width_ratio": {
+      "status": "estimated",
+      "source_field": "stroke_width_ratio",
+      "source_value": 0.005556,
+      "applied_value": 0.005556,
+      "caption_id": null,
+      "method": "median-caption-raster-appearance"
+    },
+    "anchor": {
+      "status": "estimated",
+      "source_field": "anchor",
+      "source_value": "bottom",
+      "applied_value": "bottom",
+      "caption_id": null,
+      "method": "median-caption-raster-appearance"
+    },
+    "anchor_x": {
+      "status": "estimated",
+      "source_field": "position",
+      "source_value": [
+        0.5,
+        0.801389
+      ],
+      "applied_value": 0.5,
+      "caption_id": null,
+      "method": "median-caption-raster-appearance"
+    },
+    "anchor_y": {
+      "status": "estimated",
+      "source_field": "position",
+      "source_value": [
+        0.5,
+        0.801389
+      ],
+      "applied_value": 0.801389,
+      "caption_id": null,
+      "method": "median-caption-raster-appearance"
+    },
+    "line_height": {
+      "status": "estimated",
+      "source_field": "line_height_ratio",
+      "source_value": 0.063889,
+      "applied_value": 1.0,
+      "caption_id": null,
+      "method": "median-caption-raster-appearance"
+    },
+    "entry": {
+      "status": "estimated",
+      "source_field": "animation",
+      "source_value": "static",
+      "applied_value": "static",
+      "caption_id": null,
+      "method": "median-caption-raster-appearance"
+    },
+    "box_color": {
+      "status": "unknown",
+      "source_field": "box_color",
+      "source_value": null,
+      "applied_value": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "caption_id": null,
+      "method": "median-caption-raster-appearance"
+    },
+    "shadow": {
+      "status": "unknown",
+      "source_field": "shadow",
+      "source_value": {
+        "status": "unknown"
+      },
+      "applied_value": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "caption_id": null,
+      "method": "median-caption-raster-appearance"
+    },
+    "highlight": {
+      "status": "implementation_choice",
+      "source_field": "highlight",
+      "source_value": null,
+      "applied_value": [
+        254,
+        255,
+        255
+      ],
+      "caption_id": null,
+      "method": "analysis record; see implementation choices for substitutions"
+    }
+  }
+}

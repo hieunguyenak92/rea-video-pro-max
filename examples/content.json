@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "kind": "rea-video-content",
+  "width": 640,
+  "height": 360,
+  "fps": 24,
+  "audio": "new-audio.wav",
+  "scenes": [
+    {
+      "id": "idea",
+      "text": "BUILD A FRESH IDEA",
+      "asset": "new-0.png",
+      "duration": 3
+    },
+    {
+      "id": "craft",
+      "text": "EDIT WITH CLEAR INTENT",
+      "asset": "new-footage.mp4",
+      "duration": 3.6
+    },
+    {
+      "id": "publish",
+      "text": "CREATE YOUR OWN STORY",
+      "asset": "new-2.png",
+      "duration": 4.2
+    }
+  ]
+}

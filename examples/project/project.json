@@ -1,0 +1,1237 @@
+{
+  "schema_version": 1,
+  "kind": "rea-video-project",
+  "render": {
+    "width": 640,
+    "height": 360,
+    "fps": 24.0,
+    "duration": 10.8,
+    "frame_count": 260,
+    "encoder": "libx264",
+    "pixel_format": "yuv420p"
+  },
+  "style": {
+    "font_size_ratio": 0.088889,
+    "fill": [
+      254,
+      255,
+      255
+    ],
+    "stroke": [
+      3,
+      5,
+      11
+    ],
+    "stroke_width_ratio": 0.005556,
+    "anchor": "bottom",
+    "anchor_x": 0.5,
+    "anchor_y": 0.801389,
+    "max_width_ratio": 0.88,
+    "box_color": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "shadow": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "highlight": [
+      254,
+      255,
+      255
+    ],
+    "entry": "static",
+    "entry_duration": 0.18,
+    "words_per_group": 3,
+    "line_height": 1.0
+  },
+  "motion": {
+    "family": "static",
+    "panzoom": 0,
+    "scale_ratio": 1,
+    "easing": "linear",
+    "status": "implementation_choice",
+    "shot_id": "shot-0001",
+    "evidence": [
+      "frame-00000000",
+      "frame-00000001",
+      "frame-00000002",
+      "frame-00000003",
+      "frame-00000004",
+      "frame-00000005",
+      "frame-00000006",
+      "frame-00000012",
+      "frame-00000018",
+      "frame-00000024",
+      "frame-00000030",
+      "frame-00000036",
+      "frame-00000042",
+      "frame-00000048",
+      "frame-00000049",
+      "frame-00000050",
+      "frame-00000051",
+      "frame-00000052",
+      "frame-00000053",
+      "frame-00000054"
+    ],
+    "pattern": [
+      {
+        "family": "static",
+        "panzoom": 0,
+        "scale_ratio": 1,
+        "easing": "linear",
+        "status": "implementation_choice",
+        "shot_id": "shot-0001",
+        "evidence": [
+          "frame-00000000",
+          "frame-00000001",
+          "frame-00000002",
+          "frame-00000003",
+          "frame-00000004",
+          "frame-00000005",
+          "frame-00000006",
+          "frame-00000012",
+          "frame-00000018",
+          "frame-00000024",
+          "frame-00000030",
+          "frame-00000036",
+          "frame-00000042",
+          "frame-00000048",
+          "frame-00000049",
+          "frame-00000050",
+          "frame-00000051",
+          "frame-00000052",
+          "frame-00000053",
+          "frame-00000054"
+        ]
+      },
+      {
+        "family": "static",
+        "panzoom": 0,
+        "scale_ratio": 1,
+        "easing": "linear",
+        "status": "implementation_choice",
+        "shot_id": "shot-0002",
+        "evidence": [
+          "frame-00000060",
+          "frame-00000061",
+          "frame-00000062",
+          "frame-00000063",
+          "frame-00000064",
+          "frame-00000065",
+          "frame-00000066",
+          "frame-00000072",
+          "frame-00000078",
+          "frame-00000084",
+          "frame-00000090",
+          "frame-00000096",
+          "frame-00000102",
+          "frame-00000108",
+          "frame-00000114",
+          "frame-00000120",
+          "frame-00000121",
+          "frame-00000122",
+          "frame-00000123",
+          "frame-00000124",
+          "frame-00000125",
+          "frame-00000126"
+        ]
+      },
+      {
+        "family": "static",
+        "panzoom": 0,
+        "scale_ratio": 1,
+        "easing": "linear",
+        "status": "implementation_choice",
+        "shot_id": "shot-0003",
+        "evidence": [
+          "frame-00000132",
+          "frame-00000133",
+          "frame-00000134",
+          "frame-00000135",
+          "frame-00000136",
+          "frame-00000137",
+          "frame-00000138",
+          "frame-00000144",
+          "frame-00000150",
+          "frame-00000156",
+          "frame-00000162",
+          "frame-00000168",
+          "frame-00000174",
+          "frame-00000180",
+          "frame-00000186",
+          "frame-00000192",
+          "frame-00000198",
+          "frame-00000204",
+          "frame-00000205",
+          "frame-00000206",
+          "frame-00000207",
+          "frame-00000208",
+          "frame-00000209",
+          "frame-00000210"
+        ]
+      }
+    ],
+    "reference_candidates": [
+      {
+        "shot_id": "shot-0001",
+        "status": "model-derived",
+        "evidence": [
+          "frame-00000000",
+          "frame-00000001",
+          "frame-00000002",
+          "frame-00000003",
+          "frame-00000004",
+          "frame-00000005",
+          "frame-00000006",
+          "frame-00000012",
+          "frame-00000018",
+          "frame-00000024",
+          "frame-00000030",
+          "frame-00000036",
+          "frame-00000042",
+          "frame-00000048",
+          "frame-00000049",
+          "frame-00000050",
+          "frame-00000051",
+          "frame-00000052",
+          "frame-00000053",
+          "frame-00000054"
+        ]
+      },
+      {
+        "shot_id": "shot-0002",
+        "family": "ease-in-out_apparent_transform_candidate",
+        "displacement": [
+          -0.04567608741637175,
+          -0.0016525940828453637
+        ],
+        "status": "model-derived",
+        "evidence": [
+          "frame-00000060",
+          "frame-00000061",
+          "frame-00000062",
+          "frame-00000063",
+          "frame-00000064",
+          "frame-00000065",
+          "frame-00000066",
+          "frame-00000072",
+          "frame-00000078",
+          "frame-00000084",
+          "frame-00000090",
+          "frame-00000096",
+          "frame-00000102",
+          "frame-00000108",
+          "frame-00000114",
+          "frame-00000120",
+          "frame-00000121",
+          "frame-00000122",
+          "frame-00000123",
+          "frame-00000124",
+          "frame-00000125",
+          "frame-00000126"
+        ],
+        "curve": {
+          "status": "model-derived",
+          "family": "ease-in-out",
+          "held_out_rmse_normalized": 0.00156184,
+          "complexity_penalty": 0.0005,
+          "selection_score": 0.00206184,
+          "coefficients": [
+            [
+              0.998593713,
+              -0.001649337,
+              -0.000244731,
+              0.00119426,
+              0.998111934,
+              0.00032396
+            ],
+            [
+              -0.009213092,
+              0.131928936,
+              -0.103897598,
+              0.000695792,
+              0.003078349,
+              -0.003408533
+            ]
+          ],
+          "candidates": [
+            {
+              "family": "constant",
+              "held_out_rmse_normalized": 0.02489907,
+              "complexity_penalty": 0.00025,
+              "selection_score": 0.02514907,
+              "coefficients": [
+                [
+                  0.993882013,
+                  0.0658209,
+                  -0.053379365,
+                  0.001550097,
+                  0.999686243,
+                  -0.00141921
+                ]
+              ]
+            },
+            {
+              "family": "linear",
+              "held_out_rmse_normalized": 0.00176936,
+              "complexity_penalty": 0.0005,
+              "selection_score": 0.00226936,
+              "coefficients": [
+                [
+                  0.999053544,
+                  -0.008624637,
+                  0.005307665,
+                  0.001122709,
+                  0.997993941,
+                  0.000501481
+                ],
+                [
+                  -0.010118212,
+                  0.145654312,
+                  -0.11482245,
+                  0.000836193,
+                  0.003311027,
+                  -0.003757873
+                ]
+              ]
+            },
+            {
+              "family": "ease-in-out",
+              "held_out_rmse_normalized": 0.00156184,
+              "complexity_penalty": 0.0005,
+              "selection_score": 0.00206184,
+              "coefficients": [
+                [
+                  0.998593713,
+                  -0.001649337,
+                  -0.000244731,
+                  0.00119426,
+                  0.998111934,
+                  0.00032396
+                ],
+                [
+                  -0.009213092,
+                  0.131928936,
+                  -0.103897598,
+                  0.000695792,
+                  0.003078349,
+                  -0.003408533
+                ]
+              ]
+            }
+          ],
+          "training_samples": 15,
+          "held_out_samples": 7,
+          "observed_range": [
+            2.5,
+            5.25
+          ],
+          "basis": "constant: [1]; linear: [1,u]; ease-in-out: [1,u*u*(3-2*u)]; u=(t-start)/(end-start)",
+          "value_coordinates": "row-major first two rows of normalized forward cumulative transform",
+          "limits": "curve family describes observed image-space trajectory; original animation keys and easing remain unknown"
+        }
+      },
+      {
+        "shot_id": "shot-0003",
+        "status": "model-derived",
+        "evidence": [
+          "frame-00000132",
+          "frame-00000133",
+          "frame-00000134",
+          "frame-00000135",
+          "frame-00000136",
+          "frame-00000137",
+          "frame-00000138",
+          "frame-00000144",
+          "frame-00000150",
+          "frame-00000156",
+          "frame-00000162",
+          "frame-00000168",
+          "frame-00000174",
+          "frame-00000180",
+          "frame-00000186",
+          "frame-00000192",
+          "frame-00000198",
+          "frame-00000204",
+          "frame-00000205",
+          "frame-00000206",
+          "frame-00000207",
+          "frame-00000208",
+          "frame-00000209",
+          "frame-00000210"
+        ]
+      }
+    ]
+  },
+  "style_schedule": {
+    "method": "relative-reference-progress",
+    "status": "implementation_choice",
+    "typography": "choose observed appearance at each NEW cue midpoint; use first appearance before observed start and hold nearest earlier appearance through gaps",
+    "highlight": "choose discrete palette at each NEW word midpoint; explicit scene accent overrides",
+    "limits": "new content has new cue/word times; reference word timestamps are never copied; sparse regime boundaries remain inferred"
+  },
+  "highlight_palette": {
+    "colors": [],
+    "regimes": [],
+    "status": "unknown",
+    "method": "discrete observed palette; nearby RGB observations share first representative, never averaged",
+    "coverage": {
+      "reference_captions": 3,
+      "captions_examined": 3,
+      "appearance_variants": 3,
+      "appearance_variants_omitted": 0,
+      "color_limit": 64,
+      "regime_limit": 256
+    },
+    "limits": "sparse appearance evidence; shot boundaries/gap extension and B word scheduling are inferred, not recovered word timestamps"
+  },
+  "scenes": [
+    {
+      "id": "idea",
+      "start": 0.0,
+      "end": 3.0,
+      "duration": 3.0,
+      "text": "BUILD A FRESH IDEA",
+      "title": "",
+      "asset": {
+        "path": "assets/media-4fde4378cdbb8e0b2abd.png",
+        "sha256": "4fde4378cdbb8e0b2abd8234a019582b3d3be6b2d8797413d36cca7f48e571ad",
+        "bytes": 14266,
+        "role": "media",
+        "origin": "new-content-supplied",
+        "type": "image"
+      },
+      "background": [
+        17,
+        24,
+        39
+      ],
+      "accent": [
+        254,
+        255,
+        255
+      ],
+      "accent_explicit": false,
+      "asset_start": 0.0,
+      "video_end_policy": "hold-last",
+      "motion": {
+        "family": "static",
+        "panzoom": 0,
+        "scale_ratio": 1,
+        "easing": "linear",
+        "status": "implementation_choice",
+        "shot_id": "shot-0001",
+        "evidence": [
+          "frame-00000000",
+          "frame-00000001",
+          "frame-00000002",
+          "frame-00000003",
+          "frame-00000004",
+          "frame-00000005",
+          "frame-00000006",
+          "frame-00000012",
+          "frame-00000018",
+          "frame-00000024",
+          "frame-00000030",
+          "frame-00000036",
+          "frame-00000042",
+          "frame-00000048",
+          "frame-00000049",
+          "frame-00000050",
+          "frame-00000051",
+          "frame-00000052",
+          "frame-00000053",
+          "frame-00000054"
+        ]
+      },
+      "transition": {
+        "family": "cut",
+        "duration": 0
+      },
+      "captions": [
+        {
+          "text": "BUILD A FRESH",
+          "start": 0.0,
+          "end": 2.2,
+          "words": [
+            {
+              "text": "BUILD",
+              "start": 0.0,
+              "end": 1.0,
+              "timing": "estimated-from-new-text"
+            },
+            {
+              "text": "A",
+              "start": 1.0,
+              "end": 1.2,
+              "timing": "estimated-from-new-text"
+            },
+            {
+              "text": "FRESH",
+              "start": 1.2,
+              "end": 2.2,
+              "timing": "estimated-from-new-text"
+            }
+          ],
+          "style": {
+            "font_size_ratio": 0.088889,
+            "fill": [
+              254,
+              255,
+              255
+            ],
+            "stroke": [
+              2,
+              5,
+              11
+            ],
+            "stroke_width_ratio": 0.005556,
+            "anchor": "bottom",
+            "box_color": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "anchor_x": 0.498437,
+            "anchor_y": 0.801389,
+            "entry": "static",
+            "line_height": 1.0
+          },
+          "style_variant_id": "appearance-1"
+        },
+        {
+          "text": "IDEA",
+          "start": 2.2,
+          "end": 3.0,
+          "words": [
+            {
+              "text": "IDEA",
+              "start": 2.2,
+              "end": 3.0,
+              "timing": "estimated-from-new-text"
+            }
+          ],
+          "style": {
+            "font_size_ratio": 0.088889,
+            "fill": [
+              254,
+              255,
+              255
+            ],
+            "stroke": [
+              2,
+              5,
+              11
+            ],
+            "stroke_width_ratio": 0.005556,
+            "anchor": "bottom",
+            "box_color": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "anchor_x": 0.498437,
+            "anchor_y": 0.801389,
+            "entry": "static",
+            "line_height": 1.0
+          },
+          "style_variant_id": "appearance-1"
+        }
+      ]
+    },
+    {
+      "id": "craft",
+      "start": 3.0,
+      "end": 6.6,
+      "duration": 3.6,
+      "text": "EDIT WITH CLEAR INTENT",
+      "title": "",
+      "asset": {
+        "path": "assets/media-7d78400b1457533abd6b.mp4",
+        "sha256": "7d78400b1457533abd6be913f08a0c32f97b24b1d0f8e8dd5c0e2945800aa98e",
+        "bytes": 24529,
+        "role": "media",
+        "origin": "new-content-supplied",
+        "type": "video"
+      },
+      "background": [
+        17,
+        24,
+        39
+      ],
+      "accent": [
+        254,
+        255,
+        255
+      ],
+      "accent_explicit": false,
+      "asset_start": 0.0,
+      "video_end_policy": "hold-last",
+      "motion": {
+        "family": "static",
+        "panzoom": 0,
+        "scale_ratio": 1,
+        "easing": "linear",
+        "status": "implementation_choice",
+        "shot_id": "shot-0002",
+        "evidence": [
+          "frame-00000060",
+          "frame-00000061",
+          "frame-00000062",
+          "frame-00000063",
+          "frame-00000064",
+          "frame-00000065",
+          "frame-00000066",
+          "frame-00000072",
+          "frame-00000078",
+          "frame-00000084",
+          "frame-00000090",
+          "frame-00000096",
+          "frame-00000102",
+          "frame-00000108",
+          "frame-00000114",
+          "frame-00000120",
+          "frame-00000121",
+          "frame-00000122",
+          "frame-00000123",
+          "frame-00000124",
+          "frame-00000125",
+          "frame-00000126"
+        ]
+      },
+      "transition": {
+        "family": "cut",
+        "duration": 0
+      },
+      "captions": [
+        {
+          "text": "EDIT WITH CLEAR",
+          "start": 0.0,
+          "end": 2.463157894736842,
+          "words": [
+            {
+              "text": "EDIT",
+              "start": 0.0,
+              "end": 0.7578947368421053,
+              "timing": "estimated-from-new-text"
+            },
+            {
+              "text": "WITH",
+              "start": 0.7578947368421053,
+              "end": 1.5157894736842106,
+              "timing": "estimated-from-new-text"
+            },
+            {
+              "text": "CLEAR",
+              "start": 1.5157894736842106,
+              "end": 2.463157894736842,
+              "timing": "estimated-from-new-text"
+            }
+          ],
+          "style": {
+            "font_size_ratio": 0.088889,
+            "fill": [
+              255,
+              255,
+              255
+            ],
+            "stroke": [
+              7,
+              4,
+              11
+            ],
+            "stroke_width_ratio": 0.005556,
+            "anchor": "bottom",
+            "box_color": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "anchor_x": 0.5,
+            "anchor_y": 0.801389,
+            "entry": "static",
+            "line_height": 1.0
+          },
+          "style_variant_id": "appearance-2"
+        },
+        {
+          "text": "INTENT",
+          "start": 2.463157894736842,
+          "end": 3.6,
+          "words": [
+            {
+              "text": "INTENT",
+              "start": 2.463157894736842,
+              "end": 3.6,
+              "timing": "estimated-from-new-text"
+            }
+          ],
+          "style": {
+            "font_size_ratio": 0.088889,
+            "fill": [
+              255,
+              255,
+              255
+            ],
+            "stroke": [
+              7,
+              4,
+              11
+            ],
+            "stroke_width_ratio": 0.005556,
+            "anchor": "bottom",
+            "box_color": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "anchor_x": 0.5,
+            "anchor_y": 0.801389,
+            "entry": "static",
+            "line_height": 1.0
+          },
+          "style_variant_id": "appearance-2"
+        }
+      ]
+    },
+    {
+      "id": "publish",
+      "start": 6.6,
+      "end": 10.8,
+      "duration": 4.2,
+      "text": "CREATE YOUR OWN STORY",
+      "title": "",
+      "asset": {
+        "path": "assets/media-800c06b64c0963e18a8b.png",
+        "sha256": "800c06b64c0963e18a8b4de15b0ca50292aa9dc33147b85253011b4bba874786",
+        "bytes": 11871,
+        "role": "media",
+        "origin": "new-content-supplied",
+        "type": "image"
+      },
+      "background": [
+        17,
+        24,
+        39
+      ],
+      "accent": [
+        254,
+        255,
+        255
+      ],
+      "accent_explicit": false,
+      "asset_start": 0.0,
+      "video_end_policy": "hold-last",
+      "motion": {
+        "family": "static",
+        "panzoom": 0,
+        "scale_ratio": 1,
+        "easing": "linear",
+        "status": "implementation_choice",
+        "shot_id": "shot-0003",
+        "evidence": [
+          "frame-00000132",
+          "frame-00000133",
+          "frame-00000134",
+          "frame-00000135",
+          "frame-00000136",
+          "frame-00000137",
+          "frame-00000138",
+          "frame-00000144",
+          "frame-00000150",
+          "frame-00000156",
+          "frame-00000162",
+          "frame-00000168",
+          "frame-00000174",
+          "frame-00000180",
+          "frame-00000186",
+          "frame-00000192",
+          "frame-00000198",
+          "frame-00000204",
+          "frame-00000205",
+          "frame-00000206",
+          "frame-00000207",
+          "frame-00000208",
+          "frame-00000209",
+          "frame-00000210"
+        ]
+      },
+      "transition": {
+        "family": "cut",
+        "duration": 0
+      },
+      "captions": [
+        {
+          "text": "CREATE YOUR OWN",
+          "start": 0.0,
+          "end": 3.0333333333333337,
+          "words": [
+            {
+              "text": "CREATE",
+              "start": 0.0,
+              "end": 1.4000000000000001,
+              "timing": "estimated-from-new-text"
+            },
+            {
+              "text": "YOUR",
+              "start": 1.4000000000000001,
+              "end": 2.3333333333333335,
+              "timing": "estimated-from-new-text"
+            },
+            {
+              "text": "OWN",
+              "start": 2.3333333333333335,
+              "end": 3.0333333333333337,
+              "timing": "estimated-from-new-text"
+            }
+          ],
+          "style": {
+            "font_size_ratio": 0.088889,
+            "fill": [
+              254,
+              255,
+              255
+            ],
+            "stroke": [
+              3,
+              7,
+              8
+            ],
+            "stroke_width_ratio": 0.005556,
+            "anchor": "bottom",
+            "box_color": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "anchor_x": 0.500781,
+            "anchor_y": 0.801389,
+            "entry": "static",
+            "line_height": 1.0
+          },
+          "style_variant_id": "appearance-3"
+        },
+        {
+          "text": "STORY",
+          "start": 3.0333333333333337,
+          "end": 4.2,
+          "words": [
+            {
+              "text": "STORY",
+              "start": 3.0333333333333337,
+              "end": 4.2,
+              "timing": "estimated-from-new-text"
+            }
+          ],
+          "style": {
+            "font_size_ratio": 0.088889,
+            "fill": [
+              254,
+              255,
+              255
+            ],
+            "stroke": [
+              3,
+              7,
+              8
+            ],
+            "stroke_width_ratio": 0.005556,
+            "anchor": "bottom",
+            "box_color": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "anchor_x": 0.500781,
+            "anchor_y": 0.801389,
+            "entry": "static",
+            "line_height": 1.0
+          },
+          "style_variant_id": "appearance-3"
+        }
+      ]
+    }
+  ],
+  "captions": [
+    {
+      "id": "idea-caption-1",
+      "scene_id": "idea",
+      "text": "BUILD A FRESH",
+      "start": 0.0,
+      "end": 2.2,
+      "timing": "estimated-from-new-text",
+      "words": [
+        {
+          "text": "BUILD",
+          "start": 0.0,
+          "end": 1.0,
+          "timing": "estimated-from-new-text"
+        },
+        {
+          "text": "A",
+          "start": 1.0,
+          "end": 1.2,
+          "timing": "estimated-from-new-text"
+        },
+        {
+          "text": "FRESH",
+          "start": 1.2,
+          "end": 2.2,
+          "timing": "estimated-from-new-text"
+        }
+      ],
+      "style": {
+        "font_size_ratio": 0.088889,
+        "fill": [
+          254,
+          255,
+          255
+        ],
+        "stroke": [
+          2,
+          5,
+          11
+        ],
+        "stroke_width_ratio": 0.005556,
+        "anchor": "bottom",
+        "box_color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_x": 0.498437,
+        "anchor_y": 0.801389,
+        "entry": "static",
+        "line_height": 1.0
+      },
+      "style_variant_id": "appearance-1"
+    },
+    {
+      "id": "idea-caption-2",
+      "scene_id": "idea",
+      "text": "IDEA",
+      "start": 2.2,
+      "end": 3.0,
+      "timing": "estimated-from-new-text",
+      "words": [
+        {
+          "text": "IDEA",
+          "start": 2.2,
+          "end": 3.0,
+          "timing": "estimated-from-new-text"
+        }
+      ],
+      "style": {
+        "font_size_ratio": 0.088889,
+        "fill": [
+          254,
+          255,
+          255
+        ],
+        "stroke": [
+          2,
+          5,
+          11
+        ],
+        "stroke_width_ratio": 0.005556,
+        "anchor": "bottom",
+        "box_color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_x": 0.498437,
+        "anchor_y": 0.801389,
+        "entry": "static",
+        "line_height": 1.0
+      },
+      "style_variant_id": "appearance-1"
+    },
+    {
+      "id": "craft-caption-3",
+      "scene_id": "craft",
+      "text": "EDIT WITH CLEAR",
+      "start": 3.0,
+      "end": 5.463157894736842,
+      "timing": "estimated-from-new-text",
+      "words": [
+        {
+          "text": "EDIT",
+          "start": 3.0,
+          "end": 3.7578947368421054,
+          "timing": "estimated-from-new-text"
+        },
+        {
+          "text": "WITH",
+          "start": 3.7578947368421054,
+          "end": 4.515789473684211,
+          "timing": "estimated-from-new-text"
+        },
+        {
+          "text": "CLEAR",
+          "start": 4.515789473684211,
+          "end": 5.463157894736842,
+          "timing": "estimated-from-new-text"
+        }
+      ],
+      "style": {
+        "font_size_ratio": 0.088889,
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "stroke": [
+          7,
+          4,
+          11
+        ],
+        "stroke_width_ratio": 0.005556,
+        "anchor": "bottom",
+        "box_color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_x": 0.5,
+        "anchor_y": 0.801389,
+        "entry": "static",
+        "line_height": 1.0
+      },
+      "style_variant_id": "appearance-2"
+    },
+    {
+      "id": "craft-caption-4",
+      "scene_id": "craft",
+      "text": "INTENT",
+      "start": 5.463157894736842,
+      "end": 6.6,
+      "timing": "estimated-from-new-text",
+      "words": [
+        {
+          "text": "INTENT",
+          "start": 5.463157894736842,
+          "end": 6.6,
+          "timing": "estimated-from-new-text"
+        }
+      ],
+      "style": {
+        "font_size_ratio": 0.088889,
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "stroke": [
+          7,
+          4,
+          11
+        ],
+        "stroke_width_ratio": 0.005556,
+        "anchor": "bottom",
+        "box_color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_x": 0.5,
+        "anchor_y": 0.801389,
+        "entry": "static",
+        "line_height": 1.0
+      },
+      "style_variant_id": "appearance-2"
+    },
+    {
+      "id": "publish-caption-5",
+      "scene_id": "publish",
+      "text": "CREATE YOUR OWN",
+      "start": 6.6,
+      "end": 9.633333333333333,
+      "timing": "estimated-from-new-text",
+      "words": [
+        {
+          "text": "CREATE",
+          "start": 6.6,
+          "end": 8.0,
+          "timing": "estimated-from-new-text"
+        },
+        {
+          "text": "YOUR",
+          "start": 8.0,
+          "end": 8.933333333333334,
+          "timing": "estimated-from-new-text"
+        },
+        {
+          "text": "OWN",
+          "start": 8.933333333333334,
+          "end": 9.633333333333333,
+          "timing": "estimated-from-new-text"
+        }
+      ],
+      "style": {
+        "font_size_ratio": 0.088889,
+        "fill": [
+          254,
+          255,
+          255
+        ],
+        "stroke": [
+          3,
+          7,
+          8
+        ],
+        "stroke_width_ratio": 0.005556,
+        "anchor": "bottom",
+        "box_color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_x": 0.500781,
+        "anchor_y": 0.801389,
+        "entry": "static",
+        "line_height": 1.0
+      },
+      "style_variant_id": "appearance-3"
+    },
+    {
+      "id": "publish-caption-6",
+      "scene_id": "publish",
+      "text": "STORY",
+      "start": 9.633333333333333,
+      "end": 10.8,
+      "timing": "estimated-from-new-text",
+      "words": [
+        {
+          "text": "STORY",
+          "start": 9.633333333333333,
+          "end": 10.8,
+          "timing": "estimated-from-new-text"
+        }
+      ],
+      "style": {
+        "font_size_ratio": 0.088889,
+        "fill": [
+          254,
+          255,
+          255
+        ],
+        "stroke": [
+          3,
+          7,
+          8
+        ],
+        "stroke_width_ratio": 0.005556,
+        "anchor": "bottom",
+        "box_color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_x": 0.500781,
+        "anchor_y": 0.801389,
+        "entry": "static",
+        "line_height": 1.0
+      },
+      "style_variant_id": "appearance-3"
+    }
+  ],
+  "font": {
+    "path": "assets/font-7f738fe5c43c8872807b.ttf",
+    "sha256": "7f738fe5c43c8872807b20e2d30d42163618de8a4daf7f48a939adac32c16847",
+    "bytes": 140300,
+    "role": "font",
+    "origin": "new-content-supplied"
+  },
+  "audio": {
+    "path": "assets/audio-80736f49c0da4d4cbb8b.wav",
+    "sha256": "80736f49c0da4d4cbb8be6a1a8803e2e5d229155b54850c30ac53f424b685355",
+    "bytes": 1036844,
+    "role": "audio",
+    "origin": "new-content-supplied",
+    "offset": 0.0
+  },
+  "assets": [
+    {
+      "path": "assets/font-7f738fe5c43c8872807b.ttf",
+      "sha256": "7f738fe5c43c8872807b20e2d30d42163618de8a4daf7f48a939adac32c16847",
+      "bytes": 140300,
+      "role": "font",
+      "origin": "new-content-supplied"
+    },
+    {
+      "path": "assets/media-4fde4378cdbb8e0b2abd.png",
+      "sha256": "4fde4378cdbb8e0b2abd8234a019582b3d3be6b2d8797413d36cca7f48e571ad",
+      "bytes": 14266,
+      "role": "media",
+      "origin": "new-content-supplied",
+      "type": "image"
+    },
+    {
+      "path": "assets/media-7d78400b1457533abd6b.mp4",
+      "sha256": "7d78400b1457533abd6be913f08a0c32f97b24b1d0f8e8dd5c0e2945800aa98e",
+      "bytes": 24529,
+      "role": "media",
+      "origin": "new-content-supplied",
+      "type": "video"
+    },
+    {
+      "path": "assets/media-800c06b64c0963e18a8b.png",
+      "sha256": "800c06b64c0963e18a8b4de15b0ca50292aa9dc33147b85253011b4bba874786",
+      "bytes": 11871,
+      "role": "media",
+      "origin": "new-content-supplied",
+      "type": "image"
+    },
+    {
+      "path": "assets/audio-80736f49c0da4d4cbb8b.wav",
+      "sha256": "80736f49c0da4d4cbb8be6a1a8803e2e5d229155b54850c30ac53f424b685355",
+      "bytes": 1036844,
+      "role": "audio",
+      "origin": "new-content-supplied",
+      "offset": 0.0
+    }
+  ],
+  "timing_policy": "relative",
+  "reference": {
+    "sha256": "e179338ef69c969d396adfb2527e6ec801f8cddc297da0a8e5fcb34d1295ecdc",
+    "width": 640.0,
+    "height": 360.0,
+    "duration": 9.0,
+    "content_policy": "analysis-only; never implicit render media"
+  },
+  "template_sha256": "99d5a56873fe0ce2849812dd3287f5e43999a65a364a5d9a0519223af8ae2ad1",
+  "content_sha256": "1787b5cffc03be590cff2c03c8fede4f25b1e341e5effa1ab0978e0f8fb1ca0b",
+  "provenance": {
+    "content": "explicit-new-content-bindings",
+    "reference_media_reused": false,
+    "reference_reuse_authorized": false,
+    "reference_path_included": false
+  },
+  "speech_provenance": null,
+  "limits": {
+    "caption_timing": "character-weighted estimates unless scene.words supplied; not ASR alignment",
+    "shaping": "complex scripts require Pillow RAQM and a suitable supplied font; missing glyphs rejected",
+    "video_audio": "muted; supply an explicit audio binding",
+    "video_end": "hold final decoded frame if asset is shorter than scene",
+    "effects": "2D static/panzoom plus caption static/fade/pop/slide and cut/dissolve/fade/wipe subset",
+    "footage_geometry": "square pixels; rotated or anamorphic footage is rejected; prepare upright square-pixel media first"
+  }
+}

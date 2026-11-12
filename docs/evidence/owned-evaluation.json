@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "kind": "rea-video-owned-evaluation",
+  "status": "passed",
+  "source_sha256": "e179338ef69c969d396adfb2527e6ec801f8cddc297da0a8e5fcb34d1295ecdc",
+  "gates": [
+    {
+      "name": "hard-cut-F1",
+      "value": 1.0,
+      "minimum": 0.95,
+      "passed": true
+    },
+    {
+      "name": "clean-caption-CER",
+      "value": 0.0,
+      "maximum": 0.05,
+      "passed": true
+    },
+    {
+      "name": "cue-boundary-max-seconds",
+      "value": 0.0,
+      "maximum": 0.041666666666666664,
+      "passed": true
+    },
+    {
+      "name": "caption-anchor-y-error",
+      "value": 0.0013889999999999736,
+      "maximum": 0.04,
+      "passed": true
+    },
+    {
+      "name": "requested-signal-coverage",
+      "passed": true
+    }
+  ],
+  "details": {
+    "cut_errors_seconds": [
+      0.0,
+      0.0
+    ],
+    "cut_precision": 1.0,
+    "cut_recall": 1.0,
+    "cue_boundary_errors_seconds": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "cue_boundary_median_seconds": 0.0,
+    "actual_caption_text": "watch the rhythm read the moment make something new",
+    "expected_caption_text": "watch the rhythm read the moment make something new"
+  },
+  "limits": [
+    "Three owned clean caption/graphic scenes. Does not represent natural footage or broad genre accuracy.",
+    "Thresholds were authored in the fixture generator before the analysis run. This small corpus cannot substantiate broad genre/language or market superiority claims."
+  ]
+}

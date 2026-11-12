@@ -1,0 +1,342 @@
+{
+  "schema_version": 1,
+  "kind": "rea-video-transcript",
+  "status": "completed",
+  "channel": "audio-speech-asr",
+  "source": {
+    "path": "owned-English-speech.aiff (local fixture; not bundled)",
+    "sha256": "419b44980acb49e8b6287e078d6a4174d49b83335cf1b0aa15eb80a059e52441",
+    "bytes": 234268
+  },
+  "coverage": {
+    "stream_index": 0,
+    "first_audio_pts": 0,
+    "first_audio_time_base": "1/22050",
+    "first_audio_seconds": 0.0,
+    "clock_origin_seconds": 0.0,
+    "clock_origin_method": "first decoded audio presentation timestamp",
+    "sample_rate": 16000,
+    "samples": 83510,
+    "observed_samples": 83510,
+    "sample_sha256": "6c2a1d72b39e0b4e71d14069c573d5d0358bcf5b6e65f4ede44008c1cd82b6b5",
+    "sample_format": "little-endian float32 mono",
+    "start": 0,
+    "end": 5.219375,
+    "partial": false,
+    "max_seconds": 30.0,
+    "gaps": [],
+    "resampled_chunks_missing_pts": 0
+  },
+  "time_convention": "seconds from recorded clock origin; video start PTS when available, otherwise first audio PTS",
+  "text": "A fresh story begins today. We turn new ideas into clear video timelines.",
+  "segments": [
+    {
+      "id": "speech-1",
+      "start": 0.0,
+      "end": 4.88,
+      "text": "A fresh story begins today. We turn new ideas into clear video timelines.",
+      "words": [
+        {
+          "text": "A",
+          "start": 0.0,
+          "end": 0.26,
+          "status": "model-derived",
+          "method": "whisper-cross-attention-word-timestamps",
+          "model_probability": 0.7870287895202637,
+          "zero_duration": false
+        },
+        {
+          "text": "fresh",
+          "start": 0.26,
+          "end": 0.56,
+          "status": "model-derived",
+          "method": "whisper-cross-attention-word-timestamps",
+          "model_probability": 0.9619408249855042,
+          "zero_duration": false
+        },
+        {
+          "text": "story",
+          "start": 0.56,
+          "end": 0.94,
+          "status": "model-derived",
+          "method": "whisper-cross-attention-word-timestamps",
+          "model_probability": 0.9982450008392334,
+          "zero_duration": false
+        },
+        {
+          "text": "begins",
+          "start": 0.94,
+          "end": 1.32,
+          "status": "model-derived",
+          "method": "whisper-cross-attention-word-timestamps",
+          "model_probability": 0.9977037310600281,
+          "zero_duration": false
+        },
+        {
+          "text": "today.",
+          "start": 1.32,
+          "end": 1.84,
+          "status": "model-derived",
+          "method": "whisper-cross-attention-word-timestamps",
+          "model_probability": 0.9952921867370605,
+          "zero_duration": false
+        },
+        {
+          "text": "We",
+          "start": 2.18,
+          "end": 2.36,
+          "status": "model-derived",
+          "method": "whisper-cross-attention-word-timestamps",
+          "model_probability": 0.9654654860496521,
+          "zero_duration": false
+        },
+        {
+          "text": "turn",
+          "start": 2.36,
+          "end": 2.6,
+          "status": "model-derived",
+          "method": "whisper-cross-attention-word-timestamps",
+          "model_probability": 0.9899975061416626,
+          "zero_duration": false
+        },
+        {
+          "text": "new",
+          "start": 2.6,
+          "end": 2.9,
+          "status": "model-derived",
+          "method": "whisper-cross-attention-word-timestamps",
+          "model_probability": 0.9940892457962036,
+          "zero_duration": false
+        },
+        {
+          "text": "ideas",
+          "start": 2.9,
+          "end": 3.22,
+          "status": "model-derived",
+          "method": "whisper-cross-attention-word-timestamps",
+          "model_probability": 0.9986739158630371,
+          "zero_duration": false
+        },
+        {
+          "text": "into",
+          "start": 3.22,
+          "end": 3.6,
+          "status": "model-derived",
+          "method": "whisper-cross-attention-word-timestamps",
+          "model_probability": 0.9966534972190857,
+          "zero_duration": false
+        },
+        {
+          "text": "clear",
+          "start": 3.6,
+          "end": 3.9,
+          "status": "model-derived",
+          "method": "whisper-cross-attention-word-timestamps",
+          "model_probability": 0.9085726737976074,
+          "zero_duration": false
+        },
+        {
+          "text": "video",
+          "start": 3.9,
+          "end": 4.36,
+          "status": "model-derived",
+          "method": "whisper-cross-attention-word-timestamps",
+          "model_probability": 0.9972032308578491,
+          "zero_duration": false
+        },
+        {
+          "text": "timelines.",
+          "start": 4.36,
+          "end": 4.88,
+          "status": "model-derived",
+          "method": "whisper-cross-attention-word-timestamps",
+          "model_probability": 0.978235125541687,
+          "zero_duration": false
+        }
+      ],
+      "status": "model-derived",
+      "avg_log_probability": -0.2747936828268899,
+      "no_speech_model_probability": 0.017138879746198654
+    }
+  ],
+  "words": [
+    {
+      "text": "A",
+      "start": 0.0,
+      "end": 0.26,
+      "status": "model-derived",
+      "method": "whisper-cross-attention-word-timestamps",
+      "model_probability": 0.7870287895202637,
+      "zero_duration": false
+    },
+    {
+      "text": "fresh",
+      "start": 0.26,
+      "end": 0.56,
+      "status": "model-derived",
+      "method": "whisper-cross-attention-word-timestamps",
+      "model_probability": 0.9619408249855042,
+      "zero_duration": false
+    },
+    {
+      "text": "story",
+      "start": 0.56,
+      "end": 0.94,
+      "status": "model-derived",
+      "method": "whisper-cross-attention-word-timestamps",
+      "model_probability": 0.9982450008392334,
+      "zero_duration": false
+    },
+    {
+      "text": "begins",
+      "start": 0.94,
+      "end": 1.32,
+      "status": "model-derived",
+      "method": "whisper-cross-attention-word-timestamps",
+      "model_probability": 0.9977037310600281,
+      "zero_duration": false
+    },
+    {
+      "text": "today.",
+      "start": 1.32,
+      "end": 1.84,
+      "status": "model-derived",
+      "method": "whisper-cross-attention-word-timestamps",
+      "model_probability": 0.9952921867370605,
+      "zero_duration": false
+    },
+    {
+      "text": "We",
+      "start": 2.18,
+      "end": 2.36,
+      "status": "model-derived",
+      "method": "whisper-cross-attention-word-timestamps",
+      "model_probability": 0.9654654860496521,
+      "zero_duration": false
+    },
+    {
+      "text": "turn",
+      "start": 2.36,
+      "end": 2.6,
+      "status": "model-derived",
+      "method": "whisper-cross-attention-word-timestamps",
+      "model_probability": 0.9899975061416626,
+      "zero_duration": false
+    },
+    {
+      "text": "new",
+      "start": 2.6,
+      "end": 2.9,
+      "status": "model-derived",
+      "method": "whisper-cross-attention-word-timestamps",
+      "model_probability": 0.9940892457962036,
+      "zero_duration": false
+    },
+    {
+      "text": "ideas",
+      "start": 2.9,
+      "end": 3.22,
+      "status": "model-derived",
+      "method": "whisper-cross-attention-word-timestamps",
+      "model_probability": 0.9986739158630371,
+      "zero_duration": false
+    },
+    {
+      "text": "into",
+      "start": 3.22,
+      "end": 3.6,
+      "status": "model-derived",
+      "method": "whisper-cross-attention-word-timestamps",
+      "model_probability": 0.9966534972190857,
+      "zero_duration": false
+    },
+    {
+      "text": "clear",
+      "start": 3.6,
+      "end": 3.9,
+      "status": "model-derived",
+      "method": "whisper-cross-attention-word-timestamps",
+      "model_probability": 0.9085726737976074,
+      "zero_duration": false
+    },
+    {
+      "text": "video",
+      "start": 3.9,
+      "end": 4.36,
+      "status": "model-derived",
+      "method": "whisper-cross-attention-word-timestamps",
+      "model_probability": 0.9972032308578491,
+      "zero_duration": false
+    },
+    {
+      "text": "timelines.",
+      "start": 4.36,
+      "end": 4.88,
+      "status": "model-derived",
+      "method": "whisper-cross-attention-word-timestamps",
+      "model_probability": 0.978235125541687,
+      "zero_duration": false
+    }
+  ],
+  "language": {
+    "requested": "en",
+    "detected": "en",
+    "status": "model-derived",
+    "model_probability": 1.0,
+    "multilingual_model": false
+  },
+  "provider": {
+    "name": "faster-whisper",
+    "version": "1.2.1",
+    "runtime": "CTranslate2",
+    "runtime_version": "4.8.0",
+    "device": "cpu",
+    "compute_type": "int8",
+    "cpu_threads": 2,
+    "model_directory": "explicit-external-local-model (not bundled)",
+    "model_files": [
+      {
+        "name": "model.bin",
+        "bytes": 75537502,
+        "sha256": "1a5afae06a4db91c975c9a9d78be5cc110ee4ea022ad57d55492e4550e936b2a"
+      },
+      {
+        "name": "config.json",
+        "bytes": 2317,
+        "sha256": "14b1b421a90349bc551b881461426b561a874049cb9e4c4864f2ca384f6a7cc5"
+      },
+      {
+        "name": "tokenizer.json",
+        "bytes": 2128466,
+        "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+      },
+      {
+        "name": "vocabulary.txt",
+        "bytes": 422309,
+        "sha256": "ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf"
+      }
+    ],
+    "model_license": "not inferred; consult the local model supplier",
+    "network": "disabled; complete local model/tokenizer required",
+    "code_loading": "installed provider only; no model-adjacent Python/plugins"
+  },
+  "limits": [
+    "Speech text and word boundaries are model-derived; they are not visible subtitle OCR or measured ground truth.",
+    "Whisper can hallucinate, omit, reorder or mistranscribe speech; inspect important names, language and noisy/silent regions.",
+    "Word probabilities are model scores, not calibrated accuracy guarantees; timestamps are approximate cross-attention estimates, not forced alignment.",
+    "No speaker diarization, voice identity, source separation or verified speech/subtitle correspondence.",
+    "Native provider is CPU-only; model/language accuracy requires separate task evidence. Model weights are not bundled or downloaded.",
+    "Zero padding represents missing timestamped samples, not observed silence; large gaps can reduce transcription quality."
+  ],
+  "elapsed_seconds": 1.079,
+  "acceptance": {
+    "expected_words": 13,
+    "exact_normalized_word_sequence": true,
+    "provider_tests_passed": 22,
+    "model_supplier": "Systran/faster-whisper-tiny.en",
+    "model_revision": "0d3d19a32d3338f10357c0889762bd8d64bbdeba",
+    "model_license": "MIT",
+    "model_card": "https://huggingface.co/Systran/faster-whisper-tiny.en/tree/0d3d19a32d3338f10357c0889762bd8d64bbdeba",
+    "limits": "One owned English speech case; no claim all models/languages or forced-alignment accuracy. Audio/model not bundled."
+  }
+}

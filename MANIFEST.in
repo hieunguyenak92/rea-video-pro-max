@@ -1,0 +1,9 @@
+include LICENSE NOTICE CHANGELOG.md SECURITY.md CONTRIBUTING.md SUPPORT.md
+include README*.md
+recursive-include skills *.py *.md *.yaml *.json *.ttf *.txt
+recursive-include tools *.py
+recursive-include tests *.py
+recursive-include docs *.md
+exclude .DS_Store
+global-exclude *.py[cod]
+global-exclude __pycache__

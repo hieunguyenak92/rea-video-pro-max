@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "kind": "rea-video-unknowns",
+  "unknowns": [
+    {
+      "id": "original-project",
+      "status": "unknown",
+      "question": "Original editing software, source assets and unique layer/keyframe graph",
+      "reason": "flattened media does not uniquely identify the original project"
+    },
+    {
+      "id": "font-identity",
+      "status": "unknown",
+      "question": "Exact original font",
+      "reason": "font fitting searches only the bundled catalog; candidates are not identity proof"
+    },
+    {
+      "id": "production-origin",
+      "status": "unknown",
+      "question": "Filmed, AI-generated, 3D or hybrid origin",
+      "reason": "appearance statistics cannot certify production origin"
+    },
+    {
+      "id": "semantic-audio",
+      "status": "not_run",
+      "question": "Speech transcript, speaker and separated music/SFX",
+      "reason": "signal analysis only; no ASR/source-separation model called"
+    },
+    {
+      "id": "motion-scope",
+      "status": "unknown",
+      "question": "Perspective, original easing/keyframes and hidden masks",
+      "reason": "sampled similarity/affine and temporal curve candidates; perspective, camera/object identity, original keys and hidden layers remain unknown"
+    }
+  ]
+}

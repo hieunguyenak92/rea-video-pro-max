@@ -1,0 +1,344 @@
+{
+  "schema_version": 1,
+  "kind": "rea-video-subtitle-style",
+  "style": {
+    "font_family": "unknown",
+    "font_family_status": "unknown",
+    "font_size_ratio": 0.088889,
+    "font_size_method": "closed-catalog-raster-geometry-fit",
+    "fill": [
+      254,
+      255,
+      255
+    ],
+    "stroke": [
+      3,
+      5,
+      11
+    ],
+    "stroke_width_ratio": 0.005556,
+    "stroke_width_status": "estimated",
+    "stroke_width_method": "morphological-ink-neighbor-bands",
+    "stroke_band_support": [
+      0.4533,
+      0.8886,
+      0.1877
+    ],
+    "box_color": null,
+    "stroke_background_color_distance": 87.8351,
+    "anchor": "bottom",
+    "position": [
+      0.5,
+      0.801389
+    ],
+    "line_height_ratio": 0.063889,
+    "animation": "static",
+    "shadow": {
+      "status": "unknown"
+    },
+    "status": "estimated",
+    "method": "median-caption-raster-appearance",
+    "limitations": [
+      "font-size/stroke are approximate",
+      "compressed pixels do not identify original font",
+      "shadow and plate are not reliably separated"
+    ],
+    "font_size_ratio_status": "candidate",
+    "font_size_evidence": [
+      "frame-00000174"
+    ],
+    "render_font_candidate": "BeVietnamPro-Bold.ttf",
+    "font_size_limits": "compatible catalog rendering size fitted to observed glyph geometry; not the unknown original font em size",
+    "source_caption_ids": [
+      "text-0001",
+      "text-0002",
+      "text-0007"
+    ],
+    "font_candidates": [
+      {
+        "family": "Be Vietnam Pro",
+        "face": "Bold",
+        "font_file": "BeVietnamPro-Bold.ttf",
+        "font_sha256": "7f738fe5c43c8872807b20e2d30d42163618de8a4daf7f48a939adac32c16847",
+        "size_px": 32,
+        "glyph_iou": 0.78665,
+        "geometry_relative_error": 0.01299,
+        "fit_score": 0.78276,
+        "width_relative_error": 0.01299,
+        "height_relative_error": 0.0,
+        "size_semantics": "compatible catalog rendering size fitted to observed glyph geometry; not the unknown original font em size",
+        "status": "candidate",
+        "catalog_scope": "bundled OFL fonts only; original may not be present"
+      },
+      {
+        "family": "Be Vietnam Pro",
+        "face": "Regular",
+        "font_file": "BeVietnamPro-Regular.ttf",
+        "font_sha256": "cd1ef6e9d7db28ad5cdb88a65ccbe693870e60d340b791f349d248342b4fe4c3",
+        "size_px": 33,
+        "glyph_iou": 0.63012,
+        "geometry_relative_error": 0.08955,
+        "fit_score": 0.62065,
+        "width_relative_error": 0.0026,
+        "height_relative_error": 0.08696,
+        "size_semantics": "compatible catalog rendering size fitted to observed glyph geometry; not the unknown original font em size",
+        "status": "candidate",
+        "catalog_scope": "bundled OFL fonts only; original may not be present"
+      }
+    ]
+  },
+  "caption_styles": [
+    {
+      "id": "text-0001",
+      "style": {
+        "font_family": "unknown",
+        "font_family_status": "unknown",
+        "font_size_ratio": 0.088889,
+        "font_size_method": "closed-catalog-raster-geometry-fit",
+        "fill": [
+          254,
+          255,
+          255
+        ],
+        "stroke": [
+          2,
+          5,
+          11
+        ],
+        "stroke_width_ratio": 0.005556,
+        "stroke_width_status": "estimated",
+        "stroke_width_method": "morphological-ink-neighbor-bands",
+        "stroke_band_support": [
+          0.4481,
+          0.8828,
+          0.1512
+        ],
+        "box_color": null,
+        "stroke_background_color_distance": 89.8109,
+        "anchor": "bottom",
+        "position": [
+          0.498437,
+          0.801389
+        ],
+        "line_height_ratio": 0.063889,
+        "animation": "static",
+        "shadow": {
+          "status": "unknown"
+        },
+        "status": "estimated",
+        "method": "quantized-raster-contrast-and-neighbor-ring",
+        "limitations": [
+          "font-size/stroke are approximate",
+          "compressed pixels do not identify original font",
+          "shadow and plate are not reliably separated"
+        ],
+        "font_size_ratio_status": "candidate",
+        "font_size_evidence": [
+          "frame-00000030"
+        ],
+        "render_font_candidate": "BeVietnamPro-Bold.ttf",
+        "font_size_limits": "compatible catalog rendering size fitted to observed glyph geometry; not the unknown original font em size"
+      },
+      "font_candidates": [
+        {
+          "family": "Be Vietnam Pro",
+          "face": "Bold",
+          "font_file": "BeVietnamPro-Bold.ttf",
+          "font_sha256": "7f738fe5c43c8872807b20e2d30d42163618de8a4daf7f48a939adac32c16847",
+          "size_px": 32,
+          "glyph_iou": 0.87445,
+          "geometry_relative_error": 0.00862,
+          "fit_score": 0.87187,
+          "width_relative_error": 0.00862,
+          "height_relative_error": 0.0,
+          "size_semantics": "compatible catalog rendering size fitted to observed glyph geometry; not the unknown original font em size",
+          "status": "candidate",
+          "catalog_scope": "bundled OFL fonts only; original may not be present"
+        },
+        {
+          "family": "Be Vietnam Pro",
+          "face": "Regular",
+          "font_file": "BeVietnamPro-Regular.ttf",
+          "font_sha256": "cd1ef6e9d7db28ad5cdb88a65ccbe693870e60d340b791f349d248342b4fe4c3",
+          "size_px": 33,
+          "glyph_iou": 0.56504,
+          "geometry_relative_error": 0.0927,
+          "fit_score": 0.55462,
+          "width_relative_error": 0.00575,
+          "height_relative_error": 0.08696,
+          "size_semantics": "compatible catalog rendering size fitted to observed glyph geometry; not the unknown original font em size",
+          "status": "candidate",
+          "catalog_scope": "bundled OFL fonts only; original may not be present"
+        }
+      ]
+    },
+    {
+      "id": "text-0002",
+      "style": {
+        "font_family": "unknown",
+        "font_family_status": "unknown",
+        "font_size_ratio": 0.088889,
+        "font_size_method": "closed-catalog-raster-geometry-fit",
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "stroke": [
+          7,
+          4,
+          11
+        ],
+        "stroke_width_ratio": 0.005556,
+        "stroke_width_status": "estimated",
+        "stroke_width_method": "morphological-ink-neighbor-bands",
+        "stroke_band_support": [
+          0.4709,
+          0.9008,
+          0.1901
+        ],
+        "box_color": null,
+        "stroke_background_color_distance": 97.0258,
+        "anchor": "bottom",
+        "position": [
+          0.5,
+          0.801389
+        ],
+        "line_height_ratio": 0.063889,
+        "animation": "static",
+        "shadow": {
+          "status": "unknown"
+        },
+        "status": "estimated",
+        "method": "quantized-raster-contrast-and-neighbor-ring",
+        "limitations": [
+          "font-size/stroke are approximate",
+          "compressed pixels do not identify original font",
+          "shadow and plate are not reliably separated"
+        ],
+        "font_size_ratio_status": "candidate",
+        "font_size_evidence": [
+          "frame-00000096"
+        ],
+        "render_font_candidate": "BeVietnamPro-Bold.ttf",
+        "font_size_limits": "compatible catalog rendering size fitted to observed glyph geometry; not the unknown original font em size"
+      },
+      "font_candidates": [
+        {
+          "family": "Be Vietnam Pro",
+          "face": "Bold",
+          "font_file": "BeVietnamPro-Bold.ttf",
+          "font_sha256": "7f738fe5c43c8872807b20e2d30d42163618de8a4daf7f48a939adac32c16847",
+          "size_px": 32,
+          "glyph_iou": 0.7714,
+          "geometry_relative_error": 0.01572,
+          "fit_score": 0.76669,
+          "width_relative_error": 0.01572,
+          "height_relative_error": 0.0,
+          "size_semantics": "compatible catalog rendering size fitted to observed glyph geometry; not the unknown original font em size",
+          "status": "candidate",
+          "catalog_scope": "bundled OFL fonts only; original may not be present"
+        },
+        {
+          "family": "Be Vietnam Pro",
+          "face": "Regular",
+          "font_file": "BeVietnamPro-Regular.ttf",
+          "font_sha256": "cd1ef6e9d7db28ad5cdb88a65ccbe693870e60d340b791f349d248342b4fe4c3",
+          "size_px": 33,
+          "glyph_iou": 0.67766,
+          "geometry_relative_error": 0.08696,
+          "fit_score": 0.66897,
+          "width_relative_error": 0.0,
+          "height_relative_error": 0.08696,
+          "size_semantics": "compatible catalog rendering size fitted to observed glyph geometry; not the unknown original font em size",
+          "status": "candidate",
+          "catalog_scope": "bundled OFL fonts only; original may not be present"
+        }
+      ]
+    },
+    {
+      "id": "text-0007",
+      "style": {
+        "font_family": "unknown",
+        "font_family_status": "unknown",
+        "font_size_ratio": 0.088889,
+        "font_size_method": "closed-catalog-raster-geometry-fit",
+        "fill": [
+          254,
+          255,
+          255
+        ],
+        "stroke": [
+          3,
+          7,
+          8
+        ],
+        "stroke_width_ratio": 0.005556,
+        "stroke_width_status": "estimated",
+        "stroke_width_method": "morphological-ink-neighbor-bands",
+        "stroke_band_support": [
+          0.4533,
+          0.8886,
+          0.1877
+        ],
+        "box_color": null,
+        "stroke_background_color_distance": 87.8351,
+        "anchor": "bottom",
+        "position": [
+          0.500781,
+          0.801389
+        ],
+        "line_height_ratio": 0.063889,
+        "animation": "static",
+        "shadow": {
+          "status": "unknown"
+        },
+        "status": "estimated",
+        "method": "quantized-raster-contrast-and-neighbor-ring",
+        "limitations": [
+          "font-size/stroke are approximate",
+          "compressed pixels do not identify original font",
+          "shadow and plate are not reliably separated"
+        ],
+        "font_size_ratio_status": "candidate",
+        "font_size_evidence": [
+          "frame-00000174"
+        ],
+        "render_font_candidate": "BeVietnamPro-Bold.ttf",
+        "font_size_limits": "compatible catalog rendering size fitted to observed glyph geometry; not the unknown original font em size"
+      },
+      "font_candidates": [
+        {
+          "family": "Be Vietnam Pro",
+          "face": "Bold",
+          "font_file": "BeVietnamPro-Bold.ttf",
+          "font_sha256": "7f738fe5c43c8872807b20e2d30d42163618de8a4daf7f48a939adac32c16847",
+          "size_px": 32,
+          "glyph_iou": 0.78665,
+          "geometry_relative_error": 0.01299,
+          "fit_score": 0.78276,
+          "width_relative_error": 0.01299,
+          "height_relative_error": 0.0,
+          "size_semantics": "compatible catalog rendering size fitted to observed glyph geometry; not the unknown original font em size",
+          "status": "candidate",
+          "catalog_scope": "bundled OFL fonts only; original may not be present"
+        },
+        {
+          "family": "Be Vietnam Pro",
+          "face": "Regular",
+          "font_file": "BeVietnamPro-Regular.ttf",
+          "font_sha256": "cd1ef6e9d7db28ad5cdb88a65ccbe693870e60d340b791f349d248342b4fe4c3",
+          "size_px": 33,
+          "glyph_iou": 0.63012,
+          "geometry_relative_error": 0.08955,
+          "fit_score": 0.62065,
+          "width_relative_error": 0.0026,
+          "height_relative_error": 0.08696,
+          "size_semantics": "compatible catalog rendering size fitted to observed glyph geometry; not the unknown original font em size",
+          "status": "candidate",
+          "catalog_scope": "bundled OFL fonts only; original may not be present"
+        }
+      ]
+    }
+  ]
+}

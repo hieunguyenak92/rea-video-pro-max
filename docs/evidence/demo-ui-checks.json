@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-12T11:21:37.376Z",
+  "browser": "installed Google Chrome, headless CDP",
+  "url": "localhost/docs",
+  "checks": [
+    {
+      "name": "Desktop has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Both real MP4 metadata load",
+      "passed": true,
+      "detail": [
+        {
+          "duration": 9,
+          "error": null
+        },
+        {
+          "duration": 10.833333,
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Four recorded artifacts load",
+      "passed": true,
+      "detail": "All four recorded artifacts loaded. Nothing on this page runs live inference."
+    },
+    {
+      "name": "Real timeline events appear",
+      "passed": true,
+      "detail": 25
+    },
+    {
+      "name": "Timeline selection opens actual event",
+      "passed": true
+    },
+    {
+      "name": "Template selection opens actual template",
+      "passed": true
+    },
+    {
+      "name": "Scrub links relative progress of different durations",
+      "passed": true,
+      "detail": {
+        "a": 0.5,
+        "b": 0.4999999538461525
+      }
+    },
+    {
+      "name": "Linked play starts both real videos and mutes B",
+      "passed": true,
+      "detail": {
+        "a": false,
+        "b": false,
+        "muted": true
+      }
+    },
+    {
+      "name": "Unlink restores independent B audio and playback rate",
+      "passed": true
+    },
+    {
+      "name": "390px mobile has no horizontal overflow",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390
+      }
+    }
+  ]
+}

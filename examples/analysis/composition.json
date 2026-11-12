@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "kind": "rea-video-composition",
+  "text_regions": [
+    {
+      "id": "text-0001",
+      "bbox": [
+        0.226562,
+        0.769444,
+        0.54375,
+        0.063889
+      ],
+      "start": 0.25,
+      "end": 2.25,
+      "status": "observed-region-not-separated-layer",
+      "quality": {
+        "status": "candidate",
+        "reasons": [],
+        "method": "OCR-score-and-layout-heuristics",
+        "limits": "uncalibrated triage; legitimate short inserts and unusual typography remain available in text_regions"
+      }
+    },
+    {
+      "id": "text-0002",
+      "bbox": [
+        0.251563,
+        0.769444,
+        0.496875,
+        0.063889
+      ],
+      "start": 2.75,
+      "end": 5.25,
+      "status": "observed-region-not-separated-layer",
+      "quality": {
+        "status": "candidate",
+        "reasons": [],
+        "method": "OCR-score-and-layout-heuristics",
+        "limits": "uncalibrated triage; legitimate short inserts and unusual typography remain available in text_regions"
+      }
+    },
+    {
+      "id": "text-0003",
+      "bbox": [
+        0.05625,
+        0.061111,
+        0.678125,
+        0.497222
+      ],
+      "start": 3.25,
+      "end": 3.5,
+      "status": "observed-region-not-separated-layer",
+      "quality": {
+        "status": "suspect",
+        "reasons": [
+          "low_uncalibrated_engine_score",
+          "region_height_unusual_for_subtitle",
+          "ambiguous_short_reading",
+          "single_temporal_observation"
+        ],
+        "method": "OCR-score-and-layout-heuristics",
+        "limits": "uncalibrated triage; legitimate short inserts and unusual typography remain available in text_regions"
+      }
+    },
+    {
+      "id": "text-0004",
+      "bbox": [
+        0.05625,
+        0.061111,
+        0.659375,
+        0.497222
+      ],
+      "start": 4.0,
+      "end": 4.25,
+      "status": "observed-region-not-separated-layer",
+      "quality": {
+        "status": "suspect",
+        "reasons": [
+          "low_uncalibrated_engine_score",
+          "region_height_unusual_for_subtitle",
+          "ambiguous_short_reading",
+          "single_temporal_observation"
+        ],
+        "method": "OCR-score-and-layout-heuristics",
+        "limits": "uncalibrated triage; legitimate short inserts and unusual typography remain available in text_regions"
+      }
+    },
+    {
+      "id": "text-0005",
+      "bbox": [
+        0.05625,
+        0.061111,
+        0.651563,
+        0.497222
+      ],
+      "start": 4.25,
+      "end": 4.75,
+      "status": "observed-region-not-separated-layer",
+      "quality": {
+        "status": "suspect",
+        "reasons": [
+          "low_uncalibrated_engine_score",
+          "region_height_unusual_for_subtitle"
+        ],
+        "method": "OCR-score-and-layout-heuristics",
+        "limits": "uncalibrated triage; legitimate short inserts and unusual typography remain available in text_regions"
+      }
+    },
+    {
+      "id": "text-0006",
+      "bbox": [
+        0.05625,
+        0.061111,
+        0.634375,
+        0.497222
+      ],
+      "start": 5.0,
+      "end": 5.25,
+      "status": "observed-region-not-separated-layer",
+      "quality": {
+        "status": "suspect",
+        "reasons": [
+          "low_uncalibrated_engine_score",
+          "region_height_unusual_for_subtitle",
+          "single_temporal_observation"
+        ],
+        "method": "OCR-score-and-layout-heuristics",
+        "limits": "uncalibrated triage; legitimate short inserts and unusual typography remain available in text_regions"
+      }
+    },
+    {
+      "id": "text-0007",
+      "bbox": [
+        0.2,
+        0.769444,
+        0.601562,
+        0.063889
+      ],
+      "start": 5.75,
+      "end": 8.75,
+      "status": "observed-region-not-separated-layer",
+      "quality": {
+        "status": "candidate",
+        "reasons": [],
+        "method": "OCR-score-and-layout-heuristics",
+        "limits": "uncalibrated triage; legitimate short inserts and unusual typography remain available in text_regions"
+      }
+    }
+  ],
+  "production_origin": "unknown",
+  "original_layers": "unknown"
+}

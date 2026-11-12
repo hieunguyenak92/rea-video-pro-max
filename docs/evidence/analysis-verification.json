@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "kind": "rea-video-verification",
+  "mode": "analysis",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "source-identity",
+      "passed": true,
+      "detail": "Original bytes match the recorded SHA-256"
+    },
+    {
+      "name": "coverage-present",
+      "passed": true,
+      "detail": {
+        "requested_range": [
+          0,
+          9.0
+        ],
+        "decoded_range": [
+          0,
+          9.0
+        ],
+        "decoded_frame_extent": [
+          0,
+          9.0
+        ],
+        "complete": true,
+        "decoded_frames": 216,
+        "indexed_frames": 216,
+        "missing_pts": 0,
+        "decoded_frames_semantics": "indexed presentation frames in analyzed range; decoder boundary/lookahead frames are not counted",
+        "signal_analyzed_frames": 216,
+        "visual_evidence_samples": 66,
+        "sample_fps_requested": 4,
+        "evidence_sample_budget": 600,
+        "main_pass_evidence_samples": 36,
+        "evidence_budget_exhausted": false,
+        "ocr": {
+          "status": "sampled-plus-local-refinement",
+          "calls": 36,
+          "reused": 0,
+          "sampled_range": [
+            0,
+            8.75
+          ],
+          "failures": [],
+          "language": "eng",
+          "regions_per_frame_budget": 200,
+          "regions_omitted": 0,
+          "track_budget": 1000,
+          "track_observations_omitted": 0
+        },
+        "cue_boundary_refinement": {
+          "status": "completed",
+          "ocr_calls": 36,
+          "decoded_frames_inspected": 42,
+          "budget": 240,
+          "caption_budget": 40,
+          "fully_refined_cues": 3,
+          "candidate_cues": 3,
+          "budget_exhausted": false,
+          "failures": [],
+          "evidence_omitted": 0,
+          "evidence_budget": 600
+        },
+        "semantic_vision": {
+          "status": "not_run",
+          "reason": "no VLM provider called"
+        },
+        "limit_reason": null,
+        "outside_requested_range": null,
+        "motion": {
+          "profile": "affine",
+          "status": "completed",
+          "pair_budget": 192,
+          "selected_pairs": 63,
+          "accepted_pairs": 61,
+          "rejected_pairs": 2,
+          "pairs_omitted_by_budget": 0,
+          "limits": "sampled apparent image-space fits; rejected pairs break trajectories; no camera/object or original-keyframe recovery"
+        }
+      }
+    },
+    {
+      "name": "evidence-files",
+      "passed": true,
+      "detail": {
+        "missing": []
+      }
+    }
+  ],
+  "limits": [
+    "Integrity/structure checks do not certify OCR, cuts, motion or original editing history. Annotated independent fixtures are required."
+  ]
+}

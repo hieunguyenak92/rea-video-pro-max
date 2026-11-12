@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "kind": "rea-video-embedded-subtitles",
+  "subtitles": {
+    "status": "absent",
+    "streams": [],
+    "events": []
+  }
+}

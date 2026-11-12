@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/hieunguyenak92/rea-video-pro-max/schemas/style-template.json",
+  "title": "REA Video style-template v1",
+  "description": "Structural contract. Runtime additionally checks clocks, glyphs, media identity, path confinement and resource budgets. Unknown fields are preserved for forward-compatible evidence.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "reference",
+    "style",
+    "rhythm",
+    "motion",
+    "slots",
+    "implementation_choices"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "kind": {
+      "const": "rea-video-style-template"
+    },
+    "reference": {
+      "type": "object"
+    },
+    "style": {
+      "type": "object"
+    },
+    "rhythm": {
+      "type": "object"
+    },
+    "motion": {
+      "type": "object"
+    },
+    "slots": {
+      "type": "array"
+    },
+    "implementation_choices": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,20 @@
+name: Reproducible video task
+description: Report an analysis, binding, render or export failure without private media.
+body:
+  - type: textarea
+    attributes:
+      label: Task and expected result
+      description: Analysis files, a reusable style, or a different rendered video?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Minimal owned or permitted fixture and commands
+      description: Include runtime versions, method/status fields, actual errors and relevant loss receipt. Do not upload private video or secrets.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Actual output and evidence
+    validations:
+      required: true

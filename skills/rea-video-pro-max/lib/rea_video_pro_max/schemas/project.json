@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/hieunguyenak92/rea-video-pro-max/schemas/project.json",
+  "title": "REA Video project v1",
+  "description": "Structural contract. Runtime additionally checks clocks, glyphs, media identity, path confinement and resource budgets. Unknown fields are preserved for forward-compatible evidence.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "render",
+    "style",
+    "scenes",
+    "captions",
+    "font",
+    "assets",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "kind": {
+      "const": "rea-video-project"
+    },
+    "render": {
+      "type": "object",
+      "required": [
+        "width",
+        "height",
+        "fps",
+        "duration",
+        "frame_count"
+      ],
+      "properties": {
+        "width": {
+          "type": "integer"
+        },
+        "height": {
+          "type": "integer"
+        },
+        "fps": {
+          "type": "number"
+        },
+        "duration": {
+          "type": "number",
+          "minimum": 0
+        },
+        "frame_count": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "style": {
+      "type": "object"
+    },
+    "scenes": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 256,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "start",
+          "end"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "start": {
+            "type": "number",
+            "minimum": 0
+          },
+          "end": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "captions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "start",
+          "end"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "start": {
+            "type": "number",
+            "minimum": 0
+          },
+          "end": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "font": {
+      "type": "object"
+    },
+    "assets": {
+      "type": "array",
+      "minItems": 1
+    },
+    "provenance": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

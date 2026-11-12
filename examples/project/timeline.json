@@ -1,0 +1,768 @@
+{
+  "schema_version": 1,
+  "kind": "rea-video-resolved-timeline",
+  "duration": 10.8,
+  "scenes": [
+    {
+      "id": "idea",
+      "start": 0.0,
+      "end": 3.0,
+      "duration": 3.0,
+      "text": "BUILD A FRESH IDEA",
+      "title": "",
+      "asset": {
+        "path": "assets/media-4fde4378cdbb8e0b2abd.png",
+        "sha256": "4fde4378cdbb8e0b2abd8234a019582b3d3be6b2d8797413d36cca7f48e571ad",
+        "bytes": 14266,
+        "role": "media",
+        "origin": "new-content-supplied",
+        "type": "image"
+      },
+      "background": [
+        17,
+        24,
+        39
+      ],
+      "accent": [
+        254,
+        255,
+        255
+      ],
+      "accent_explicit": false,
+      "asset_start": 0.0,
+      "video_end_policy": "hold-last",
+      "motion": {
+        "family": "static",
+        "panzoom": 0,
+        "scale_ratio": 1,
+        "easing": "linear",
+        "status": "implementation_choice",
+        "shot_id": "shot-0001",
+        "evidence": [
+          "frame-00000000",
+          "frame-00000001",
+          "frame-00000002",
+          "frame-00000003",
+          "frame-00000004",
+          "frame-00000005",
+          "frame-00000006",
+          "frame-00000012",
+          "frame-00000018",
+          "frame-00000024",
+          "frame-00000030",
+          "frame-00000036",
+          "frame-00000042",
+          "frame-00000048",
+          "frame-00000049",
+          "frame-00000050",
+          "frame-00000051",
+          "frame-00000052",
+          "frame-00000053",
+          "frame-00000054"
+        ]
+      },
+      "transition": {
+        "family": "cut",
+        "duration": 0
+      },
+      "captions": [
+        {
+          "text": "BUILD A FRESH",
+          "start": 0.0,
+          "end": 2.2,
+          "words": [
+            {
+              "text": "BUILD",
+              "start": 0.0,
+              "end": 1.0,
+              "timing": "estimated-from-new-text"
+            },
+            {
+              "text": "A",
+              "start": 1.0,
+              "end": 1.2,
+              "timing": "estimated-from-new-text"
+            },
+            {
+              "text": "FRESH",
+              "start": 1.2,
+              "end": 2.2,
+              "timing": "estimated-from-new-text"
+            }
+          ],
+          "style": {
+            "font_size_ratio": 0.088889,
+            "fill": [
+              254,
+              255,
+              255
+            ],
+            "stroke": [
+              2,
+              5,
+              11
+            ],
+            "stroke_width_ratio": 0.005556,
+            "anchor": "bottom",
+            "box_color": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "anchor_x": 0.498437,
+            "anchor_y": 0.801389,
+            "entry": "static",
+            "line_height": 1.0
+          },
+          "style_variant_id": "appearance-1"
+        },
+        {
+          "text": "IDEA",
+          "start": 2.2,
+          "end": 3.0,
+          "words": [
+            {
+              "text": "IDEA",
+              "start": 2.2,
+              "end": 3.0,
+              "timing": "estimated-from-new-text"
+            }
+          ],
+          "style": {
+            "font_size_ratio": 0.088889,
+            "fill": [
+              254,
+              255,
+              255
+            ],
+            "stroke": [
+              2,
+              5,
+              11
+            ],
+            "stroke_width_ratio": 0.005556,
+            "anchor": "bottom",
+            "box_color": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "anchor_x": 0.498437,
+            "anchor_y": 0.801389,
+            "entry": "static",
+            "line_height": 1.0
+          },
+          "style_variant_id": "appearance-1"
+        }
+      ]
+    },
+    {
+      "id": "craft",
+      "start": 3.0,
+      "end": 6.6,
+      "duration": 3.6,
+      "text": "EDIT WITH CLEAR INTENT",
+      "title": "",
+      "asset": {
+        "path": "assets/media-7d78400b1457533abd6b.mp4",
+        "sha256": "7d78400b1457533abd6be913f08a0c32f97b24b1d0f8e8dd5c0e2945800aa98e",
+        "bytes": 24529,
+        "role": "media",
+        "origin": "new-content-supplied",
+        "type": "video"
+      },
+      "background": [
+        17,
+        24,
+        39
+      ],
+      "accent": [
+        254,
+        255,
+        255
+      ],
+      "accent_explicit": false,
+      "asset_start": 0.0,
+      "video_end_policy": "hold-last",
+      "motion": {
+        "family": "static",
+        "panzoom": 0,
+        "scale_ratio": 1,
+        "easing": "linear",
+        "status": "implementation_choice",
+        "shot_id": "shot-0002",
+        "evidence": [
+          "frame-00000060",
+          "frame-00000061",
+          "frame-00000062",
+          "frame-00000063",
+          "frame-00000064",
+          "frame-00000065",
+          "frame-00000066",
+          "frame-00000072",
+          "frame-00000078",
+          "frame-00000084",
+          "frame-00000090",
+          "frame-00000096",
+          "frame-00000102",
+          "frame-00000108",
+          "frame-00000114",
+          "frame-00000120",
+          "frame-00000121",
+          "frame-00000122",
+          "frame-00000123",
+          "frame-00000124",
+          "frame-00000125",
+          "frame-00000126"
+        ]
+      },
+      "transition": {
+        "family": "cut",
+        "duration": 0
+      },
+      "captions": [
+        {
+          "text": "EDIT WITH CLEAR",
+          "start": 0.0,
+          "end": 2.463157894736842,
+          "words": [
+            {
+              "text": "EDIT",
+              "start": 0.0,
+              "end": 0.7578947368421053,
+              "timing": "estimated-from-new-text"
+            },
+            {
+              "text": "WITH",
+              "start": 0.7578947368421053,
+              "end": 1.5157894736842106,
+              "timing": "estimated-from-new-text"
+            },
+            {
+              "text": "CLEAR",
+              "start": 1.5157894736842106,
+              "end": 2.463157894736842,
+              "timing": "estimated-from-new-text"
+            }
+          ],
+          "style": {
+            "font_size_ratio": 0.088889,
+            "fill": [
+              255,
+              255,
+              255
+            ],
+            "stroke": [
+              7,
+              4,
+              11
+            ],
+            "stroke_width_ratio": 0.005556,
+            "anchor": "bottom",
+            "box_color": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "anchor_x": 0.5,
+            "anchor_y": 0.801389,
+            "entry": "static",
+            "line_height": 1.0
+          },
+          "style_variant_id": "appearance-2"
+        },
+        {
+          "text": "INTENT",
+          "start": 2.463157894736842,
+          "end": 3.6,
+          "words": [
+            {
+              "text": "INTENT",
+              "start": 2.463157894736842,
+              "end": 3.6,
+              "timing": "estimated-from-new-text"
+            }
+          ],
+          "style": {
+            "font_size_ratio": 0.088889,
+            "fill": [
+              255,
+              255,
+              255
+            ],
+            "stroke": [
+              7,
+              4,
+              11
+            ],
+            "stroke_width_ratio": 0.005556,
+            "anchor": "bottom",
+            "box_color": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "anchor_x": 0.5,
+            "anchor_y": 0.801389,
+            "entry": "static",
+            "line_height": 1.0
+          },
+          "style_variant_id": "appearance-2"
+        }
+      ]
+    },
+    {
+      "id": "publish",
+      "start": 6.6,
+      "end": 10.8,
+      "duration": 4.2,
+      "text": "CREATE YOUR OWN STORY",
+      "title": "",
+      "asset": {
+        "path": "assets/media-800c06b64c0963e18a8b.png",
+        "sha256": "800c06b64c0963e18a8b4de15b0ca50292aa9dc33147b85253011b4bba874786",
+        "bytes": 11871,
+        "role": "media",
+        "origin": "new-content-supplied",
+        "type": "image"
+      },
+      "background": [
+        17,
+        24,
+        39
+      ],
+      "accent": [
+        254,
+        255,
+        255
+      ],
+      "accent_explicit": false,
+      "asset_start": 0.0,
+      "video_end_policy": "hold-last",
+      "motion": {
+        "family": "static",
+        "panzoom": 0,
+        "scale_ratio": 1,
+        "easing": "linear",
+        "status": "implementation_choice",
+        "shot_id": "shot-0003",
+        "evidence": [
+          "frame-00000132",
+          "frame-00000133",
+          "frame-00000134",
+          "frame-00000135",
+          "frame-00000136",
+          "frame-00000137",
+          "frame-00000138",
+          "frame-00000144",
+          "frame-00000150",
+          "frame-00000156",
+          "frame-00000162",
+          "frame-00000168",
+          "frame-00000174",
+          "frame-00000180",
+          "frame-00000186",
+          "frame-00000192",
+          "frame-00000198",
+          "frame-00000204",
+          "frame-00000205",
+          "frame-00000206",
+          "frame-00000207",
+          "frame-00000208",
+          "frame-00000209",
+          "frame-00000210"
+        ]
+      },
+      "transition": {
+        "family": "cut",
+        "duration": 0
+      },
+      "captions": [
+        {
+          "text": "CREATE YOUR OWN",
+          "start": 0.0,
+          "end": 3.0333333333333337,
+          "words": [
+            {
+              "text": "CREATE",
+              "start": 0.0,
+              "end": 1.4000000000000001,
+              "timing": "estimated-from-new-text"
+            },
+            {
+              "text": "YOUR",
+              "start": 1.4000000000000001,
+              "end": 2.3333333333333335,
+              "timing": "estimated-from-new-text"
+            },
+            {
+              "text": "OWN",
+              "start": 2.3333333333333335,
+              "end": 3.0333333333333337,
+              "timing": "estimated-from-new-text"
+            }
+          ],
+          "style": {
+            "font_size_ratio": 0.088889,
+            "fill": [
+              254,
+              255,
+              255
+            ],
+            "stroke": [
+              3,
+              7,
+              8
+            ],
+            "stroke_width_ratio": 0.005556,
+            "anchor": "bottom",
+            "box_color": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "anchor_x": 0.500781,
+            "anchor_y": 0.801389,
+            "entry": "static",
+            "line_height": 1.0
+          },
+          "style_variant_id": "appearance-3"
+        },
+        {
+          "text": "STORY",
+          "start": 3.0333333333333337,
+          "end": 4.2,
+          "words": [
+            {
+              "text": "STORY",
+              "start": 3.0333333333333337,
+              "end": 4.2,
+              "timing": "estimated-from-new-text"
+            }
+          ],
+          "style": {
+            "font_size_ratio": 0.088889,
+            "fill": [
+              254,
+              255,
+              255
+            ],
+            "stroke": [
+              3,
+              7,
+              8
+            ],
+            "stroke_width_ratio": 0.005556,
+            "anchor": "bottom",
+            "box_color": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "anchor_x": 0.500781,
+            "anchor_y": 0.801389,
+            "entry": "static",
+            "line_height": 1.0
+          },
+          "style_variant_id": "appearance-3"
+        }
+      ]
+    }
+  ],
+  "captions": [
+    {
+      "id": "idea-caption-1",
+      "scene_id": "idea",
+      "text": "BUILD A FRESH",
+      "start": 0.0,
+      "end": 2.2,
+      "timing": "estimated-from-new-text",
+      "words": [
+        {
+          "text": "BUILD",
+          "start": 0.0,
+          "end": 1.0,
+          "timing": "estimated-from-new-text"
+        },
+        {
+          "text": "A",
+          "start": 1.0,
+          "end": 1.2,
+          "timing": "estimated-from-new-text"
+        },
+        {
+          "text": "FRESH",
+          "start": 1.2,
+          "end": 2.2,
+          "timing": "estimated-from-new-text"
+        }
+      ],
+      "style": {
+        "font_size_ratio": 0.088889,
+        "fill": [
+          254,
+          255,
+          255
+        ],
+        "stroke": [
+          2,
+          5,
+          11
+        ],
+        "stroke_width_ratio": 0.005556,
+        "anchor": "bottom",
+        "box_color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_x": 0.498437,
+        "anchor_y": 0.801389,
+        "entry": "static",
+        "line_height": 1.0
+      },
+      "style_variant_id": "appearance-1"
+    },
+    {
+      "id": "idea-caption-2",
+      "scene_id": "idea",
+      "text": "IDEA",
+      "start": 2.2,
+      "end": 3.0,
+      "timing": "estimated-from-new-text",
+      "words": [
+        {
+          "text": "IDEA",
+          "start": 2.2,
+          "end": 3.0,
+          "timing": "estimated-from-new-text"
+        }
+      ],
+      "style": {
+        "font_size_ratio": 0.088889,
+        "fill": [
+          254,
+          255,
+          255
+        ],
+        "stroke": [
+          2,
+          5,
+          11
+        ],
+        "stroke_width_ratio": 0.005556,
+        "anchor": "bottom",
+        "box_color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_x": 0.498437,
+        "anchor_y": 0.801389,
+        "entry": "static",
+        "line_height": 1.0
+      },
+      "style_variant_id": "appearance-1"
+    },
+    {
+      "id": "craft-caption-3",
+      "scene_id": "craft",
+      "text": "EDIT WITH CLEAR",
+      "start": 3.0,
+      "end": 5.463157894736842,
+      "timing": "estimated-from-new-text",
+      "words": [
+        {
+          "text": "EDIT",
+          "start": 3.0,
+          "end": 3.7578947368421054,
+          "timing": "estimated-from-new-text"
+        },
+        {
+          "text": "WITH",
+          "start": 3.7578947368421054,
+          "end": 4.515789473684211,
+          "timing": "estimated-from-new-text"
+        },
+        {
+          "text": "CLEAR",
+          "start": 4.515789473684211,
+          "end": 5.463157894736842,
+          "timing": "estimated-from-new-text"
+        }
+      ],
+      "style": {
+        "font_size_ratio": 0.088889,
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "stroke": [
+          7,
+          4,
+          11
+        ],
+        "stroke_width_ratio": 0.005556,
+        "anchor": "bottom",
+        "box_color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_x": 0.5,
+        "anchor_y": 0.801389,
+        "entry": "static",
+        "line_height": 1.0
+      },
+      "style_variant_id": "appearance-2"
+    },
+    {
+      "id": "craft-caption-4",
+      "scene_id": "craft",
+      "text": "INTENT",
+      "start": 5.463157894736842,
+      "end": 6.6,
+      "timing": "estimated-from-new-text",
+      "words": [
+        {
+          "text": "INTENT",
+          "start": 5.463157894736842,
+          "end": 6.6,
+          "timing": "estimated-from-new-text"
+        }
+      ],
+      "style": {
+        "font_size_ratio": 0.088889,
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "stroke": [
+          7,
+          4,
+          11
+        ],
+        "stroke_width_ratio": 0.005556,
+        "anchor": "bottom",
+        "box_color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_x": 0.5,
+        "anchor_y": 0.801389,
+        "entry": "static",
+        "line_height": 1.0
+      },
+      "style_variant_id": "appearance-2"
+    },
+    {
+      "id": "publish-caption-5",
+      "scene_id": "publish",
+      "text": "CREATE YOUR OWN",
+      "start": 6.6,
+      "end": 9.633333333333333,
+      "timing": "estimated-from-new-text",
+      "words": [
+        {
+          "text": "CREATE",
+          "start": 6.6,
+          "end": 8.0,
+          "timing": "estimated-from-new-text"
+        },
+        {
+          "text": "YOUR",
+          "start": 8.0,
+          "end": 8.933333333333334,
+          "timing": "estimated-from-new-text"
+        },
+        {
+          "text": "OWN",
+          "start": 8.933333333333334,
+          "end": 9.633333333333333,
+          "timing": "estimated-from-new-text"
+        }
+      ],
+      "style": {
+        "font_size_ratio": 0.088889,
+        "fill": [
+          254,
+          255,
+          255
+        ],
+        "stroke": [
+          3,
+          7,
+          8
+        ],
+        "stroke_width_ratio": 0.005556,
+        "anchor": "bottom",
+        "box_color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_x": 0.500781,
+        "anchor_y": 0.801389,
+        "entry": "static",
+        "line_height": 1.0
+      },
+      "style_variant_id": "appearance-3"
+    },
+    {
+      "id": "publish-caption-6",
+      "scene_id": "publish",
+      "text": "STORY",
+      "start": 9.633333333333333,
+      "end": 10.8,
+      "timing": "estimated-from-new-text",
+      "words": [
+        {
+          "text": "STORY",
+          "start": 9.633333333333333,
+          "end": 10.8,
+          "timing": "estimated-from-new-text"
+        }
+      ],
+      "style": {
+        "font_size_ratio": 0.088889,
+        "fill": [
+          254,
+          255,
+          255
+        ],
+        "stroke": [
+          3,
+          7,
+          8
+        ],
+        "stroke_width_ratio": 0.005556,
+        "anchor": "bottom",
+        "box_color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor_x": 0.500781,
+        "anchor_y": 0.801389,
+        "entry": "static",
+        "line_height": 1.0
+      },
+      "style_variant_id": "appearance-3"
+    }
+  ]
+}
