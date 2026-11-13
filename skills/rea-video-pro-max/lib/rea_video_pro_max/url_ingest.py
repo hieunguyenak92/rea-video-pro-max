@@ -88,6 +88,17 @@ def _sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def _downloader_version(module) -> str:
+    version = getattr(module, "__version__", None)
+    if version:
+        return str(version)
+    try:
+        from yt_dlp import version as version_module
+        return str(getattr(version_module, "__version__", "unknown"))
+    except (ImportError, AttributeError):
+        return "unknown"
+
+
 def _empty_or_new(path: Path) -> None:
     if path.exists():
         if not path.is_dir():
@@ -147,13 +158,32 @@ def fetch_url(url: str, out_dir: str | Path, *, max_bytes: int = DEFAULT_MAX_BYT
             "max_filesize": max_bytes,
             "overwrites": False,
         }
+        strategy = "primary"
         try:
             with yt_dlp.YoutubeDL(options) as downloader:
                 info = downloader.extract_info(url, download=True)
         except Exception as error:
-            # Keep platform/private/DRM failures actionable without exposing a
-            # potentially enormous extractor traceback to the calling agent.
-            raise RuntimeError(f"Public video download failed: {error}") from error
+            host = (urlparse(url).hostname or "").lower()
+            # YouTube may expose DASH formats whose signed media URL returns
+            # 403 in a restricted runner while its public progressive format
+            # remains available. Retry that bounded public format only; this is
+            # not a credentials, DRM or private-content bypass.
+            if "youtube.com" not in host and not host.endswith("youtu.be"):
+                raise RuntimeError(f"Public video download failed: {error}") from error
+            for partial in staging.iterdir():
+                if partial.is_file():
+                    partial.unlink()
+            fallback = dict(options)
+            fallback["format"] = "18"
+            fallback["extractor_args"] = {"youtube": {"player_client": ["android"]}}
+            try:
+                with yt_dlp.YoutubeDL(fallback) as downloader:
+                    info = downloader.extract_info(url, download=True)
+                strategy = "youtube-progressive-fallback"
+            except Exception as fallback_error:
+                raise RuntimeError(
+                    f"Public video download failed (primary: {error}; progressive fallback: {fallback_error})"
+                ) from fallback_error
         if info.get("entries"):
             entries = [entry for entry in info["entries"] if entry]
             if len(entries) != 1:
@@ -188,7 +218,8 @@ def fetch_url(url: str, out_dir: str | Path, *, max_bytes: int = DEFAULT_MAX_BYT
         "width": info.get("width"),
         "height": info.get("height"),
         "extension": final.suffix.lower().lstrip("."),
-        "downloader": {"name": "yt-dlp", "version": getattr(yt_dlp, "__version__", "unknown")},
+        "downloader": {"name": "yt-dlp", "version": _downloader_version(yt_dlp),
+                       "format_id": info.get("format_id"), "strategy": strategy},
         "policy": {"noplaylist": True, "max_bytes": max_bytes, "max_seconds": max_seconds,
                    "credentials": "not supplied", "drm_or_private_bypass": False},
         "fetched_at": _datetime.datetime.now(_datetime.timezone.utc).isoformat(),

@@ -68,3 +68,38 @@ def test_fetch_requires_fresh_output(monkeypatch, tmp_path):
     (target / "existing.txt").write_text("keep")
     with pytest.raises(ValueError, match="empty"):
         fetch_url("https://youtu.be/fixture", target)
+
+
+def test_youtube_retries_public_progressive_format(monkeypatch, tmp_path):
+    class DownloadError(Exception):
+        pass
+
+    class YoutubeDL:
+        attempts = []
+
+        def __init__(self, options):
+            self.options = options
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *args):
+            return False
+
+        def extract_info(self, url, download=True):
+            self.attempts.append(self.options["format"])
+            if len(self.attempts) == 1:
+                raise DownloadError("HTTP Error 403")
+            path = Path(self.options["outtmpl"].replace("%(id)s", "fallback").replace("%(ext)s", "mp4"))
+            path.write_bytes(b"progressive fixture")
+            return {"id": "fallback", "title": "Fallback", "duration": 1.0,
+                    "extractor_key": "Youtube", "webpage_url": url, "format_id": "18"}
+
+    fake = types.SimpleNamespace(YoutubeDL=YoutubeDL, __version__="test",
+                                 utils=types.SimpleNamespace(DownloadError=DownloadError))
+    monkeypatch.setitem(sys.modules, "yt_dlp", fake)
+    monkeypatch.setattr("rea_video_pro_max.url_ingest._public_dns", lambda host: None)
+    manifest = fetch_url("https://youtu.be/fallback", tmp_path / "source", max_bytes=1024,
+                         max_seconds=10, timeout_seconds=10)
+    assert YoutubeDL.attempts == ["bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]/b", "18"]
+    assert manifest["downloader"]["strategy"] == "youtube-progressive-fallback"
