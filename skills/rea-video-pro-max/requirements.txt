@@ -5,3 +5,4 @@ av>=14,<18
 # Optional timeline interchange: opentimelineio>=0.18,<0.20
 # System prerequisites: ffmpeg, ffprobe; optional OCR: tesseract + language data.
 # Optional local ASR: faster-whisper>=1.2.1,<2 (explicit local model required)
+# Optional public URL ingestion: yt-dlp>=2025.01.15,<2027 (no credentials/DRM bypass)

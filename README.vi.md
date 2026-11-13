@@ -99,6 +99,21 @@ Sao chép **toàn bộ** thư mục `skills/rea-video-pro-max` vào thư mục s
 
 Bạn cũng có thể giải nén [skill ZIP](https://github.com/hieunguyenak92/rea-video-pro-max/releases/download/v0.1.1/rea-video-pro-max-v0.1.1-skill.zip) vào đó. Giữ nguyên `lib`, `assets`, `scripts` và `references` cùng nhau. Nếu chỉ cài từ ZIP, cài thư viện Python bằng `python -m pip install -r /path/to/rea-video-pro-max/requirements.txt`; chạy qua `python /path/to/rea-video-pro-max/scripts/rea-video-pro-max.py`. Các lệnh console bên dưới được cung cấp bởi bước cài từ mã nguồn ở trên. Agent phải dùng đúng trình thông dịch Python đã cài các thư viện này.
 
+### Tự động phân tích video từ URL công khai
+
+Với video công khai trên YouTube, Facebook hoặc TikTok mà bạn được phép sử dụng, hãy cài phần mở rộng nhận URL tùy chọn để skill tải một bản sao cục bộ có giới hạn rồi phân tích:
+
+```sh
+python -m pip install 'rea-video-pro-max[url]'
+rea-video-pro-max analyze-url 'https://www.youtube.com/shorts/VIDEO_ID' --out work/url-analysis --ocr required --ocr-lang eng
+```
+
+Nếu dùng skill ZIP đã giải nén, hãy cài trực tiếp `yt-dlp>=2025.01.15,<2027`; ZIP không tự cài phần phụ thuộc tùy chọn.
+
+Skill ZIP v0.1.1 được liên kết ở trên được phát hành trước adapter URL tùy chọn này; hãy dùng checkout hiện tại để nhận URL cho đến bản phát hành kế tiếp.
+
+Lệnh lưu video, `url-source.json` chứa URL, bộ trích xuất, thời lượng, dung lượng và SHA-256, sau đó ghi các tệp phân tích thông thường dưới `work/url-analysis/analysis/`. Lệnh không dùng thông tin đăng nhập, không vượt DRM, không nhận playlist/livestream và không tải model. Quyền truy cập, bản quyền và điều khoản nền tảng vẫn thuộc trách nhiệm của bạn. [Chi tiết nhận URL — tiếng Anh](skills/rea-video-pro-max/references/url-ingestion.md).
+
 ### 3. Chạy ví dụ A → B đi kèm
 
 ```sh

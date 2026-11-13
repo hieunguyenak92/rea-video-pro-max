@@ -99,6 +99,21 @@ rea-video-pro-max doctor
 
 [スキルZIP](https://github.com/hieunguyenak92/rea-video-pro-max/releases/download/v0.1.1/rea-video-pro-max-v0.1.1-skill.zip)をそこへ展開しても構いません。`lib`、`assets`、`scripts`、`references`は一緒に保ってください。ZIPのみで導入する場合は、`python -m pip install -r /path/to/rea-video-pro-max/requirements.txt`でPython依存関係をインストールし、`python /path/to/rea-video-pro-max/scripts/rea-video-pro-max.py`を起動点にします。以下のコンソールコマンドは、前述のチェックアウトからのインストールで利用できます。エージェントは、その依存関係が入ったインタープリターを使う必要があります。
 
+### 公開動画 URL を自動で解析する
+
+利用を許可された公開 YouTube、Facebook、TikTok の動画ページなら、任意の URL 取り込み機能を追加して、制限付きのローカルコピーを取得してから解析できます。
+
+```sh
+python -m pip install 'rea-video-pro-max[url]'
+rea-video-pro-max analyze-url 'https://www.youtube.com/shorts/VIDEO_ID' --out work/url-analysis --ocr required --ocr-lang eng
+```
+
+展開した skill ZIP を使う場合は `yt-dlp>=2025.01.15,<2027` を直接インストールしてください。ZIP は任意の依存関係を自動でインストールしません。
+
+上記の v0.1.1 skill ZIP はこの任意の URL アダプターより前のものです。次のリリースまでは現在の checkout を使用してください。
+
+このコマンドは動画と、URL・抽出器・長さ・バイト数・SHA-256 を記録した `url-source.json` を保存し、通常の解析結果を `work/url-analysis/analysis/` に作成します。認証情報を使わず、DRM を回避せず、プレイリスト/ライブ配信やモデルの自動ダウンロードも受け付けません。プラットフォームへのアクセス権、著作権、利用規約は利用者が確認してください。[URL 取り込みの詳細（英語）](skills/rea-video-pro-max/references/url-ingestion.md)。
+
 ### 3. 付属のA → Bサンプルを実行
 
 ```sh

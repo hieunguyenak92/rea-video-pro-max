@@ -15,7 +15,7 @@ The native analysis, template, composition, render, report and export paths run 
 
 `report --no-media` omits the copied full reference media. It does **not** remove OCR text, evidence crops, local paths or other analysis data from the report. Redact or select outputs before sharing. Native JSON preserves more information than a subtitle export; it is not a redacted document.
 
-Core inputs are read as local files. Outputs go into the explicit directory/file selected by the caller. The runtime does not provide secure erasure, encrypted storage, retention management or an operating-system sandbox. Delete outputs and temporary project copies when no longer needed; use your own storage/access controls for confidential files.
+Core analysis inputs are read as local files. Optional URL ingestion is a separate, explicit network action: it sends the requested public platform URL to the locally installed `yt-dlp` process, stores the downloaded media and a provenance manifest in the selected output directory, and then returns to the local pipeline. It does not send credentials, use cookies, bypass DRM or upload the downloaded media to REA. Outputs go into the explicit directory/file selected by the caller. The runtime does not provide secure erasure, encrypted storage, retention management or an operating-system sandbox. Delete outputs and temporary project copies when no longer needed; use your own storage/access controls for confidential files.
 
 ## Agent and MCP boundaries
 

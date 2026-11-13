@@ -183,7 +183,7 @@ def tool(command: list[str], timeout: int = 10) -> dict:
 
 def doctor() -> dict:
     versions = {}
-    for package in ["Pillow", "numpy", "av", "mcp", "opentimelineio", "faster-whisper", "ctranslate2"]:
+    for package in ["Pillow", "numpy", "av", "mcp", "opentimelineio", "faster-whisper", "ctranslate2", "yt-dlp"]:
         try:
             versions[package] = importlib.metadata.version(package)
         except importlib.metadata.PackageNotFoundError:
@@ -204,7 +204,7 @@ def doctor() -> dict:
                                           filters.get("output", "").splitlines())
                                    for n in ["ass", "subtitles", "drawtext", "ssim", "libvmaf"]}},
             "ffprobe": tool(["ffprobe", "-version"]), "tesseract": tesseract, "fonts": fonts,
-            "network": "No content upload or model download in the native pipeline.",
+            "network": "No content upload or model download in the native pipeline; URL ingestion is explicit and optional.",
             "limitations": ["Tesseract language availability is not certified OCR accuracy.",
                             "Native renderer: 2D graphics/captions; complex scripts need a verified shaper.",
                             "Metadata/analysis does not identify the original editing project uniquely."]}

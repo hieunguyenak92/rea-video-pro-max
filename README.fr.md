@@ -99,6 +99,21 @@ Copiez le dossier **entier** `skills/rea-video-pro-max` dans le répertoire de s
 
 Vous pouvez également y extraire le [ZIP du skill](https://github.com/hieunguyenak92/rea-video-pro-max/releases/download/v0.1.1/rea-video-pro-max-v0.1.1-skill.zip). Gardez `lib`, `assets`, `scripts` et `references` ensemble. Pour une installation depuis le ZIP seul, installez ses dépendances Python avec `python -m pip install -r /path/to/rea-video-pro-max/requirements.txt` ; le point d’entrée est `python /path/to/rea-video-pro-max/scripts/rea-video-pro-max.py`. Les commandes de console ci-dessous proviennent de l’installation du dépôt décrite plus haut. Votre agent doit utiliser l’interpréteur contenant ces dépendances.
 
+### Analyser automatiquement une vidéo depuis une URL publique
+
+Pour une page vidéo publique YouTube, Facebook ou TikTok que vous êtes autorisé à utiliser, installez l’extension facultative d’ingestion d’URL afin que le skill télécharge une copie locale limitée avant l’analyse :
+
+```sh
+python -m pip install 'rea-video-pro-max[url]'
+rea-video-pro-max analyze-url 'https://www.youtube.com/shorts/VIDEO_ID' --out work/url-analysis --ocr required --ocr-lang eng
+```
+
+Avec un ZIP du skill extrait, installez directement `yt-dlp>=2025.01.15,<2027` ; le ZIP n’installe pas automatiquement les dépendances facultatives.
+
+Le ZIP du skill v0.1.1 lié ci-dessus précède cet adaptateur URL facultatif ; utilisez le checkout actuel pour l’ingestion d’URL jusqu’à la prochaine version.
+
+La commande enregistre la vidéo et `url-source.json` avec l’URL, l’extracteur, la durée, le nombre d’octets et le SHA-256, puis crée les artefacts d’analyse habituels dans `work/url-analysis/analysis/`. Elle n’utilise pas d’identifiants, ne contourne pas les DRM, n’accepte pas les playlists/diffusions en direct et ne télécharge pas de poids de modèle. L’accès à la plateforme, les droits d’auteur et les conditions restent sous votre responsabilité. [Détails de l’ingestion d’URL (anglais)](skills/rea-video-pro-max/references/url-ingestion.md).
+
 ### 3. Exécutez l’exemple A → B inclus
 
 ```sh

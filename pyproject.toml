@@ -15,6 +15,7 @@ dependencies = ["Pillow>=11,<13", "numpy>=2,<3", "av>=14,<18"]
 mcp = ["mcp>=1.28,<2"]
 interop = ["opentimelineio>=0.18,<0.20"]
 asr = ["faster-whisper>=1.2.1,<2"]
+url = ["yt-dlp>=2025.01.15,<2027"]
 test = ["pytest>=8,<10", "ruff>=0.14", "jsonschema>=4.20"]
 
 [project.scripts]

@@ -99,6 +99,21 @@ Copie a pasta **inteira** `skills/rea-video-pro-max` para o diretório de skills
 
 Você também pode extrair o [ZIP da skill](https://github.com/hieunguyenak92/rea-video-pro-max/releases/download/v0.1.1/rea-video-pro-max-v0.1.1-skill.zip) nesse local. Mantenha `lib`, `assets`, `scripts` e `references` juntos. Para instalar apenas a partir do ZIP, instale as dependências de Python com `python -m pip install -r /path/to/rea-video-pro-max/requirements.txt`; o ponto de entrada é `python /path/to/rea-video-pro-max/scripts/rea-video-pro-max.py`. Os comandos de console abaixo vêm da instalação do repositório descrita acima. Seu agente deve usar o interpretador que contém essas dependências.
 
+### Analise automaticamente um vídeo por URL pública
+
+Para uma página pública de vídeo do YouTube, Facebook ou TikTok que você tenha autorização para usar, instale o extra opcional de ingestão de URL e deixe a skill baixar uma cópia local limitada antes da análise:
+
+```sh
+python -m pip install 'rea-video-pro-max[url]'
+rea-video-pro-max analyze-url 'https://www.youtube.com/shorts/VIDEO_ID' --out work/url-analysis --ocr required --ocr-lang eng
+```
+
+Ao usar um ZIP da skill extraído, instale `yt-dlp>=2025.01.15,<2027` diretamente; o ZIP não instala dependências opcionais automaticamente.
+
+O ZIP da skill v0.1.1 linkado acima é anterior a este adaptador opcional de URL; use o checkout atual para ingestão de URL até o próximo release.
+
+O comando salva o vídeo e `url-source.json` com URL, extrator, duração, bytes e SHA-256, e depois cria os artefatos normais em `work/url-analysis/analysis/`. Não usa credenciais, contorna DRM, aceita playlists/live streams nem baixa pesos de modelos. O acesso à plataforma, direitos autorais e termos continuam sob sua responsabilidade. [Detalhes da ingestão de URL (inglês)](skills/rea-video-pro-max/references/url-ingestion.md).
+
 ### 3. Execute o exemplo A → B incluído
 
 ```sh

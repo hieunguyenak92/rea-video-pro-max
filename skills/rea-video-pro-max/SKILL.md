@@ -13,6 +13,7 @@ Convert a flattened reference into inspectable editing evidence and a reusable s
 - **Create a new video from a reference:** analyze first, then read [style-and-content.md](references/style-and-content.md) and [render-and-verify.md](references/render-and-verify.md). Deliver the template, content bindings, portable project, rendered B and verification result.
 - **Use an existing template:** inspect its provenance and supported primitives, then begin at content binding. Do not reanalyze A unless needed.
 - **Setup or unsupported effect/language/export:** read [runtime-and-support.md](references/runtime-and-support.md).
+- **A public YouTube/Facebook/TikTok URL:** read [url-ingestion.md](references/url-ingestion.md), acquire one bounded local copy first, then continue with the normal analysis workflow. Never treat a URL as a local media path.
 - **Speech timing or global motion fitting:** read [speech-and-motion.md](references/speech-and-motion.md). Use an explicit local model for ASR and preserve model-derived timing separately from visible text.
 
 Keep these four artifacts distinct: observed reference timeline, inferred editing operations, reusable StyleTemplate, and new-content concrete timeline. A renderer choice for B is not a historical fact about A.
@@ -27,6 +28,17 @@ python skills/rea-video-pro-max/scripts/rea-video-pro-max.py --help
 ```
 
 Use explicit output paths in the user's workspace. Preserve original inputs. `compose --out` expects a fresh directory; `template --out` expects a JSON file. Consult subcommand `--help` before using optional flags. A configured local MCP server may expose the same kernel: discover its actual tool schemas rather than invent tool names or assume a provider is installed.
+
+For an authorized public platform URL, install the optional downloader and use the dedicated URL command. It records a source manifest and then hands a local file to the unchanged analysis kernel:
+
+```sh
+python -m pip install 'rea-video-pro-max[url]'
+rea-video-pro-max analyze-url 'https://www.youtube.com/shorts/VIDEO_ID' --out ./work/url-analysis --ocr required --ocr-lang eng
+```
+
+When running from an extracted skill ZIP rather than a checkout, install `yt-dlp>=2025.01.15,<2027` directly in the interpreter used by the skill. The ZIP does not install optional dependencies automatically.
+
+For a split workflow, run `fetch-url URL --out ./work/source`, read the recorded `downloaded_path` in `work/source/url-source.json`, then pass that local path to `analyze`. The one-command `analyze-url` workflow downloads into `source/`, analyzes into `analysis/` and returns both paths. URL acquisition is opt-in and bounded; it accepts supported public platform hosts only, one non-live video, no credentials, no playlist, no private/DRM bypass, and no automatic model download. If the optional downloader is unavailable or the platform requires login, provide a local video instead.
 
 ## Reference → style → new video
 

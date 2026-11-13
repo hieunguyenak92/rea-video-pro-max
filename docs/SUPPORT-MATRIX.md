@@ -13,6 +13,7 @@ This is the **implemented boundary of v0.1.1**, not a certification of every cod
 | Linux | Intended CI/runtime target; only CI results actually completed count as evidence |
 | Windows | Not certified. Native pipe handling and FFmpeg invocation need platform-specific validation |
 | Browser | Static report/demo viewing only; no browser renderer or hosted inference dependency |
+| Public URL ingestion | Optional `yt-dlp` extra downloads one public YouTube/Facebook/TikTok video into a provenance-tracked local file before normal analysis | Not part of the base install; no credentials, private/DRM bypass, playlists or live streams; platform access and terms remain external |
 | Cloud models | Not required by the native pipeline; no bundled paid API, ASR or video-generation service |
 | Optional MCP | Local stdio server using the official Python SDK, explicit workspace, job execution and artifact reads |
 | Optional OTIO | Install `.[interop]`; native OTIO adapter readback, not specific NLE certification |

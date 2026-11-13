@@ -99,6 +99,21 @@ rea-video-pro-max doctor
 
 也可将 [Skill ZIP](https://github.com/hieunguyenak92/rea-video-pro-max/releases/download/v0.1.1/rea-video-pro-max-v0.1.1-skill.zip) 解压到该位置。保持 `lib`、`assets`、`scripts` 与 `references` 在一起。仅使用 ZIP 安装时，通过 `python -m pip install -r /path/to/rea-video-pro-max/requirements.txt` 安装 Python 依赖，入口为 `python /path/to/rea-video-pro-max/scripts/rea-video-pro-max.py`。下方控制台命令由上面的仓库安装提供。智能体必须使用已装好这些依赖的解释器。
 
+### 自动分析公开视频 URL
+
+对于你获准使用的公开 YouTube、Facebook 或 TikTok 视频页面，可以安装可选的 URL 导入扩展，让 skill 在分析前下载一份有边界的本地副本：
+
+```sh
+python -m pip install 'rea-video-pro-max[url]'
+rea-video-pro-max analyze-url 'https://www.youtube.com/shorts/VIDEO_ID' --out work/url-analysis --ocr required --ocr-lang eng
+```
+
+如果使用解压后的 skill ZIP，请直接安装 `yt-dlp>=2025.01.15,<2027`；ZIP 不会自动安装可选依赖。
+
+上方链接的 v0.1.1 skill ZIP 早于这个可选 URL 适配器；在下一版本发布前，请使用当前 checkout 进行 URL 导入。
+
+该命令会保存视频和包含 URL、提取器、时长、字节数及 SHA-256 的 `url-source.json`，然后在 `work/url-analysis/analysis/` 下生成常规分析结果。它不会使用凭据、绕过 DRM、接受播放列表/直播或下载模型权重。平台访问权限、版权和服务条款仍由你负责。[URL 导入详情（英文）](skills/rea-video-pro-max/references/url-ingestion.md)。
+
 ### 3. 运行随附 A → B 示例
 
 ```sh

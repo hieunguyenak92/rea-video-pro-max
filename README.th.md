@@ -99,6 +99,22 @@ rea-video-pro-max doctor
 
 คุณจะแตก [Skill ZIP](https://github.com/hieunguyenak92/rea-video-pro-max/releases/download/v0.1.1/rea-video-pro-max-v0.1.1-skill.zip) ไว้ที่นั่นก็ได้ เก็บ `lib`, `assets`, `scripts` และ `references` ไว้ด้วยกัน หากติดตั้งจาก ZIP เพียงอย่างเดียว ให้ติดตั้งไลบรารี Python ด้วย `python -m pip install -r /path/to/rea-video-pro-max/requirements.txt` และเรียกผ่าน `python /path/to/rea-video-pro-max/scripts/rea-video-pro-max.py` คำสั่งคอนโซลด้านล่างมาจากการติดตั้งผ่านเช็กเอาต์ด้านบน เอเจนต์ต้องใช้อินเทอร์พรีเตอร์ที่มีไลบรารีเหล่านี้อยู่
 
+### วิเคราะห์วิดีโอจาก URL สาธารณะโดยอัตโนมัติ
+
+สำหรับหน้าวิดีโอสาธารณะของ YouTube, Facebook หรือ TikTok ที่คุณมีสิทธิ์ใช้งาน ให้ติดตั้งส่วนเสริมรับ URL แล้วให้ skill ดาวน์โหลดสำเนาในเครื่องที่มีขอบเขตก่อนวิเคราะห์:
+
+```sh
+python -m pip install 'rea-video-pro-max[url]'
+rea-video-pro-max analyze-url 'https://www.youtube.com/shorts/VIDEO_ID' --out work/url-analysis --ocr required --ocr-lang eng
+```
+
+หากใช้ skill ZIP ที่แตกไฟล์แล้ว ให้ติดตั้ง `yt-dlp>=2025.01.15,<2027` โดยตรง ZIP จะไม่ติดตั้งการพึ่งพาเสริมโดยอัตโนมัติ
+
+skill ZIP v0.1.1 ที่ลิงก์ด้านบนออกมาก่อนอะแดปเตอร์ URL เสริมนี้ ให้ใช้ checkout ปัจจุบันสำหรับการรับ URL จนกว่าจะมีรุ่นถัดไป
+
+คำสั่งนี้บันทึกวิดีโอและ `url-source.json` ซึ่งมี URL, ตัวดึงข้อมูล, ระยะเวลา, จำนวนไบต์ และ SHA-256 จากนั้นสร้างผลวิเคราะห์ปกติไว้ใน `work/url-analysis/analysis/` จะไม่ใช้ข้อมูลเข้าสู่ระบบ ไม่หลบเลี่ยง DRM ไม่รับเพลย์ลิสต์/สตรีมสด และไม่ดาวน์โหลดน้ำหนักโมเดล สิทธิ์เข้าถึง แหล่งลิขสิทธิ์ และข้อกำหนดของแพลตฟอร์มยังเป็นความรับผิดชอบของคุณ [รายละเอียดการรับ URL (ภาษาอังกฤษ)](skills/rea-video-pro-max/references/url-ingestion.md)
+
+
 ### 3. รันตัวอย่าง A → B ที่แนบมา
 
 ```sh

@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Add opt-in public URL ingestion for supported YouTube, Facebook and TikTok page URLs through the optional `url` extra. `fetch-url` records a provenance manifest; `analyze-url` downloads one bounded local video and runs the existing analysis kernel.
+- Reject credentials, unsupported hosts, private-network resolution, playlists and live streams; preserve local-only behavior when the optional downloader is not installed.
+
 ## 0.1.1 — 2026-11-13
 
 - Separate coherent subtitle candidates from scene/suspect OCR in the recorded demo.

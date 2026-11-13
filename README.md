@@ -99,6 +99,21 @@ Copy the **whole** `skills/rea-video-pro-max` folder into your project’s skill
 
 You can also extract the [skill ZIP](https://github.com/hieunguyenak92/rea-video-pro-max/releases/download/v0.1.1/rea-video-pro-max-v0.1.1-skill.zip) there. Keep its `lib`, `assets`, `scripts` and `references` together. For a ZIP-only installation, install its Python dependencies with `python -m pip install -r /path/to/rea-video-pro-max/requirements.txt`; the entrypoint is `python /path/to/rea-video-pro-max/scripts/rea-video-pro-max.py`. The console commands below come from the checkout installation above. Your agent must use the interpreter containing those dependencies.
 
+### Analyze a public video URL automatically
+
+For an authorized public YouTube, Facebook or TikTok video page, install the optional URL-ingestion extra and let the skill download one bounded local copy before analysis:
+
+```sh
+python -m pip install 'rea-video-pro-max[url]'
+rea-video-pro-max analyze-url 'https://www.youtube.com/shorts/VIDEO_ID' --out work/url-analysis --ocr required --ocr-lang eng
+```
+
+When using an extracted skill ZIP, install `yt-dlp>=2025.01.15,<2027` directly; the ZIP does not install optional dependencies.
+
+The linked v0.1.1 skill ZIP predates this optional URL adapter; use the current checkout for URL ingestion until the next release.
+
+The command writes the downloaded media, `url-source.json` with the URL, extractor, duration, byte count and SHA-256, then the normal analysis artifacts under `work/url-analysis/analysis/`. It does not use credentials, bypass DRM, accept playlists/live streams or download model weights. Platform access, copyright and terms remain your responsibility. [URL-ingestion details (English)](skills/rea-video-pro-max/references/url-ingestion.md).
+
 ### 3. Run the included A → B example
 
 ```sh

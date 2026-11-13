@@ -12,7 +12,11 @@ process that can concurrently rewrite the same workspace. No HTTP listener is
 started by the MCP entrypoint.
 
 The native pipeline restricts media protocols/demuxers and does not fetch remote
-playlists, models or assets. Missing dependencies fail explicitly. Report folders
+playlists, models or assets. The opt-in URL-ingestion command is separate: it
+allows only supported public platform hosts, rejects credentials and private
+network resolution, disables playlists/live streams, bounds bytes/duration/time,
+and records a download manifest. Missing optional dependencies fail explicitly;
+platform login, private media and DRM are not bypassed. Report folders
 can contain copies of source media, private captions and evidence; inspect them
 before sharing. `report --no-media` omits the full reference copy, while evidence
 crops and text remain private data.

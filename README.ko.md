@@ -99,6 +99,21 @@ rea-video-pro-max doctor
 
 [스킬 ZIP](https://github.com/hieunguyenak92/rea-video-pro-max/releases/download/v0.1.1/rea-video-pro-max-v0.1.1-skill.zip)을 같은 위치에 풀어도 됩니다. `lib`, `assets`, `scripts`, `references`를 함께 유지하세요. ZIP만 설치할 경우 `python -m pip install -r /path/to/rea-video-pro-max/requirements.txt`로 Python 의존성을 설치하며 진입점은 `python /path/to/rea-video-pro-max/scripts/rea-video-pro-max.py`입니다. 아래 콘솔 명령은 앞서 저장소를 설치한 환경에서 제공됩니다. 에이전트는 해당 의존성이 설치된 인터프리터를 사용해야 합니다.
 
+### 공개 동영상 URL 자동 분석
+
+사용 권한이 있는 공개 YouTube, Facebook 또는 TikTok 동영상 페이지라면 선택적 URL 수집 기능을 설치해 제한된 로컬 사본을 받은 뒤 분석할 수 있습니다.
+
+```sh
+python -m pip install 'rea-video-pro-max[url]'
+rea-video-pro-max analyze-url 'https://www.youtube.com/shorts/VIDEO_ID' --out work/url-analysis --ocr required --ocr-lang eng
+```
+
+추출한 skill ZIP을 사용하는 경우 `yt-dlp>=2025.01.15,<2027`를 직접 설치하세요. ZIP은 선택적 의존성을 자동으로 설치하지 않습니다.
+
+위에 연결된 v0.1.1 skill ZIP은 이 선택적 URL 어댑터보다 먼저 배포되었습니다. 다음 릴리스 전에는 현재 checkout을 사용하세요.
+
+이 명령은 동영상과 URL, 추출기, 길이, 바이트 수, SHA-256이 담긴 `url-source.json`을 저장한 뒤 `work/url-analysis/analysis/`에 일반 분석 결과를 만듭니다. 자격 증명을 사용하거나 DRM을 우회하지 않으며, 재생목록/라이브 스트림과 모델 가중치 다운로드를 허용하지 않습니다. 플랫폼 접근 권한, 저작권과 이용약관은 사용자가 확인해야 합니다. [URL 수집 상세(영어)](skills/rea-video-pro-max/references/url-ingestion.md).
+
 ### 3. 포함된 A → B 예제 실행
 
 ```sh
